@@ -116,3 +116,41 @@ $video-bg-height: 491px;
 		}
 	}
 }
+
+/* BLOG GRID */
+.blog-grid {
+	li {
+		position: relative;
+		.pic {
+			position: absolute;
+			width: 100%;
+			top: -14%;
+			left: 0;
+			> div {
+				@include bg-img-control;
+				margin: 0 auto;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				padding: $blue-dark;
+			}
+		}
+		.content {
+			background-color: $gray-lighter;
+			padding: $container-fluid;
+			min-height: 210px;
+			@include flex-middle-center;
+		} 
+		&:hover {
+			.content {
+				background-color: $brand-warning;
+				p {
+					color: white;
+				}
+				h5 {
+					color: $brand-danger;
+				}
+			}
+		}
+	}
+}
