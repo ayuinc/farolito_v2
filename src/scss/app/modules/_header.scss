@@ -21,6 +21,19 @@ header,
 		text-align: center;
 	}
 	.right {
+		.navbar {
+			.select-btn {
+				border-radius: 16px;
+				border: 1px solid $gray-light;
+			}
+		}
+	}
+}
 
+.nav {
+	li {
+		a:hover {
+			background: none !important;
+		}
 	}
 }

@@ -16,7 +16,7 @@
       *Run grunt build when ready
       <link rel="stylesheet" href="assets/css/style.pkgd.min.css">
     -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="../src/scss/style.css" rel="stylesheet">
     <link href="assets/css/ebm.css" rel="stylesheet">
   </head>
   <body>
@@ -26,21 +26,66 @@
         <header class="header">
           <div class="left"></div>
           <div class="right">
-            <button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu">
-              <span class="tcon-menu__lines" aria-hidden="true"></span>
-              <span class="tcon-visuallyhidden">toggle menu</span>
-            </button>
+            <div class="navbar">
+              <div class="navbar-header">
+                <button type="button" class="tcon tcon-menu--xcross hidden-lg" aria-label="toggle menu">
+                  <span class="tcon-menu__lines" aria-hidden="true"></span>
+                  <span class="tcon-visuallyhidden">toggle menu</span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right list-unstyled">
+                  <li class="active">
+                    <a href="#">Sobre nosotros</a>
+                  </li>
+                  <li>
+                    <a href="#">Oportunidades</a>
+                  </li>
+                  <li class="p-7">
+                    <select name="" id="" class="btn select-btn">
+                      <option value="">ES</option>
+                      <option value="">EN</option>
+                    </select>
+                  </li>
+                  <li>
+                    <a href="#" class="btn-outline" id="ingresar">INGRESAR</a>
+                  </li>
+                </ul>
+              </div>
+                <!--/.nav-collapse -->         
+            </div>
           </div>
         </header>
-        <section style="background-image: url(assets/img/img.png)" class="bg-img-block minhp-100 flex-middle">
+        <section style="background-image: url(assets/img/img-home.png)" class="bg-img-block minhp-100 flex-middle">
           <div class="container">
             <div class="col-sm-6"></div>
             <div class="col-sm-6 text-center">
               <h1>Farolito</h1>
-              <h3 class="text-primary">Identificamos al mejor talento</h3>
+              <h3 class="text-primary">Identificamos al mejor talento y maximizamos su potencial</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aspernatur fuga perferendis itaque ipsam, consequuntur dignissimos quod cupiditate sunt, necessitatibus ullam aliquid ipsum culpa nemo repellat. Cumque ipsum necessitatibus, tempora?</p>
               <div class="pv-14">
                 <a href="#" class="btn btn-danger btn-lg uppercase">Crea tu perfil</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="metodologia" class="bg-white">
+          <div class="container text-center">
+            <h2 class="text-center">Nuestra metodología</h2>
+            <h3 class="text-center"><span class="h3 text-danger">Nuestro examen es 3 veces más fuerte</span><br> que el proceso interno aplicado por nuestros propios clientes.</h3>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="line1"></div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-circle p-14 bg-danger">
+                  <div class="metodologia-circle bg-danger php-14 pt-35  text-white">
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus porro, maiores quae architecto voluptatum modi dignissimos itaque veniam quo, error cumque. <br> Nos basamos en 3 pilares:</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="line2"></div>
               </div>
             </div>
           </div>
@@ -54,7 +99,7 @@
                   <div style="background-image: url(assets/img/user.jpg);"></div>
                 </div>
                 <div class="content">
-                  <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                  <!-- <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5> -->
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit in obcaecati illum nisi autem ut recusandae facilis magnam ea minima.</p>
                 </div>
               </li>
@@ -63,7 +108,7 @@
                   <div style="background-image: url(assets/img/user.jpg);"></div>
                 </div>
                 <div class="content">
-                  <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                  <!-- <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5> -->
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit in obcaecati illum nisi autem ut recusandae facilis magnam ea minima.</p>
                 </div>
               </li>
@@ -72,16 +117,7 @@
                   <div style="background-image: url(assets/img/user.jpg);"></div>
                 </div>
                 <div class="content">
-                  <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit in obcaecati illum nisi autem ut recusandae facilis magnam ea minima.</p>
-                </div>
-              </li>
-              <li>
-                <div class="pic">
-                  <div style="background-image: url(assets/img/user.jpg);"></div>
-                </div>
-                <div class="content">
-                  <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                  <!-- <h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5> -->
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit in obcaecati illum nisi autem ut recusandae facilis magnam ea minima.</p>
                 </div>
               </li>
