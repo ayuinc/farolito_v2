@@ -131,9 +131,21 @@ $video-bg-height: 491px;
 				&:hover {
 					border: none;
 					background: white;
+					// display: inline-block; 
 				}
+				// .text-hover {
+				// 	display: none;
+				// 	&:hover {
+				// 		display: block;
+				// 	}
+				// }
 			}
 		}
+		.border-middle {
+			border-left: 3px dashed #EC6645;
+			height: 121px;
+		}
+
 		.line1 {
 	   	width: 175px;
 			height: 47px;
@@ -151,6 +163,9 @@ $video-bg-height: 491px;
 			position: absolute;
 			bottom: -221px;
 			left: -15px;
+		}
+		.text-metodologia {
+			top: -315px;
 		}
 	}
 }
