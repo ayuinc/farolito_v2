@@ -119,10 +119,20 @@ $video-bg-height: 491px;
 
 #metodologia {
 	.container {
-		.metodologia-circle {
-			border: 3px dashed white;
-			border-radius: 50%;
-			min-height: 400px;
+		.border-circle {
+			&:hover {
+				border: 3px dashed #EC6645;
+				background: white !important;
+			}
+			.metodologia-circle {
+				border: 3px dashed white;
+				border-radius: 50%;
+				min-height: 400px;
+				&:hover {
+					border: none;
+					background: white;
+				}
+			}
 		}
 		.line1 {
 	   	width: 175px;
