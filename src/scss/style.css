@@ -3594,16 +3594,18 @@ body {
   .size.xl.hero-unit .overlay {
     height: 701px; }
 
-#metodologia .container .border-circle:hover {
-  border: 3px dashed #EC6645;
-  background: white !important; }
-#metodologia .container .border-circle .metodologia-circle {
-  border: 3px dashed white;
-  border-radius: 50%;
-  min-height: 400px; }
-  #metodologia .container .border-circle .metodologia-circle:hover {
-    border: none;
-    background: white; }
+#metodologia .container .external-circle {
+  background-color: #ff6a49;
+  border-radius: 50%; }
+  #metodologia .container .external-circle.active {
+    background-color: white; }
+  #metodologia .container .external-circle .internal-circle {
+    border: 3px dashed white;
+    border-radius: 50%;
+    height: 428px; }
+    #metodologia .container .external-circle .internal-circle:hover {
+      border: 3px dashed #ff6a49;
+      background-color: white; }
 #metodologia .container .border-middle {
   border-left: 3px dashed #EC6645;
   height: 121px; }

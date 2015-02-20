@@ -119,20 +119,26 @@ $video-bg-height: 491px;
 
 #metodologia {
 	.container {
-		.border-circle {
-			&:hover {
-				border: 3px dashed #EC6645;
-				background: white !important;
-			}
-			.metodologia-circle {
+		.external-circle {
+				background-color: $brand-danger;
+				border-radius: 50%;
+				&.active {
+					// border: 3px dashed #EC6645;
+					background-color: white;
+				}
+			.internal-circle {
 				border: 3px dashed white;
 				border-radius: 50%;
-				min-height: 400px;
+				height: 428px;
 				&:hover {
-					border: none;
-					background: white;
-					// display: inline-block; 
+					border: 3px dashed $brand-danger;
+					background-color: white;
 				}
+				// &:hover {
+				// 	border: none;
+				// 	background: white;
+				// 	// display: inline-block; 
+				// }
 				// .text-hover {
 				// 	display: none;
 				// 	&:hover {
