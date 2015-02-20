@@ -78,4 +78,15 @@ input[type="submit"].btn {
 			color: $brand-danger;
 		}
 	}
+	&.info {
+		background-color: $brand-info;
+		border: 2px solid $brand-info;
+		&.lg {
+			font-size: 22px;
+			font-size: rem(22px);
+		}
+		a {
+			color: white;
+		}
+	}
 }
