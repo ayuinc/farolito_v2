@@ -3736,6 +3736,12 @@ body {
   border-radius: 21px;
   border: 2px solid white; }
 
+.btn-submit {
+  padding: 3px 33px;
+  border-radius: 12px;
+  background: #aaa;
+  color: white; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
@@ -4954,8 +4960,6 @@ p {
     margin: 0 auto;
     padding: 3px;
     border-radius: 10px; }
-    #seccion_5 .container-fluid .row .btn-custom a {
-      color: white; }
 
 .header-global {
   color: #777777;
