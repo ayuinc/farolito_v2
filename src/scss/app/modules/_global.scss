@@ -1,0 +1,290 @@
+// Prevent layout breakage on unsupporting browsers
+html {
+	&.no-js {
+		.flex-space-between {
+			@include clearfix;
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+			}
+		}
+	}
+} 
+
+html,
+body {
+	min-height: 100%;
+	height: 100%;
+	background-color: $body-bg;
+	// overflow-x: hidden;
+	&::-webkit-scrollbar { 
+    display: none; 
+	}
+}
+
+// SIZE CONTROL VARS
+$size-control-placeholder: 530px;
+	// Banners
+$banner-height: 350px;
+	// Site menu
+$site-menu-width-control: 101px;
+$menu-list-icons-width: 35px;
+	// Header
+$header-height-control: 70px;
+	// Mobile header
+$mobile-navbar-height: 56px;
+	// Hero Unit and Videocover
+$video-bg-height: 491px;
+
+.site-wrapper,
+.site-content {
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+}
+
+// HERO UNIT
+.hero-unit {
+	position: relative;
+	height: $video-bg-height;
+	@include bg-img-control;
+	&.video-bg {
+		overflow: hidden;
+		height: $video-bg-height;
+	}
+	.overlay {
+		@include position(absolute, 0 0 0 0);
+		height: $video-bg-height;
+	}
+}
+
+// CLICKABLE DIV
+[data-href]{
+	cursor: pointer;
+}
+
+
+
+// SIZE CONTROL
+	// I assume that the 'md' size is the default size
+	// Control the sizes of elements by using $size-control variables at the top of this file
+.size {
+	&.xs {
+		&.hero-unit {
+			height: $video-bg-height - 280;
+			&.video-bg {
+				height: $video-bg-height - 280;
+			}
+			.overlay {
+				height: $video-bg-height - 280;
+			}
+		}
+	}
+	&.sm {
+		&.hero-unit {
+			height: $video-bg-height - 140;
+			&.video-bg {
+				height: $video-bg-height - 140;
+			}
+			.overlay {
+				height: $video-bg-height - 140;
+			}
+		}
+	}
+	&.lg {
+		&.hero-unit {
+			height: $video-bg-height + 140;
+			&.video-bg {
+				height: $video-bg-height + 140;
+			}
+			.overlay {
+				height: $video-bg-height + 140;
+			}
+		}
+	}
+	&.xl {
+		&.hero-unit {
+			height: $video-bg-height + 210;
+			&.video-bg {
+				height: $video-bg-height + 210;
+			}
+			.overlay {
+				height: $video-bg-height + 210;
+			}
+		}
+	}
+}
+
+#metodologia {
+	.container {
+		.external-circle {
+				background-color: $brand-danger;
+				border-radius: 50%;
+				&.active {
+					// border: 3px dashed #EC6645;
+					background-color: white;
+				}
+			.internal-circle {
+				border: 3px dashed white;
+				border-radius: 50%;
+				height: 428px;
+				&:hover {
+					border: 3px dashed $brand-danger;
+					background-color: white;
+				}
+				.circle-text-hover {
+					h3 {
+						line-height: 1.3;
+					}
+					.absolute {
+						bottom: -5px;
+						left: 65px;
+					}
+				}
+			}
+		}
+		.border-middle {
+			border-left: 3px dashed #EC6645;
+			height: 121px;
+		}
+
+		.line1 {
+	   	width: 175px;
+			height: 47px;
+			border-bottom: 3px dashed #EC6645;
+			-webkit-transform: translateY(10px) translateX(2px) rotate(-18deg);
+			position: absolute;
+			top: 158px;
+			left: 74px;
+		}
+		.line2 {
+	    width: 175px;
+			height: 37px;
+			border-bottom: 3px dashed #EC6645;
+			-webkit-transform: translateY(-10px) translateX(5px) rotate(18deg);
+			position: absolute;
+			bottom: -221px;
+			left: -15px;
+		}
+		.text-metodologia {
+			top: -315px;
+		}
+	}
+}
+
+/* BLOG GRID */
+.blog-grid {
+	li {
+		position: relative;
+		.pic {
+			position: absolute;
+			width: 100%;
+			top: -7%;
+			left: 0;
+			> div {
+				@include bg-img-control;
+				margin: 0 auto;
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				padding: $blue-dark;
+			}
+		}
+		.content {
+			background-color: $gray-lighter;
+			padding: $container-fluid;
+			min-height: 210px;
+			@include flex-middle-center;
+		} 
+		&:hover {
+			.content {
+				background-color: $brand-warning;
+				p {
+					color: white;
+				}
+				h5 {
+					color: $brand-danger;
+				}
+			}
+		}
+	}
+}
+
+#postulantes {
+	.col-md-4	{
+		ul {
+			border-right: 2px dashed white;
+			li.list-left {
+				border-bottom: 2px dashed white;
+			}
+		}
+	}
+	.img-red {
+		right: -69px;
+		top: -10px;
+	}
+	.img-yellow {
+		right: -69px;
+		top: 39px;
+	}
+	.img-green {
+		right: -69px;
+		bottom: -69px;
+	}
+	.border-down {
+		border-right: 2px dashed white;
+		min-height: 100px;
+		width: 49%;
+	}
+}
+
+#empresas {
+	.container {
+		.dashed-down {
+			border-bottom: 2px dashed #EC6645;
+		}
+		.btn-empresas {
+			padding: 16px 51px;
+			border-radius: 21px;
+		}
+	}
+}
+
+#educativos {
+	background-color: #77d248;
+	.container {
+		.col-md-8 {
+			h3 {
+				color: #fbef7d;
+			}
+		}
+		.dashed-down {
+			border-bottom: 2px dashed white;
+		}
+		.btn-educativos {
+			padding: 16px 51px;
+			border-radius: 21px;
+			border: 2px solid white;
+		}
+	}
+}
+
+.btn-more {
+	padding: 17px 75px;
+	border-radius: 21px;
+}
+
+.btn-oportunidades {
+	padding: 17px 35px;
+	border-radius: 21px;
+	border: 2px solid white;
+}
+
+.btn-submit {
+	padding: 3px 33px;
+	border-radius: 12px;
+	background: #aaa;
+	color: white;
+}
