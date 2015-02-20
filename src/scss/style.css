@@ -1837,19 +1837,19 @@ select[multiple].input-lg {
 
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c; }
+  background-color: #77d248;
+  border-color: #68cd34; }
   .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #5db92e;
+    border-color: #4f9d27; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-    background-color: #5cb85c;
-    border-color: #4cae4c; }
+    background-color: #77d248;
+    border-color: #68cd34; }
   .btn-success .badge {
-    color: #5cb85c;
+    color: #77d248;
     background-color: #fff; }
 
 .btn-info {
@@ -3700,10 +3700,36 @@ body {
 #postulantes .img-green {
   right: -69px;
   bottom: -69px; }
+#postulantes .border-down {
+  border-right: 2px dashed white;
+  min-height: 100px;
+  width: 49%; }
+
+#empresas .container .dashed-down {
+  border-bottom: 2px dashed #EC6645; }
+#empresas .container .btn-empresas {
+  padding: 16px 51px;
+  border-radius: 21px; }
+
+#educativos {
+  background-color: #77d248; }
+  #educativos .container .col-md-8 h3 {
+    color: #fbef7d; }
+  #educativos .container .dashed-down {
+    border-bottom: 2px dashed white; }
+  #educativos .container .btn-educativos {
+    padding: 16px 51px;
+    border-radius: 21px;
+    border: 2px solid white; }
 
 .btn-more {
   padding: 17px 75px;
   border-radius: 21px; }
+
+.btn-oportunidades {
+  padding: 17px 35px;
+  border-radius: 21px;
+  border: 2px solid white; }
 
 @font-face {
   font-family: 'NeutraText-BookAlt';
@@ -3785,12 +3811,12 @@ html {
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, ol.lead, li.lead {
   font-size: 21px !important;
   font-size: 1.5rem !important;
-  line-height: 1.3; }
+  line-height: 1.5; }
 @media only screen and (max-width: 480px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, ol.lead, li.lead {
     font-size: 17px !important;
     font-size: 1.21429rem !important;
-    line-height: 1.1; } }
+    line-height: 1.3; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, ol.lead, li.lead {
     font-size: 19px !important;
@@ -3800,12 +3826,12 @@ p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, o
 .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
   font-size: 21px !important;
   font-size: 1.5rem !important;
-  line-height: 1.3; }
+  line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
       font-size: 17px !important;
       font-size: 1.21429rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
       font-size: 19px !important;
@@ -3817,12 +3843,12 @@ h1 {
   h1.lead {
     font-size: 43px !important;
     font-size: 3.07143rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     h1.lead {
       font-size: 39px !important;
       font-size: 2.78571rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h1.lead {
       font-size: 41px !important;
@@ -3834,12 +3860,12 @@ h2 {
   h2.lead {
     font-size: 37px !important;
     font-size: 2.64286rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     h2.lead {
       font-size: 33px !important;
       font-size: 2.35714rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h2.lead {
       font-size: 35px !important;
@@ -3851,12 +3877,12 @@ h3 {
   h3.lead {
     font-size: 31px !important;
     font-size: 2.21429rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     h3.lead {
       font-size: 27px !important;
       font-size: 1.92857rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h3.lead {
       font-size: 29px !important;
@@ -3868,12 +3894,12 @@ h4 {
   h4.lead {
     font-size: 25px !important;
     font-size: 1.78571rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     h4.lead {
       font-size: 21px !important;
       font-size: 1.5rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h4.lead {
       font-size: 23px !important;
@@ -3885,12 +3911,12 @@ h5 {
   h5.lead {
     font-size: 21px !important;
     font-size: 1.5rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     h5.lead {
       font-size: 17px !important;
       font-size: 1.21429rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h5.lead {
       font-size: 19px !important;
@@ -3902,12 +3928,12 @@ h6 {
   h6.lead {
     font-size: 19px !important;
     font-size: 1.35714rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     h6.lead {
       font-size: 15px !important;
       font-size: 1.07143rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h6.lead {
       font-size: 17px !important;
@@ -3919,12 +3945,12 @@ h6 {
   .h1.lead {
     font-size: 43px !important;
     font-size: 3.07143rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .h1.lead {
       font-size: 39px !important;
       font-size: 2.78571rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h1.lead {
       font-size: 41px !important;
@@ -3936,12 +3962,12 @@ h6 {
   .h2.lead {
     font-size: 37px !important;
     font-size: 2.64286rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .h2.lead {
       font-size: 33px !important;
       font-size: 2.35714rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h2.lead {
       font-size: 35px !important;
@@ -3953,12 +3979,12 @@ h6 {
   .h3.lead {
     font-size: 31px !important;
     font-size: 2.21429rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .h3.lead {
       font-size: 27px !important;
       font-size: 1.92857rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h3.lead {
       font-size: 29px !important;
@@ -3970,12 +3996,12 @@ h6 {
   .h4.lead {
     font-size: 25px !important;
     font-size: 1.78571rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .h4.lead {
       font-size: 21px !important;
       font-size: 1.5rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h4.lead {
       font-size: 23px !important;
@@ -3987,12 +4013,12 @@ h6 {
   .h5.lead {
     font-size: 21px !important;
     font-size: 1.5rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .h5.lead {
       font-size: 17px !important;
       font-size: 1.21429rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h5.lead {
       font-size: 19px !important;
@@ -4004,12 +4030,12 @@ h6 {
   .h6.lead {
     font-size: 19px !important;
     font-size: 1.35714rem !important;
-    line-height: 1.3; }
+    line-height: 1.5; }
   @media only screen and (max-width: 480px) {
     .h6.lead {
       font-size: 15px !important;
       font-size: 1.07143rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h6.lead {
       font-size: 17px !important;
@@ -4023,7 +4049,7 @@ h6 {
     .lead-ch h1 {
       font-size: 39px !important;
       font-size: 2.78571rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h1 {
       font-size: 41px !important;
@@ -4036,7 +4062,7 @@ h6 {
     .lead-ch h2 {
       font-size: 33px !important;
       font-size: 2.35714rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h2 {
       font-size: 35px !important;
@@ -4049,7 +4075,7 @@ h6 {
     .lead-ch h3 {
       font-size: 27px !important;
       font-size: 1.92857rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h3 {
       font-size: 29px !important;
@@ -4062,7 +4088,7 @@ h6 {
     .lead-ch h4 {
       font-size: 21px !important;
       font-size: 1.5rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h4 {
       font-size: 23px !important;
@@ -4075,7 +4101,7 @@ h6 {
     .lead-ch h5 {
       font-size: 17px !important;
       font-size: 1.21429rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h5 {
       font-size: 19px !important;
@@ -4088,7 +4114,7 @@ h6 {
     .lead-ch h6 {
       font-size: 15px !important;
       font-size: 1.07143rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h6 {
       font-size: 17px !important;
@@ -4102,7 +4128,7 @@ h6 {
     .lead-ch .h1 {
       font-size: 39px !important;
       font-size: 2.78571rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h1 {
       font-size: 41px !important;
@@ -4115,7 +4141,7 @@ h6 {
     .lead-ch .h2 {
       font-size: 33px !important;
       font-size: 2.35714rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h2 {
       font-size: 35px !important;
@@ -4128,7 +4154,7 @@ h6 {
     .lead-ch .h3 {
       font-size: 27px !important;
       font-size: 1.92857rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h3 {
       font-size: 29px !important;
@@ -4141,7 +4167,7 @@ h6 {
     .lead-ch .h4 {
       font-size: 21px !important;
       font-size: 1.5rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h4 {
       font-size: 23px !important;
@@ -4154,7 +4180,7 @@ h6 {
     .lead-ch .h5 {
       font-size: 17px !important;
       font-size: 1.21429rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h5 {
       font-size: 19px !important;
@@ -4167,7 +4193,7 @@ h6 {
     .lead-ch .h6 {
       font-size: 15px !important;
       font-size: 1.07143rem !important;
-      line-height: 1.1; } }
+      line-height: 1.3; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h6 {
       font-size: 17px !important;
@@ -4346,8 +4372,8 @@ a.not-underline:hover {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .text-gradient {
-    background: -webkit-linear-gradient(left, #58C6E7, #5bc0de, #5cb85c) repeat;
-    background: linear-gradient(to right, #58C6E7, #5bc0de, #5cb85c) repeat;
+    background: -webkit-linear-gradient(left, #58C6E7, #5bc0de, #77d248) repeat;
+    background: linear-gradient(to right, #58C6E7, #5bc0de, #77d248) repeat;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -4464,16 +4490,16 @@ a.btn.btn-success.btn-outline,
 button.btn.btn-success.btn-outline,
 input[type="submit"].btn.btn-success.btn-outline {
   background: none;
-  border: 2px solid #a7d8a7;
+  border: 2px solid #b7e79e;
   border-radius: 0;
-  color: #a7d8a7; }
+  color: #b7e79e; }
   a.btn.btn-success.btn-outline:hover,
   button.btn.btn-success.btn-outline:hover,
   input[type="submit"].btn.btn-success.btn-outline:hover {
     background: none;
     border-radius: 0;
-    border: 2px solid #5cb85c;
-    color: #5cb85c; }
+    border: 2px solid #77d248;
+    color: #77d248; }
 a.btn.btn-info.btn-outline,
 button.btn.btn-info.btn-outline,
 input[type="submit"].btn.btn-info.btn-outline {
@@ -4770,5 +4796,50 @@ header,
 
 .nav li a:hover {
   background: none !important; }
+
+#seccion_5 .container-fluid {
+  background-image: url(../assets/img/fotos_fonfo_farolito-23.png);
+  height: 1000px;
+  background-size: cover; }
+  #seccion_5 .container-fluid .row .col-sm-8 {
+    box-shadow: 0px 1px 14px 2px black;
+    background-color: white; }
+    #seccion_5 .container-fluid .row .col-sm-8 .clearfix {
+      border-bottom: 2px dotted #555555; }
+    #seccion_5 .container-fluid .row .col-sm-8 h2 {
+      color: #555555; }
+  #seccion_5 .container-fluid .row .hoja {
+    padding: 68px;
+    height: 927px; }
+    @media only screen and (max-width: 768px) {
+      #seccion_5 .container-fluid .row .hoja {
+        padding: 14px; } }
+  #seccion_5 .container-fluid .row p {
+    color: #555555;
+    font-size: 17px; }
+  #seccion_5 .container-fluid .row .button {
+    margin-top: -38px; }
+  #seccion_5 .container-fluid .row a#ingresar {
+    display: block;
+    background-color: white;
+    border: 2px solid;
+    width: 99px;
+    text-decoration: none; }
+  #seccion_5 .container-fluid .row a#ingresar.bt {
+    color: gray;
+    font-size: 11px;
+    margin-left: 318px; }
+  #seccion_5 .container-fluid .row h6 {
+    font-size: 10px; }
+  #seccion_5 .container-fluid .row h2.text-center {
+    margin-top: -57px;
+    margin-bottom: 22px; }
+  #seccion_5 .container-fluid .row h4 {
+    text-decoration: underline;
+    color: #2B8BBA;
+    font-size: 20px; }
+  #seccion_5 .container-fluid .row h5 {
+    font-size: 20px;
+    color: #555555; }
 
 /*# sourceMappingURL=style.css.map */

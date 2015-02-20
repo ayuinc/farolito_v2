@@ -3,7 +3,8 @@
 ========================================*/
 @import 
   // GLOBAL STYLES DEFINITION
-  "modules/global";
+ 
+  "modules/global"; 
 
 // APP Includes
 @import 
@@ -35,6 +36,7 @@
 
   // LAYOUT
   "modules/header",
+   "modules/vacantes",
   // "modules/videocover",
   // "modules/dashboard-wrapper",
   // "modules/mobile-menu",
