@@ -9,17 +9,18 @@
 .light {@include light;}
 // @mixin light-italic { font-family: $font-family-base !important; font-weight: 300; font-style: italic;}
 // .light-italic {@include light-italic;}
-
-@mixin book-heading { font-family: 'NeutraText-BookAlt' !important; font-weight: 400; font-style: normal;}
+@mixin light-heading { font-family: 'NeutraText-LightAlt' !important; font-style: normal;}
+.light-heading {@include light-heading;}
+@mixin book-heading { font-family: 'NeutraText-BookAlt' !important; font-style: normal;}
 .book-heading {@include book-heading;}
 // @mixin book-italic { font-family: $font-family-base !important; font-weight: 400; font-style: italic;}
 // .book-italic {@include book-italic;}
-@mixin medium-heading { font-family: 'NeutraText-DemiAlt' !important; font-weight: 500; font-style: normal;}
+@mixin medium-heading { font-family: 'NeutraText-DemiAlt' !important; font-style: normal;}
 .medium-heading {@include medium-heading;}
 // @mixin medium-italic { font-family: $font-family-base !important; font-weight: 500; font-style: italic;}
 // .medium-italic {@include medium-italic;}
-@mixin bold { font-family: $font-family-base !important; font-weight: 700; font-style: normal;}
-.bold {@include bold;}
+// @mixin bold { font-family: $font-family-base !important; font-weight: 700; font-style: normal;}
+// .bold {@include bold;}
 // @mixin bold-italic { font-family: $font-family-base !important; font-weight: 700; font-style: italic;}
 // .bold-italic {@include bold-italic;}
 

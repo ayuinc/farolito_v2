@@ -1,0 +1,25 @@
+.author {
+	height: 63px;
+	width: 63px;
+	background-size: cover;
+	display: inline-block;
+}
+
+p {
+	font-size: 22px;
+	font-size: rem(22px);
+	color: $gray;
+}
+
+.categories {
+	background-color: $gray-lighter;
+	ul {
+		padding: 28px 21px;
+		li {
+			color: $gray-light;
+			border-bottom: 1px solid $gray-light;
+			font-size: 18px;
+			font-size: rem(18px);
+		}
+	}
+}

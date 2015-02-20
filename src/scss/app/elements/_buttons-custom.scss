@@ -59,3 +59,13 @@ input[type="submit"].btn {
 		}
 	}
 }
+
+//other Buttons
+.btn-custom {
+	color: white;
+	background-color: $gray-light;
+	border-color: $gray-light;
+	font-size: 18px;
+	// padding: 0;
+	@include  medium-heading;
+}
