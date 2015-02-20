@@ -1,0 +1,43 @@
+#seccion_5 {
+	.container-fluid {
+		height: 1172px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.row  {
+			.col-sm-8{
+				.clearfix{
+					border-bottom: 2px dotted $gray;
+				}
+				box-shadow: 0px 1px 14px 2px black;
+				background-color:white;
+			}
+			.hoja {
+				padding: 84px;
+				min-height: 900px;
+				@media #{$sm-down} {
+					padding: 14px;
+				}
+			}	
+
+			h2.text-center {
+				margin-top: -57px;
+				margin-bottom: 22px;
+				color: $gray;
+			}
+			h4 {
+				text-decoration: underline;
+				@include medium-heading;
+			}
+			.btn-custom {
+				display: block;
+				width: 128px;
+				margin: 0 auto;
+				padding: 3px;
+				border-radius: 10px;
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+}
