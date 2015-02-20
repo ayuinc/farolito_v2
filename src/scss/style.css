@@ -3685,6 +3685,24 @@ body {
     .blog-grid li:hover .content h5 {
       color: #ff6a49; }
 
+#postulantes .col-md-4 ul {
+  border-right: 2px dashed white; }
+  #postulantes .col-md-4 ul li.list-left {
+    border-bottom: 2px dashed white; }
+#postulantes .img-red {
+  right: -69px;
+  top: -10px; }
+#postulantes .img-yellow {
+  right: -69px;
+  top: 39px; }
+#postulantes .img-green {
+  right: -69px;
+  bottom: -69px; }
+
+.btn-more {
+  padding: 17px 75px;
+  border-radius: 21px; }
+
 @font-face {
   font-family: 'NeutraText-BookAlt';
   src: url("../../app/assets/fonts/NeutraText-BookAlt.eot");
