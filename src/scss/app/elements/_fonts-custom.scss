@@ -7,6 +7,10 @@
 .extra-light {@include extra-light;}
 @mixin light { font-family: $font-family-base !important; font-weight: 300; font-style: normal;}
 .light {@include light;}
+@mixin book { font-family: $font-family-base !important; font-style: normal;}
+.book {@include book;}
+@mixin bold { font-family: $font-family-base !important; font-style: normal; font-weight: 700;}
+.bold {@include bold;}
 // @mixin light-italic { font-family: $font-family-base !important; font-weight: 300; font-style: italic;}
 // .light-italic {@include light-italic;}
 @mixin light-heading { font-family: 'NeutraText-LightAlt' !important; font-style: normal;}

@@ -63,9 +63,11 @@ input[type="submit"].btn {
 //other Buttons
 .btn-custom {
 	color: white;
-	background-color: $gray-light;
-	border-color: $gray-light;
-	font-size: 18px;
-	// padding: 0;
-	@include  medium-heading;
+	background-color: #BFBFBF;
+	border-color: #BFBFBF;
+	font-size: 16px;
+	font-size: rem(16px);
+	padding: 3px 28px;
+	border-radius: 14px;
+	@include bold;
 }

@@ -284,7 +284,7 @@ html {
 
 body {
   font-family: "museo-sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #333333;
   background-color: #fff; }
@@ -339,8 +339,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -389,8 +389,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 22px;
+  margin-bottom: 11px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -405,8 +405,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 11px;
+  margin-bottom: 11px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -419,38 +419,38 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 41px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 34px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 28px; }
 
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 16px; }
 
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 14px; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 11px; }
 
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 22px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4; }
   @media (min-width: 768px) {
     .lead {
-      font-size: 21px; } }
+      font-size: 24px; } }
 
 small,
 .small {
-  font-size: 85%; }
+  font-size: 87%; }
 
 mark,
 .mark {
@@ -548,14 +548,14 @@ a.bg-danger:hover {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
   border-bottom: 1px solid #eeeeee; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 11px; }
   ul ul,
   ul ol,
   ol ul,
@@ -577,7 +577,7 @@ ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 22px; }
 
 dt,
 dd {
@@ -616,9 +616,9 @@ abbr[data-original-title] {
   text-transform: uppercase; }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  font-size: 20px;
   border-left: 5px solid #eeeeee; }
   blockquote p:last-child,
   blockquote ul:last-child,
@@ -659,7 +659,7 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-style: normal;
   line-height: 1.42857; }
 
@@ -1343,8 +1343,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 22px;
+  font-size: 24px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -1388,16 +1388,16 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555; }
 
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555;
   background-color: #fff;
@@ -1437,7 +1437,7 @@ input[type="search"] {
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: 34px; }
+    line-height: 36px; }
     input[type="date"].input-sm, .input-group-sm input[type="date"],
     input[type="time"].input-sm, .input-group-sm
     input[type="time"],
@@ -1445,7 +1445,7 @@ input[type="search"] {
     input[type="datetime-local"],
     input[type="month"].input-sm, .input-group-sm
     input[type="month"] {
-      line-height: 30px; }
+      line-height: 33px; }
     input[type="date"].input-lg, .input-group-lg input[type="date"],
     input[type="time"].input-lg, .input-group-lg
     input[type="time"],
@@ -1453,7 +1453,7 @@ input[type="search"] {
     input[type="datetime-local"],
     input[type="month"].input-lg, .input-group-lg
     input[type="month"] {
-      line-height: 46px; } }
+      line-height: 49px; } }
 .form-group {
   margin-bottom: 15px; }
 
@@ -1465,7 +1465,7 @@ input[type="search"] {
   margin-bottom: 10px; }
   .radio label,
   .checkbox label {
-    min-height: 20px;
+    min-height: 22px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -1522,75 +1522,75 @@ input[type="checkbox"] {
     padding-right: 0; }
 
 .input-sm {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
 select.input-sm {
-  height: 30px;
-  line-height: 30px; }
+  height: 33px;
+  line-height: 33px; }
 
 textarea.input-sm,
 select[multiple].input-sm {
   height: auto; }
 
 .form-group-sm .form-control {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 .form-group-sm select.form-control {
-  height: 30px;
-  line-height: 30px; }
+  height: 33px;
+  line-height: 33px; }
 .form-group-sm textarea.form-control,
 .form-group-sm select[multiple].form-control {
   height: auto; }
 .form-group-sm .form-control-static {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5; }
 
 .input-lg {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px; }
 
 select.input-lg {
-  height: 46px;
-  line-height: 46px; }
+  height: 49px;
+  line-height: 49px; }
 
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto; }
 
 .form-group-lg .form-control {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px; }
 .form-group-lg select.form-control {
-  height: 46px;
-  line-height: 46px; }
+  height: 49px;
+  line-height: 49px; }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto; }
 .form-group-lg .form-control-static {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333; }
 
 .has-feedback {
   position: relative; }
   .has-feedback .form-control {
-    padding-right: 42.5px; }
+    padding-right: 45px; }
 
 .form-control-feedback {
   position: absolute;
@@ -1598,21 +1598,21 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
   pointer-events: none; }
 
 .input-lg + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px; }
+  width: 49px;
+  height: 49px;
+  line-height: 49px; }
 
 .input-sm + .form-control-feedback {
-  width: 30px;
-  height: 30px;
-  line-height: 30px; }
+  width: 33px;
+  height: 33px;
+  line-height: 33px; }
 
 .has-success .help-block,
 .has-success .control-label,
@@ -1681,7 +1681,7 @@ select[multiple].input-lg {
   color: #a94442; }
 
 .has-feedback label ~ .form-control-feedback {
-  top: 25px; }
+  top: 27px; }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
 
@@ -1739,7 +1739,7 @@ select[multiple].input-lg {
   padding-top: 7px; }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px; }
+  min-height: 29px; }
 .form-horizontal .form-group {
   margin-left: -14px;
   margin-right: -14px; }
@@ -1774,7 +1774,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -1871,19 +1871,19 @@ select[multiple].input-lg {
 
 .btn-warning {
   color: #fff;
-  background-color: #f0ad4e;
-  border-color: #eea236; }
+  background-color: #FFC200;
+  border-color: #e6af00; }
   .btn-warning:hover, .btn-warning:focus, .btn-warning.focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
     color: #fff;
-    background-color: #ec971f;
-    border-color: #d58512; }
+    background-color: #cc9b00;
+    border-color: #a88000; }
   .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
     background-image: none; }
   .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
-    background-color: #f0ad4e;
-    border-color: #eea236; }
+    background-color: #FFC200;
+    border-color: #e6af00; }
   .btn-warning .badge {
-    color: #f0ad4e;
+    color: #FFC200;
     background-color: #fff; }
 
 .btn-danger {
@@ -1923,19 +1923,19 @@ select[multiple].input-lg {
 
 .btn-lg {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px; }
 
 .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px; }
 
@@ -2014,7 +2014,7 @@ tbody.collapse.in {
     border-color: #58C6E7; }
   .nav .nav-divider {
     height: 1px;
-    margin: 9px 0;
+    margin: 10px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   .nav > li > a > img {
@@ -2109,7 +2109,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -2211,9 +2211,9 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 15px 14px;
-  font-size: 18px;
-  line-height: 20px;
+  padding: 14px 14px;
+  font-size: 20px;
+  line-height: 22px;
   height: 50px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
@@ -2248,11 +2248,11 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 7.5px -14px; }
+  margin: 7px -14px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px; }
+    line-height: 22px; }
   @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
@@ -2266,7 +2266,7 @@ tbody.collapse.in {
       .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
       .navbar-nav .open .dropdown-menu > li > a {
-        line-height: 20px; }
+        line-height: 22px; }
         .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
           background-image: none; } }
   @media (min-width: 768px) {
@@ -2276,8 +2276,8 @@ tbody.collapse.in {
       .navbar-nav > li {
         float: left; }
         .navbar-nav > li > a {
-          padding-top: 15px;
-          padding-bottom: 15px; } }
+          padding-top: 14px;
+          padding-bottom: 14px; } }
 
 .navbar-form {
   margin-left: -14px;
@@ -2287,8 +2287,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
   @media (min-width: 768px) {
     .navbar-form .form-group {
       display: inline-block;
@@ -2356,18 +2356,18 @@ tbody.collapse.in {
   border-bottom-left-radius: 0; }
 
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
   .navbar-btn.btn-sm {
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 8.5px;
+    margin-bottom: 8.5px; }
   .navbar-btn.btn-xs {
     margin-top: 14px;
     margin-bottom: 14px; }
 
 .navbar-text {
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 14px;
+  margin-bottom: 14px; }
   @media (min-width: 768px) {
     .navbar-text {
       float: left;
@@ -3681,7 +3681,7 @@ body {
     align-items: center;
     -ms-flex-align: center; }
   .blog-grid li:hover .content {
-    background-color: #f0ad4e; }
+    background-color: #FFC200; }
     .blog-grid li:hover .content p {
       color: white; }
     .blog-grid li:hover .content h5 {
@@ -3736,6 +3736,15 @@ body {
   font-weight: 300;
   font-style: normal; }
 
+.book {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-style: normal; }
+
+.bold {
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 700; }
+
 .light-heading {
   font-family: 'NeutraText-LightAlt' !important;
   font-style: normal; }
@@ -3749,529 +3758,529 @@ body {
   font-style: normal; }
 
 html {
-  font-size: 14px; }
+  font-size: 16px; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     html {
-      font-size: 12px; }
+      font-size: 14px; }
       html h1, html h2, html h3, html h4, html h5, html h6,
       html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
         line-height: 1; }
       html h1, html .h1,
       html h2, html .h2,
       html h3, html .h3 {
-        margin-top: 1.42857rem;
-        margin-bottom: 0.71429rem; }
+        margin-top: 1.375rem;
+        margin-bottom: 0.6875rem; }
       html h4, html .h4,
       html h5, html .h5,
       html h6, html .h6 {
-        margin-top: 0.71429rem;
-        margin-bottom: 0.71429rem; } }
+        margin-top: 0.6875rem;
+        margin-bottom: 0.6875rem; } }
   @media only screen and (max-width: 480px) {
     html {
-      font-size: 11px; }
+      font-size: 13px; }
       html h1, html h2, html h3, html h4, html h5, html h6,
       html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
         line-height: 0.9; }
       html h1, html .h1,
       html h2, html .h2,
       html h3, html .h3 {
-        margin-top: 1.42857rem;
-        margin-bottom: 0.71429rem; }
+        margin-top: 1.375rem;
+        margin-bottom: 0.6875rem; }
       html h4, html .h4,
       html h5, html .h5,
       html h6, html .h6 {
-        margin-top: 0.71429rem;
-        margin-bottom: 0.71429rem; } }
+        margin-top: 0.6875rem;
+        margin-bottom: 0.6875rem; } }
 
 /* TEXT IN REMS */
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, ol.lead, li.lead {
-  font-size: 21px !important;
-  font-size: 1.5rem !important;
+  font-size: 23px !important;
+  font-size: 1.4375rem !important;
   line-height: 1.3; }
 @media only screen and (max-width: 480px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, ol.lead, li.lead {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 19px !important;
+    font-size: 1.1875rem !important;
     line-height: 1.1; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, i.lead, ul.lead, ol.lead, li.lead {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 21px !important;
+    font-size: 1.3125rem !important;
     line-height: 1.2; } }
 
 .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-  font-size: 21px !important;
-  font-size: 1.5rem !important;
+  font-size: 23px !important;
+  font-size: 1.4375rem !important;
   line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-      font-size: 19px !important;
-      font-size: 1.35714rem !important;
+      font-size: 21px !important;
+      font-size: 1.3125rem !important;
       line-height: 1.2; } }
 
 h1 {
-  font-size: 2.57143rem; }
+  font-size: 2.5625rem; }
   h1.lead {
-    font-size: 43px !important;
-    font-size: 3.07143rem !important;
+    font-size: 48px !important;
+    font-size: 3rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     h1.lead {
-      font-size: 39px !important;
-      font-size: 2.78571rem !important;
+      font-size: 44px !important;
+      font-size: 2.75rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h1.lead {
-      font-size: 41px !important;
-      font-size: 2.92857rem !important;
+      font-size: 46px !important;
+      font-size: 2.875rem !important;
       line-height: 1.2; } }
 
 h2 {
-  font-size: 2.14286rem; }
+  font-size: 2.125rem; }
   h2.lead {
-    font-size: 37px !important;
-    font-size: 2.64286rem !important;
+    font-size: 41px !important;
+    font-size: 2.5625rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     h2.lead {
-      font-size: 33px !important;
-      font-size: 2.35714rem !important;
+      font-size: 37px !important;
+      font-size: 2.3125rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h2.lead {
-      font-size: 35px !important;
-      font-size: 2.5rem !important;
+      font-size: 39px !important;
+      font-size: 2.4375rem !important;
       line-height: 1.2; } }
 
 h3 {
-  font-size: 1.71429rem; }
+  font-size: 1.75rem; }
   h3.lead {
-    font-size: 31px !important;
-    font-size: 2.21429rem !important;
+    font-size: 35px !important;
+    font-size: 2.1875rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     h3.lead {
-      font-size: 27px !important;
-      font-size: 1.92857rem !important;
+      font-size: 31px !important;
+      font-size: 1.9375rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h3.lead {
-      font-size: 29px !important;
-      font-size: 2.07143rem !important;
+      font-size: 33px !important;
+      font-size: 2.0625rem !important;
       line-height: 1.2; } }
 
 h4 {
-  font-size: 1.28571rem; }
+  font-size: 1.25rem; }
   h4.lead {
-    font-size: 25px !important;
-    font-size: 1.78571rem !important;
+    font-size: 27px !important;
+    font-size: 1.6875rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     h4.lead {
-      font-size: 21px !important;
-      font-size: 1.5rem !important;
+      font-size: 23px !important;
+      font-size: 1.4375rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h4.lead {
-      font-size: 23px !important;
-      font-size: 1.64286rem !important;
+      font-size: 25px !important;
+      font-size: 1.5625rem !important;
       line-height: 1.2; } }
 
 h5 {
   font-size: 1rem; }
   h5.lead {
-    font-size: 21px !important;
-    font-size: 1.5rem !important;
+    font-size: 23px !important;
+    font-size: 1.4375rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     h5.lead {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h5.lead {
-      font-size: 19px !important;
-      font-size: 1.35714rem !important;
+      font-size: 21px !important;
+      font-size: 1.3125rem !important;
       line-height: 1.2; } }
 
 h6 {
-  font-size: 0.85714rem; }
+  font-size: 0.875rem; }
   h6.lead {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 21px !important;
+    font-size: 1.3125rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     h6.lead {
-      font-size: 15px !important;
-      font-size: 1.07143rem !important;
+      font-size: 17px !important;
+      font-size: 1.0625rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     h6.lead {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.2; } }
 
 .h1 {
-  font-size: 2.57143rem; }
+  font-size: 2.5625rem; }
   .h1.lead {
-    font-size: 43px !important;
-    font-size: 3.07143rem !important;
+    font-size: 48px !important;
+    font-size: 3rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .h1.lead {
-      font-size: 39px !important;
-      font-size: 2.78571rem !important;
+      font-size: 44px !important;
+      font-size: 2.75rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h1.lead {
-      font-size: 41px !important;
-      font-size: 2.92857rem !important;
+      font-size: 46px !important;
+      font-size: 2.875rem !important;
       line-height: 1.2; } }
 
 .h2 {
-  font-size: 2.14286rem; }
+  font-size: 2.125rem; }
   .h2.lead {
-    font-size: 37px !important;
-    font-size: 2.64286rem !important;
+    font-size: 41px !important;
+    font-size: 2.5625rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .h2.lead {
-      font-size: 33px !important;
-      font-size: 2.35714rem !important;
+      font-size: 37px !important;
+      font-size: 2.3125rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h2.lead {
-      font-size: 35px !important;
-      font-size: 2.5rem !important;
+      font-size: 39px !important;
+      font-size: 2.4375rem !important;
       line-height: 1.2; } }
 
 .h3 {
-  font-size: 1.71429rem; }
+  font-size: 1.75rem; }
   .h3.lead {
-    font-size: 31px !important;
-    font-size: 2.21429rem !important;
+    font-size: 35px !important;
+    font-size: 2.1875rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .h3.lead {
-      font-size: 27px !important;
-      font-size: 1.92857rem !important;
+      font-size: 31px !important;
+      font-size: 1.9375rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h3.lead {
-      font-size: 29px !important;
-      font-size: 2.07143rem !important;
+      font-size: 33px !important;
+      font-size: 2.0625rem !important;
       line-height: 1.2; } }
 
 .h4 {
-  font-size: 1.28571rem; }
+  font-size: 1.25rem; }
   .h4.lead {
-    font-size: 25px !important;
-    font-size: 1.78571rem !important;
+    font-size: 27px !important;
+    font-size: 1.6875rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .h4.lead {
-      font-size: 21px !important;
-      font-size: 1.5rem !important;
+      font-size: 23px !important;
+      font-size: 1.4375rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h4.lead {
-      font-size: 23px !important;
-      font-size: 1.64286rem !important;
+      font-size: 25px !important;
+      font-size: 1.5625rem !important;
       line-height: 1.2; } }
 
 .h5 {
   font-size: 1rem; }
   .h5.lead {
-    font-size: 21px !important;
-    font-size: 1.5rem !important;
+    font-size: 23px !important;
+    font-size: 1.4375rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .h5.lead {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h5.lead {
-      font-size: 19px !important;
-      font-size: 1.35714rem !important;
+      font-size: 21px !important;
+      font-size: 1.3125rem !important;
       line-height: 1.2; } }
 
 .h6 {
-  font-size: 0.85714rem; }
+  font-size: 0.875rem; }
   .h6.lead {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 21px !important;
+    font-size: 1.3125rem !important;
     line-height: 1.3; }
   @media only screen and (max-width: 480px) {
     .h6.lead {
-      font-size: 15px !important;
-      font-size: 1.07143rem !important;
+      font-size: 17px !important;
+      font-size: 1.0625rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .h6.lead {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.2; } }
 
 .lead-ch h1 {
-  font-size: 43px !important;
-  font-size: 3.07143rem !important; }
+  font-size: 48px !important;
+  font-size: 3rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch h1 {
-      font-size: 39px !important;
-      font-size: 2.78571rem !important;
+      font-size: 44px !important;
+      font-size: 2.75rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h1 {
-      font-size: 41px !important;
-      font-size: 2.92857rem !important;
+      font-size: 46px !important;
+      font-size: 2.875rem !important;
       line-height: 1.2; } }
 .lead-ch h2 {
-  font-size: 37px !important;
-  font-size: 2.64286rem !important; }
+  font-size: 41px !important;
+  font-size: 2.5625rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch h2 {
-      font-size: 33px !important;
-      font-size: 2.35714rem !important;
+      font-size: 37px !important;
+      font-size: 2.3125rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h2 {
-      font-size: 35px !important;
-      font-size: 2.5rem !important;
+      font-size: 39px !important;
+      font-size: 2.4375rem !important;
       line-height: 1.2; } }
 .lead-ch h3 {
-  font-size: 31px !important;
-  font-size: 2.21429rem !important; }
+  font-size: 35px !important;
+  font-size: 2.1875rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch h3 {
-      font-size: 27px !important;
-      font-size: 1.92857rem !important;
+      font-size: 31px !important;
+      font-size: 1.9375rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h3 {
-      font-size: 29px !important;
-      font-size: 2.07143rem !important;
+      font-size: 33px !important;
+      font-size: 2.0625rem !important;
       line-height: 1.2; } }
 .lead-ch h4 {
-  font-size: 25px !important;
-  font-size: 1.78571rem !important; }
+  font-size: 27px !important;
+  font-size: 1.6875rem !important; }
   @media only screen and (max-width: 480px) {
-    .lead-ch h4 {
-      font-size: 21px !important;
-      font-size: 1.5rem !important;
-      line-height: 1.1; } }
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h4 {
       font-size: 23px !important;
-      font-size: 1.64286rem !important;
+      font-size: 1.4375rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h4 {
+      font-size: 25px !important;
+      font-size: 1.5625rem !important;
       line-height: 1.2; } }
 .lead-ch h5 {
-  font-size: 21px !important;
-  font-size: 1.5rem !important; }
+  font-size: 23px !important;
+  font-size: 1.4375rem !important; }
   @media only screen and (max-width: 480px) {
-    .lead-ch h5 {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
-      line-height: 1.1; } }
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h5 {
       font-size: 19px !important;
-      font-size: 1.35714rem !important;
+      font-size: 1.1875rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch h5 {
+      font-size: 21px !important;
+      font-size: 1.3125rem !important;
       line-height: 1.2; } }
 .lead-ch h6 {
-  font-size: 19px !important;
-  font-size: 1.35714rem !important; }
+  font-size: 21px !important;
+  font-size: 1.3125rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch h6 {
-      font-size: 15px !important;
-      font-size: 1.07143rem !important;
+      font-size: 17px !important;
+      font-size: 1.0625rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch h6 {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.2; } }
 
 .lead-ch .h1 {
-  font-size: 43px !important;
-  font-size: 3.07143rem !important; }
+  font-size: 48px !important;
+  font-size: 3rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch .h1 {
-      font-size: 39px !important;
-      font-size: 2.78571rem !important;
+      font-size: 44px !important;
+      font-size: 2.75rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h1 {
-      font-size: 41px !important;
-      font-size: 2.92857rem !important;
+      font-size: 46px !important;
+      font-size: 2.875rem !important;
       line-height: 1.2; } }
 .lead-ch .h2 {
-  font-size: 37px !important;
-  font-size: 2.64286rem !important; }
+  font-size: 41px !important;
+  font-size: 2.5625rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch .h2 {
-      font-size: 33px !important;
-      font-size: 2.35714rem !important;
+      font-size: 37px !important;
+      font-size: 2.3125rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h2 {
-      font-size: 35px !important;
-      font-size: 2.5rem !important;
+      font-size: 39px !important;
+      font-size: 2.4375rem !important;
       line-height: 1.2; } }
 .lead-ch .h3 {
-  font-size: 31px !important;
-  font-size: 2.21429rem !important; }
+  font-size: 35px !important;
+  font-size: 2.1875rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch .h3 {
-      font-size: 27px !important;
-      font-size: 1.92857rem !important;
+      font-size: 31px !important;
+      font-size: 1.9375rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h3 {
-      font-size: 29px !important;
-      font-size: 2.07143rem !important;
+      font-size: 33px !important;
+      font-size: 2.0625rem !important;
       line-height: 1.2; } }
 .lead-ch .h4 {
-  font-size: 25px !important;
-  font-size: 1.78571rem !important; }
+  font-size: 27px !important;
+  font-size: 1.6875rem !important; }
   @media only screen and (max-width: 480px) {
-    .lead-ch .h4 {
-      font-size: 21px !important;
-      font-size: 1.5rem !important;
-      line-height: 1.1; } }
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h4 {
       font-size: 23px !important;
-      font-size: 1.64286rem !important;
+      font-size: 1.4375rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h4 {
+      font-size: 25px !important;
+      font-size: 1.5625rem !important;
       line-height: 1.2; } }
 .lead-ch .h5 {
-  font-size: 21px !important;
-  font-size: 1.5rem !important; }
+  font-size: 23px !important;
+  font-size: 1.4375rem !important; }
   @media only screen and (max-width: 480px) {
-    .lead-ch .h5 {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
-      line-height: 1.1; } }
-  @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h5 {
       font-size: 19px !important;
-      font-size: 1.35714rem !important;
+      font-size: 1.1875rem !important;
+      line-height: 1.1; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .lead-ch .h5 {
+      font-size: 21px !important;
+      font-size: 1.3125rem !important;
       line-height: 1.2; } }
 .lead-ch .h6 {
-  font-size: 19px !important;
-  font-size: 1.35714rem !important; }
+  font-size: 21px !important;
+  font-size: 1.3125rem !important; }
   @media only screen and (max-width: 480px) {
     .lead-ch .h6 {
-      font-size: 15px !important;
-      font-size: 1.07143rem !important;
+      font-size: 17px !important;
+      font-size: 1.0625rem !important;
       line-height: 1.1; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .lead-ch .h6 {
-      font-size: 17px !important;
-      font-size: 1.21429rem !important;
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
       line-height: 1.2; } }
 
 @media only screen and (max-width: 480px) {
   .h1-xs {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important; } }
+    font-size: 41px !important;
+    font-size: 2.5625rem !important; } }
 @media only screen and (min-width: 768px) {
   .h1-sm {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important; } }
+    font-size: 41px !important;
+    font-size: 2.5625rem !important; } }
 @media only screen and (min-width: 992px) {
   .h1-md {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important; } }
+    font-size: 41px !important;
+    font-size: 2.5625rem !important; } }
 @media only screen and (min-width: 1200px) {
   .h1-lg {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important; } }
+    font-size: 41px !important;
+    font-size: 2.5625rem !important; } }
 @media only screen and (max-width: 480px) {
   .h2-xs {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important; } }
+    font-size: 34px !important;
+    font-size: 2.125rem !important; } }
 @media only screen and (min-width: 768px) {
   .h2-sm {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important; } }
+    font-size: 34px !important;
+    font-size: 2.125rem !important; } }
 @media only screen and (min-width: 992px) {
   .h2-md {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important; } }
+    font-size: 34px !important;
+    font-size: 2.125rem !important; } }
 @media only screen and (min-width: 1200px) {
   .h2-lg {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important; } }
+    font-size: 34px !important;
+    font-size: 2.125rem !important; } }
 @media only screen and (max-width: 480px) {
   .h3-xs {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important; } }
+    font-size: 28px !important;
+    font-size: 1.75rem !important; } }
 @media only screen and (min-width: 768px) {
   .h3-sm {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important; } }
+    font-size: 28px !important;
+    font-size: 1.75rem !important; } }
 @media only screen and (min-width: 992px) {
   .h3-md {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important; } }
+    font-size: 28px !important;
+    font-size: 1.75rem !important; } }
 @media only screen and (min-width: 1200px) {
   .h3-lg {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important; } }
+    font-size: 28px !important;
+    font-size: 1.75rem !important; } }
 @media only screen and (max-width: 480px) {
   .h4-xs {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important; } }
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }
 @media only screen and (min-width: 768px) {
   .h4-sm {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important; } }
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }
 @media only screen and (min-width: 992px) {
   .h4-md {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important; } }
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }
 @media only screen and (min-width: 1200px) {
   .h4-lg {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important; } }
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }
 @media only screen and (max-width: 480px) {
   .h5-xs {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-size: 1rem !important; } }
 @media only screen and (min-width: 768px) {
   .h5-sm {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-size: 1rem !important; } }
 @media only screen and (min-width: 992px) {
   .h5-md {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-size: 1rem !important; } }
 @media only screen and (min-width: 1200px) {
   .h5-lg {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-size: 1rem !important; } }
 @media only screen and (max-width: 480px) {
   .h6-xs {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important; } }
+    font-size: 14px !important;
+    font-size: 0.875rem !important; } }
 @media only screen and (min-width: 768px) {
   .h6-sm {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important; } }
+    font-size: 14px !important;
+    font-size: 0.875rem !important; } }
 @media only screen and (min-width: 992px) {
   .h6-md {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important; } }
+    font-size: 14px !important;
+    font-size: 0.875rem !important; } }
 @media only screen and (min-width: 1200px) {
   .h6-lg {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important; } }
+    font-size: 14px !important;
+    font-size: 0.875rem !important; } }
 html {
   -webkit-font-smoothing: antialiased; }
 
@@ -4357,13 +4366,13 @@ a.not-underline:hover {
     -moz-text-fill-color: transparent;
     text-fill-color: transparent; } }
 .lh-sm {
-  line-height: 1.35714rem; }
+  line-height: 1.1875rem; }
 
 .lh-md {
-  line-height: 1.5rem; }
+  line-height: 1.3125rem; }
 
 .lh-lg {
-  line-height: 2rem; }
+  line-height: 1.75rem; }
 
 /* ICON FONTS */
 a.btn.form-control,
@@ -4377,9 +4386,9 @@ input[type="submit"].btn.borderless {
 a.btn.btn-xl,
 button.btn.btn-xl,
 input[type="submit"].btn.btn-xl {
-  font-size: 24px;
+  font-size: 28px;
   padding: 12px 21px;
-  padding: 0.85714rem 1.5rem; }
+  padding: 0.75rem 1.3125rem; }
 a.btn.btn-xs,
 button.btn.btn-xs,
 input[type="submit"].btn.btn-xs {
@@ -4494,16 +4503,16 @@ a.btn.btn-warning.btn-outline,
 button.btn.btn-warning.btn-outline,
 input[type="submit"].btn.btn-warning.btn-outline {
   background: none;
-  border: 2px solid #f8dbb1;
+  border: 2px solid #ffdc6b;
   border-radius: 0;
-  color: #f8dbb1; }
+  color: #ffdc6b; }
   a.btn.btn-warning.btn-outline:hover,
   button.btn.btn-warning.btn-outline:hover,
   input[type="submit"].btn.btn-warning.btn-outline:hover {
     background: none;
     border-radius: 0;
-    border: 2px solid #f0ad4e;
-    color: #f0ad4e; }
+    border: 2px solid #FFC200;
+    color: #FFC200; }
 a.btn.btn-danger.btn-outline,
 button.btn.btn-danger.btn-outline,
 input[type="submit"].btn.btn-danger.btn-outline {
@@ -4675,11 +4684,15 @@ input[type="submit"].btn.btn-white.btn-outline {
 
 .btn-custom {
   color: white;
-  background-color: #777777;
-  border-color: #777777;
-  font-size: 18px;
-  font-family: 'NeutraText-DemiAlt' !important;
-  font-style: normal; }
+  background-color: #BFBFBF;
+  border-color: #BFBFBF;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 3px 28px;
+  border-radius: 14px;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: 700; }
 
 header,
 .header {
@@ -4800,16 +4813,29 @@ header,
         .footer .pull-left ul li img.img-thumbnail {
           padding: 2px; }
 
+.author-desc {
+  position: relative;
+  padding-bottom: 28px; }
+  .author-desc .inline-block {
+    position: absolute;
+    left: 70px;
+    top: 14px; }
+
 .author {
   height: 63px;
   width: 63px;
   background-size: cover;
   display: inline-block; }
+  .author.tiny {
+    height: 42px;
+    width: 42px;
+    position: relative;
+    top: -21px; }
 
 p {
-  font-size: 22px;
-  font-size: 1.57143rem;
-  color: #555555; }
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #777777; }
 
 .categories {
   background-color: #eeeeee; }
@@ -4819,20 +4845,64 @@ p {
       color: #777777;
       border-bottom: 1px solid #777777;
       font-size: 18px;
-      font-size: 1.28571rem; }
+      font-size: 1.125rem; }
+
+.article-preview {
+  background-color: #eeeeee;
+  padding: 0 14px 28px 14px; }
+  .article-preview p {
+    text-align: left;
+    font-size: 18px;
+    font-size: 1.125rem; }
+
+.blog-single {
+  padding-top: 98px; }
+
+.nosotros-main {
+  position: relative;
+  background-image: url("../../app/assets/img/nosotros.png");
+  min-height: 560px;
+  background-repeat: no-repeat; }
+  .nosotros-main h3 {
+    line-height: 1.2; }
+
+.fundadores {
+  position: relative; }
+  .fundadores img.fundador {
+    width: 150px; }
+
+.flecha {
+  position: absolute;
+  width: 100%;
+  bottom: -35px;
+  text-align: center; }
+
+.dashed-line {
+  border-bottom: 2px dashed white;
+  height: 1px;
+  width: 50%;
+  margin: 0 auto; }
+
+.nosotros-foco h4 {
+  line-height: 1.2;
+  font-size: 24px;
+  font-size: 1.5rem; }
 
 .header-global {
   color: #777777;
   background-color: #F0FBFD;
   height: 56px !important;
   position: fixed;
+  padding-top: 10px;
   z-index: 2;
   width: 100%; }
-  .header-global .pull-right ul li {
-    margin: 0 14px;
-    font-size: 22px; }
-    .header-global .pull-right ul li a {
-      color: #777777;
-      text-decoration: none; }
+  .header-global .pull-right {
+    padding-right: 35px; }
+    .header-global .pull-right ul li {
+      margin: 0 14px;
+      font-size: 22px; }
+      .header-global .pull-right ul li a {
+        color: #777777;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
