@@ -1,0 +1,30 @@
+{embed="includes/header"}
+    <div class="site-wrapper">
+      <div class="site-header">
+        <div class="container-fluid p-0">
+          {embed="includes/menu"}
+        </div>
+      </div>
+      <div class="site-content">
+        <section class="minhp-100 pt-70">
+          <div class="container">
+            <h1 class="text-center">Blog Farolito</h1>
+            <ul class="grid-list grid-list-3 grid-list-1-xs isotope-grid blog-grid pv-70">
+	            {exp:channel:entries channel="blog" limit="10"}
+              <li>
+                <div class="pic">
+                  <div style="background-image: url({site_url}assets/img/user_male.png);"></div>
+                </div>
+                <div class="content">
+                  <h5 class="text-primary mt-28">{title}</h5>
+                  <p>{descripcion-blog}</p>
+                </div>
+              </li>
+              {/exp:channel:entries}
+            </ul>
+          </div>
+        </section>
+      </div>
+      {embed="includes/pie-pagina"}
+    </div>
+{embed="includes/footer"}
