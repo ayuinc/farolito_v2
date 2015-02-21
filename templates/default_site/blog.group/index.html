@@ -12,13 +12,15 @@
             <ul class="grid-list grid-list-3 grid-list-1-xs isotope-grid blog-grid pv-70">
 	            {exp:channel:entries channel="blog" limit="10"}
               <li>
-                <div class="pic">
-                  <div style="background-image: url({site_url}assets/img/user_male.png);"></div>
-                </div>
-                <div class="content">
-                  <h5 class="text-primary mt-28">{title}</h5>
-                  <p>{descripcion-blog}</p>
-                </div>
+                <a href="{site_url}blog/post/{url_title}">
+	                <div class="pic">
+	                  <div style="background-image: url({site_url}assets/img/user_male.png);"></div>
+	                </div>
+	                <div class="content">
+	                  <h5 class="text-primary mt-28">{title}</h5>
+	                  <p>{descripcion-blog}</p>
+	                </div>
+                </a>
               </li>
               {/exp:channel:entries}
             </ul>
