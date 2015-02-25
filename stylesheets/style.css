@@ -3738,19 +3738,19 @@ body {
 
 @font-face {
   font-family: 'NeutraText-LightAlt';
-  src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
+  src: url("../assets/fonts/NeutraText-LightAlt.eot");
   /* IE9 */
-  src: url("../../app/assets/fonts/NeutraText-LightAlt.eot?#iefix") format("embedded-opentype"), url("../../app/assets/fonts/NeutraText-LightAlt.woff") format("woff"), url("../../app/assets/fonts/NeutraText-LightAlt.ttf") format("truetype"), url("../../app/assets/fonts/NeutraText-LightAlt.svg") format("svg"); }
+  src: url("../assets/fonts/NeutraText-LightAlt.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeutraText-LightAlt.woff") format("woff"), url("../assets/fonts/NeutraText-LightAlt.ttf") format("truetype"), url("../assets/fonts/NeutraText-LightAlt.svg") format("svg"); }
 @font-face {
   font-family: 'NeutraText-BookAlt';
-  src: url("../../app/assets/fonts/NeutraText-BookAlt.eot");
+  src: url("../assets/fonts/NeutraText-BookAlt.eot");
   /* IE9 */
-  src: url("../../app/assets/fonts/NeutraText-BookAlt.eot?#iefix") format("embedded-opentype"), url("../../app/assets/fonts/NeutraText-BookAlt.woff") format("woff"), url("../../app/assets/fonts/NeutraText-BookAlt.ttf") format("truetype"), url("../../app/assets/fonts/NeutraText-BookAlt.svg") format("svg"); }
+  src: url("../assets/fonts/NeutraText-BookAlt.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeutraText-BookAlt.woff") format("woff"), url("../assets/fonts/NeutraText-BookAlt.ttf") format("truetype"), url("../assets/fonts/NeutraText-BookAlt.svg") format("svg"); }
 @font-face {
   font-family: 'NeutraText-DemiAlt';
-  src: url("../../app/assets/fonts/NeutraText-DemiAlt.eot");
+  src: url("../assets/fonts/NeutraText-DemiAlt.eot");
   /* IE9 */
-  src: url("../../app/assets/fonts/NeutraText-DemiAlt.eot?#iefix") format("embedded-opentype"), url("../../app/assets/fonts/NeutraText-DemiAlt.woff") format("woff"), url("../../app/assets/fonts/NeutraText-DemiAlt.ttf") format("truetype"), url("../../app/assets/fonts/NeutraText-DemiAlt.svg") format("svg"); }
+  src: url("../assets/fonts/NeutraText-DemiAlt.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeutraText-DemiAlt.woff") format("woff"), url("../assets/fonts/NeutraText-DemiAlt.ttf") format("truetype"), url("../assets/fonts/NeutraText-DemiAlt.svg") format("svg"); }
 /* PROJECT ESPECIFIC FONTS */
 .thin {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;

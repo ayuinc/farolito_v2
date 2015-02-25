@@ -1,5 +1,9 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+$base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$base_url .= "://".$_SERVER['HTTP_HOST'];
+$admin_url  = $base_url . '/admin.php';
+
 /*
 |--------------------------------------------------------------------------
 | ExpressionEngine Config Items
@@ -15,7 +19,7 @@ $config['app_version'] = '292';
 $config['license_contact'] = 'herman.marin@ayuinc.com';
 $config['license_number'] = '4630-2858-5276-6671';
 $config['debug'] = '1';
-$config['cp_url'] = 'http://104.131.4.19/admin.php';
+$config['cp_url'] = $admin_url;
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
@@ -25,7 +29,21 @@ $config['cookie_httponly'] = 'y';
 $config['index_page'] = '';
 
 // END EE config items
-
+$config['site_url'] = $base_url . "/";
+$config['server_path'] = FCPATH;
+$config['site_index'] = '';
+$config['cookie_prefix'] = '';
+$config['theme_folder_url'] = $config['site_url']."/themes/";
+$config['theme_folder_path'] = $config['server_path']."/themes/";
+$config['save_tmpl_files'] = "y";
+$config['tmpl_file_basepath'] = $config['server_path']."/templates/";
+$config['avatar_url'] = $base_url."/uploads/system/avatars/";
+$config['avatar_path'] = $config['server_path']."/uploads/system/avatars/";
+$config['photo_url'] = $base_url."/uploads/system/member_photos/";
+$config['photo_path'] = $config['server_path']."/uploads/system/member_photos/";
+$config['sig_img_url'] = $base_url."/uploads/system/signature_attachments/";
+$config['sig_img_path'] = $config['server_path']."/uploads/system/signature_attachments/";
+$config['prv_msg_upload_path'] = $config['server_path']."/uploads/system/pm_attachments/";
 
 /*
 |--------------------------------------------------------------------------
