@@ -1,0 +1,21 @@
+.footer {
+	color: $gray-light;
+	background-color: #989898;
+	height: 49px !important;
+	.pull-left {
+		padding-left: 21px;
+		ul {
+			margin-bottom: 0;
+			li {
+				@include thin;
+				padding-left: 7px;
+				position: relative;
+				top: -14px;
+				display: inline-block;
+				img.img-thumbnail {
+					padding: 2px;
+				}
+			}
+		}
+	}
+}
