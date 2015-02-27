@@ -1,34 +1,54 @@
+{embed="includes/header"}
 {exp:user:register
     return="perfil/completar"
     group_id="5" 
 }
- 
-    <p>Username:
-        <input type="text" name="username" /></p>
-    <p>Screen Name:
-        <input type="text" name="screen_name" /></p>
-    <p>Email Address:
-        <input type="text" name="email" /></p>
- 
-    <p>Password:
-        <input type="password" name="password" /></p>
-    <p>Confirm Password:
-        <input type="password" name="password_confirm" /></p>
- 
-{if captcha}
-    <p>Please enter in the word you see below:
-        <input type="text" name="captcha" /></p>
-    <p>{captcha}</p>
-{/if}
- 
-    <p><input type="checkbox" name="accept_terms" value="y" />
-        Accept Terms?</p>
- 
-    <p><input type="submit" value="Submit" /></p>
- 
-{if no_results}
-    <p>You're currently logged in, and must be logged
-        out to view this form.</p>
-{/if}
- 
+<div class="site-wrapper">
+      <div class="site-menu"></div>
+      <div class="site-content">
+        <section>
+          <div class="container-fluid">
+            <div class="row mtp-7">
+              <div class="col-md-1"></div>
+              <div class="col-md-5 text-center mt-21">
+                <img src="{site_url}assets/icons/logo-slogan.png" class="mbp-7">
+                <h1 class="medium-heading text-primary">¡Bienvenido!</h1>
+                <h3 class="text-gray">Empieza creando tu cuenta farolito</h3>
+              </div>
+              
+                <div class="col-md-4 ph-35 mt-14">
+                  <form action="">
+                    <div class="form-group">
+                      <label for="exampleInputName2" class="text-gray h4">Nombre de usuario</label>
+                      <input type="text" class="form-control" id="exampleInputName2" name="username">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class="text-gray h4">Correo electrónico</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" class="text-gray h4">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                      <span class="text-right mlp-63">6 ó más caracteres</span>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" class="text-gray h4">Confirmar contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="password_confirm">
+                    </div>
+
+                  </form>
+
+                  <div class="pv-14 text-right">
+                    <button href="#" class="btn btn-danger btn-lg uppercase" type="submit" value="submit">Crear tu perfil</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    {if no_results}
+        <p>You're currently logged in, and must be logged
+            out to view this form.</p>
+    {/if}
 {/exp:user:register}
