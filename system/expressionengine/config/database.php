@@ -3,9 +3,11 @@
 $active_group = 'expressionengine';
 $active_record = TRUE;
 
-$db['expressionengine']['hostname'] = 'localhost';
+// $db['expressionengine']['hostname'] = 'localhost';	
+$db['expressionengine']['hostname'] = '127.0.0.1';
 $db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = 'Q7pXysbJIX';
+// $db['expressionengine']['password'] = 'Q7pXysbJIX';
+$db['expressionengine']['password'] = '';
 $db['expressionengine']['database'] = 'farolito';
 $db['expressionengine']['dbdriver'] = 'mysql';
 $db['expressionengine']['pconnect'] = FALSE;

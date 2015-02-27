@@ -509,7 +509,7 @@ a.text-warning:hover {
   color: #66512c; }
 
 .text-danger {
-  color: #FF6A49; }
+  color: #a94442; }
 
 a.text-danger:hover {
   color: #843534; }
@@ -3738,19 +3738,19 @@ body {
 
 @font-face {
   font-family: 'NeutraText-LightAlt';
-  src: url("../stylesheets/fonts/NeutraText-LightAlt.eot");
+  src: url("../assets/fonts/NeutraText-LightAlt.eot");
   /* IE9 */
-  src: url("../stylesheets/fonts/NeutraText-LightAlt.eot?#iefix") format("embedded-opentype"), url("../stylesheets/fonts/NeutraText-LightAlt.woff") format("woff"), url("../stylesheets/fonts/NeutraText-LightAlt.ttf") format("truetype"), url("../stylesheets/fonts/NeutraText-LightAlt.svg") format("svg"); }
+  src: url("../assets/fonts/NeutraText-LightAlt.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeutraText-LightAlt.woff") format("woff"), url("../assets/fonts/NeutraText-LightAlt.ttf") format("truetype"), url("../assets/fonts/NeutraText-LightAlt.svg") format("svg"); }
 @font-face {
   font-family: 'NeutraText-BookAlt';
-  src: url("../stylesheets/fonts/NeutraText-BookAlt.eot");
+  src: url("../assets/fonts/NeutraText-BookAlt.eot");
   /* IE9 */
-  src: url("../stylesheets/fonts/NeutraText-BookAlt.eot?#iefix") format("embedded-opentype"), url("../stylesheets/fonts/NeutraText-BookAlt.woff") format("woff"), url("../stylesheets/fonts/NeutraText-BookAlt.ttf") format("truetype"), url("../stylesheets/fonts/NeutraText-BookAlt.svg") format("svg"); }
+  src: url("../assets/fonts/NeutraText-BookAlt.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeutraText-BookAlt.woff") format("woff"), url("../assets/fonts/NeutraText-BookAlt.ttf") format("truetype"), url("../assets/fonts/NeutraText-BookAlt.svg") format("svg"); }
 @font-face {
   font-family: 'NeutraText-DemiAlt';
-  src: url("../stylesheets/fonts/NeutraText-DemiAlt.eot");
+  src: url("../assets/fonts/NeutraText-DemiAlt.eot");
   /* IE9 */
-  src: url("../stylesheets/fonts/NeutraText-DemiAlt.eot?#iefix") format("embedded-opentype"), url("../stylesheets/fonts/NeutraText-DemiAlt.woff") format("woff"), url("../stylesheets/fonts/NeutraText-DemiAlt.ttf") format("truetype"), url("../stylesheets/fonts/NeutraText-DemiAlt.svg") format("svg"); }
+  src: url("../assets/fonts/NeutraText-DemiAlt.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/NeutraText-DemiAlt.woff") format("woff"), url("../assets/fonts/NeutraText-DemiAlt.ttf") format("truetype"), url("../assets/fonts/NeutraText-DemiAlt.svg") format("svg"); }
 /* PROJECT ESPECIFIC FONTS */
 .thin {
   font-family: "museo-sans", Helvetica, Arial, sans-serif !important;
@@ -4905,7 +4905,7 @@ p {
 
 .nosotros-main {
   position: relative;
-  background-image: url("../assets/img/nosotros.png");
+  background-image: url("../../app/assets/img/nosotros.png");
   min-height: 560px;
   background-repeat: no-repeat; }
   .nosotros-main h3 {
@@ -4992,19 +4992,5 @@ p {
       .header-global .pull-right ul li a {
         color: #777777;
         text-decoration: none; }
-
-.btn-submit {
-  padding: 3px 33px;
-  border-radius: 12px;
-  background: #aaa;
-  color: white;
-}
-.btn-submit-header {
-  padding: 7px !important; 
-  border-radius: 12px;
-  background: #aaa;
-  font-family: 'NeutraText-DemiAlt' !important;
-  color: white;
-}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+.author-desc {
+	position: relative;
+	padding-bottom: 28px;
+	.inline-block {
+		position: absolute;
+		left: 70px;
+		top: 14px;
+	}
+}
+
+.author {
+	height: 63px;
+	width: 63px;
+	background-size: cover;
+	display: inline-block;
+	&.tiny {
+		height: 42px;
+		width: 42px;
+		position: relative;
+		top: -21px;
+	}
+}
+
+p {
+	font-size: 20px;
+	font-size: rem(20px);
+	color: $gray-light;
+}
+
+.categories {
+	background-color: $gray-lighter;
+	ul {
+		padding: 28px 21px;
+		li {
+			color: $gray-light;
+			border-bottom: 1px solid $gray-light;
+			font-size: 18px;
+			font-size: rem(18px);
+		}
+	}
+}
+
+.article-preview {
+	background-color: $gray-lighter;
+	padding: 0 14px 28px 14px;
+	p {
+		text-align: left;
+		font-size: 18px;
+		font-size: rem(18px);
+	}
+}
+
+.blog-single {
+	padding-top: 98px;
+}

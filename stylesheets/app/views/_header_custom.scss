@@ -1,0 +1,23 @@
+.header-global {
+	color: $gray-light;
+	background-color: #F0FBFD;
+	height: 56px !important;
+	position: fixed;
+	padding-top: 10px;
+	z-index: 2;
+	width: 100%;
+	.pull-right {
+		padding-right: 35px;
+		ul {
+			li {
+				// display: inline-block;
+				margin: 0 14px;
+				font-size: 22px;
+				a {
+					color: $gray-light;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
