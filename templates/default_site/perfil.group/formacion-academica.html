@@ -1,1 +1,44 @@
+{member_id}
 <p>Formación académica</p>
+
+{exp:freeform:form
+    form_name="formacion_academica"
+    return="/"
+}
+  <dl>
+    <dt><label>estado</label></dt>
+    <dd><input type="text" name="estado" value="" id="freeform_estado" maxlength="150"  /></dd>
+
+    <dt><label>estado_estudios</label></dt>
+    <dd><input type="text" name="estado_estudios" value="" id="freeform_estado_estudios" maxlength="150"  /></dd>
+
+    <dt><label>mes_inicio_formacion</label></dt>
+    <dd><input type="text" name="mes_inicio_formacion" value="" id="freeform_mes_inicio_formacion" maxlength="150"  /></dd>
+
+    <dt><label>mes_salida_formacion</label></dt>
+    <dd><input type="text" name="mes_salida_formacion" value="" id="freeform_mes_salida_formacion" maxlength="150"  /></dd>
+
+    <dt><label>nombre_institucion</label></dt>
+    <dd><input type="text" name="nombre_institucion" value="" id="freeform_nombre_institucion" maxlength="150"  /></dd>
+
+    <dt><label>tipo_carrera</label></dt>
+    <dd><input type="text" name="tipo_carrera" value="" id="freeform_tipo_carrera" maxlength="150"  /></dd>
+
+    <dt><label>tipo_formacion</label></dt>
+    <dd><input type="text" name="tipo_formacion" value="" id="freeform_tipo_formacion" maxlength="150"  /></dd>
+
+    <dt><label>year_inicio_formacion</label></dt>
+    <dd><input type="text" name="year_inicio_formacion" value="" id="freeform_year_inicio_formacion" maxlength="150"  /></dd>
+
+    <dt><label>year_salida_formacion</label></dt>
+    <dd><input type="text" name="year_salida_formacion" value="" id="freeform_year_salida_formacion" maxlength="150"  /></dd>        
+  </dl>
+  <p>{freeform:submit}</p>
+  {if freeform:no_results}
+      <p>
+          Specified form was not found. Please make sure you have
+          specified the correct short name of the form in the
+          <b>form_name</b> parameter.
+      </p>
+  {/if}
+{/exp:freeform:form}
