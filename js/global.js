@@ -7,6 +7,6 @@ $(document).ready(function(){
 	});
 	var $empresa1a2 = $('#empresa_1_2');
 	$empresa1a2.click(function(){
-		$('#empresa-2').slideDown("slow");
+		$('#empresa-2').slideToggle();
 	});
 });
