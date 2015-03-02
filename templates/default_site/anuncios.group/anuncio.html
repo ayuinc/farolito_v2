@@ -1,0 +1,54 @@
+{embed="includes/header"}
+    <div class="site-wrapper">
+      <div class="site-header">
+        <div class="container-fluid p-0">
+          {embed="includes/menu"}
+        </div>
+      </div>
+      <div class="site-content">
+        <section class="minhp-100 blog-single">
+          <div class="container">
+	          {exp:channel:entries channel="anuncios" limit="1"}
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-7">
+                <span>{entry_date format='%d/%m/%Y'}</span>
+                <h1 class="text-primary">{title}</h1>
+                <div class="author-desc">
+                  <div class="author" style="background-image: url({site_url}assets/img/user_male.png);"></div>
+                  <div class="inline-block">
+                    <ul class="list-unstyled">
+                      <li><h3 class="m-0 text-primary">{anuncios_descripcion}</h3></li>
+                      <li><h4 class="m-0"></h4></li>
+                    </ul> 
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 pl-28">
+                <!--<div class="articulos pb-28">
+                  <h4 class="text-warning medium-heading">Artículos</h4>
+                  <div class="categories">
+                    <ul class="list-unstyled">
+                      <li>Aprendizaje</li>
+                      <li>Avisos</li>
+                      <li>General</li>
+                      <li>General</li>
+                    </ul>
+                  </div>
+                </div>-->
+                <!--<div class="ultimos-articulos">
+                  <h4 class="text-warning medium-heading">Ultimos Artículos</h4>
+                  <div class="article-preview mt-42 text-center">
+                    <div class="author tiny" style="background-image: url({site_url}assets/img/user_male.png);"></div>
+                    <p>Cow frankfurter ham bacon tail chuck turducken.</p>
+                  </div>
+                </div>-->
+              </div>
+            </div>
+            {/exp:channel:entries}
+          </div>
+        </section>
+      </div>
+      {embed="includes/pie-pagina"}
+    </div>
+{embed="includes/footer"}
