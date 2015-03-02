@@ -1,4 +1,4 @@
-{embed="includes/header"}
+  {embed="includes/header"}  
     <div class="site-wrapper">
       <div class="site-header">
         <div class="container-fluid p-0">
@@ -6,19 +6,92 @@
         </div>
       </div>
       <div class="site-content">
-        <section class="minhp-100 pt-70">
-          <div class="container">
-            <h1 class="text-center">Lista de Oportunidades</h1>
-	            {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
+        <div class="container pvp-7">
+          <div class="col-md-5 border-right prp-7 ">
+            <div class="info">
+              <div class="user">
+                <div class="user-card user-card-round size xs">
+                  <div class="user-pic flex-middle">                        
+                    <img src="assets/icons/iconos-22.png" alt="">
+                  </div>
+                  <div class="user-info">
+                    <h4 class="text-primary m-0">Daniel Cáceres</h4>
+                    <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
+                  </div>
+                </div>
+              </div>                
+            </div>
+            <div class="informacion-peronal">
+              <h4 class="text-warning medium-heading">Información personal</h4>
+              <h5><strong class="text-gray-light">Fecha de nacimiento:</strong> Agosto de 1980</h5>
+              <h5><strong class="text-gray-light">Sexo:</strong> Hombre</h5>
+              <h5><strong class="text-gray-light">DNI:</strong> 82738272</h5>
+              <h5><strong class="text-gray-light">Correo electrónico:</strong> abc@gmail.com</h5>
+              <h5><strong class="text-gray-light">Telefono fijo:</strong> 4712426</h5>
+              <h5><strong class="text-gray-light">Estado civil:</strong> Soltero</h5>
+              <h5><strong class="text-gray-light">País:</strong> Perú</h5>
+            </div>
+            <div class="educacion">
+              <h4 class="text-warning medium-heading">Educación</h4>
+              <h5><strong class="text-gray-light">Carrera:</strong> Administración</h5>
+              <h5><strong class="text-gray-light">Nombre de la institución:</strong></h5>
+              <h5 class="mt-0">Ricardo Palma</h5>
+            </div>
+            <div class="experiencia">
+              <h4 class="text-warning medium-heading">Experiencia laboral</h4>
+              <h5><strong class="text-gray-light">Lorem ipsum dolor sit amet ADP.SAC</strong></h5>
+              <h5>(Abril 2012 - Junio 2013)</h5>
+              <h5><strong class="text-gray-light">Jefe de area de logística</strong></h5>
+              <h5>(Abril 2012 - Junio 2013)</h5>
+            </div>
+          </div>
+          <div class="col-md-7 plp-7">
+            <div class="hoja">
+              <h1 class="mt-7 text-center text-gray-light medium-heading">Lista de oportunidades</h1>
+              {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
+              <!-- integrar -->
                 <a href="{site_url}anuncios/anuncio/{url_title}">
-	                <div class="content">
-	                  <h5 class="text-primary mt-28">{title}</h5>
-	                  <p>{anuncios_descripcion}</p>
-	                </div>
+                  <div class="content">
+                    <h5 class="text-primary mt-28">{title}</h5>
+                    <p>{anuncios_descripcion}</p>
+                  </div>
                 </a>
               {/exp:channel:entries}
+              <!-- integrar -->
+              <h4>Parte hardcodeada empieza aqui:</h4>
+              <div class="clearfix pb-28 pt-28">
+                  <h4 class="text-primary"><u>Asesor de Servicio</u></h4>
+                  <h5><strong class="text-gray-light">Empresa:</strong> SAC</h5>
+                  <h5><strong class="text-gray-light">Ciudad:</strong> Lima</h5>
+                  <h5><strong class="text-gray-light">Salario:</strong> S/. 00</h5>
+                  <h5><strong class="text-gray-light">Horario:</strong> 8:00 am - 6:00 pm</h5>
+                  <div class="pull-right btn btn-custom danger">
+                    <a href="#">VER MÁS</a>
+                  </div>
+              </div>
+              <div class="clearfix pb-28 pt-28">
+                  <h4 class="text-primary"><u>Asesor de Servicio</u></h4>
+                  <h5><strong class="text-gray-light">Empresa:</strong> SAC</h5>
+                  <h5><strong class="text-gray-light">Ciudad:</strong> Lima</h5>
+                  <h5><strong class="text-gray-light">Salario:</strong> S/. 00</h5>
+                  <h5><strong class="text-gray-light">Horario:</strong> 8:00 am - 6:00 pm</h5>
+                  <div class="pull-right btn btn-custom danger">
+                    <a href="#">VER MÁS</a>
+                  </div>
+              </div>
+              <div class="pb-28 pt-28">
+                  <h4 class="text-primary"><u>Asesor de Servicio</u></h4>
+                  <h5><strong>Empresa:</strong> SAC</h5>
+                  <h5><strong>Ciudad:</strong> Lima</h5>
+                  <h5><strong>Salario:</strong> S/. 00</h5>
+                  <h5><strong>Horario:</strong> 8:00 am - 6:00 pm</h5>
+                  <div class="pull-right btn btn-custom danger">
+                    <a href="#">VER MÁS</a>
+                  </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
       {embed="includes/pie-pagina"}
     </div>
