@@ -10,6 +10,15 @@
           <div class="col-md-5 border-right prp-7 ">
             <div class="info">
               <div class="user">
+                
+                {exp:user:stats}
+                 
+                <h3>{screen_name}</h3>
+                <p>Email: {email}</p>
+                <p>Total Entries: {total_entries}</p>
+                <p>Join Date: {join_date format="%m %d, %Y"}</p>
+                 
+                {/exp:user:stats}
                 <div class="user-card user-card-round size xs">
                   <div class="user-pic flex-middle">                        
                     <img src="assets/icons/iconos-22.png" alt="">
