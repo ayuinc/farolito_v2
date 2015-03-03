@@ -10,25 +10,18 @@
           <div class="col-md-5 border-right prp-7 ">
             <div class="info">
               <div class="user">
-                <em>Parte dinámica</em>
-                {exp:user:stats}
-                 
-                <h3>{screen_name}</h3>
-                <p>Email: {email}</p>
-                <p>Total Entries: {total_entries}</p>
-                <p>Join Date: {join_date format="%m %d, %Y"}</p>
-                 
-                <em>Parte hardcodeada</em>
+                
                 <div class="user-card user-card-round size xs">
                   <div class="user-pic flex-middle">                        
                     <img src="assets/icons/iconos-22.png" alt="">
                   </div>
                   <div class="user-info">
+                  {exp:user:stats}
                     <h4 class="text-primary m-0">{screen_name}</h4>
                     <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
                   </div>
                 </div>
-                {/exp:user:stats}
+                
               </div>                
             </div>
             <div class="informacion-peronal">
@@ -40,6 +33,7 @@
               <h5><strong class="text-gray-light">Telefono fijo:</strong> 4712426</h5>
               <h5><strong class="text-gray-light">Estado civil:</strong> Soltero</h5>
               <h5><strong class="text-gray-light">País:</strong> Perú</h5>
+              {/exp:user:stats}
             </div>
             <div class="educacion">
               <h4 class="text-warning medium-heading">Educación</h4>
