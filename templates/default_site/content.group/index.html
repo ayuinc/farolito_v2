@@ -251,7 +251,7 @@ de los trabajadores</p>
           </div>
         </section>
 
-        <!--<section id="seccion_5" class="relative oportunidades" style="background-image: url({site_url}assets/img/oportunidades.png)"> 
+        <section id="seccion_5" class="relative oportunidades" style="background-image: url({site_url}assets/img/oportunidades.png)"> 
           <div class="container-fluid">
             <div class="row pt-56">
               <div class="col-sm-2"></div>
@@ -259,14 +259,16 @@ de los trabajadores</p>
                 <div class="hoja">
                   <h2 class="mt-7 text-center medium-heading">Lista de oportunidades</h2>
                   <div class="clearfix pb-28 pt-28">
-                      <h4 class="text-primary">Asesor de Servicio</h4>
-                      <h5>Empresa: SAC</h5>
-                      <h5>Ciudad: Lima</h5>
-                      <h5>Salario: S/. 00</h5>
-                      <h5>Horario: 8:00 am - 6:00 pm</h5>
+                    {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
+                      <h4 class="text-primary"><u>{title}</u></h4>
+                      <h5><strong class="text-gray-light">Empresa:</strong> {nombre_empresa}</h5>
+                      <h5><strong class="text-gray-light">Ciudad:</strong> {localidad}</h5>
+                      <h5><strong class="text-gray-light">Salario:</strong> {salario}</h5>
+                      <h5><strong class="text-gray-light">Horario:</strong> {horario}</h5>
                       <div class="pull-right btn btn-custom danger">
-                        <a href="#">VER MAS</a>
+                        <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
                       </div>
+                    {/exp:channel:entries}
                   </div>
                   <div class="clearfix pb-28 pt-28">
                       <h4 class="text-primary">Asesor de Servicio</h4>
@@ -298,7 +300,7 @@ de los trabajadores</p>
           <div class="flecha">
             <img src="{site_url}assets/img/arrow_down.png" alt="">
           </div>
-        </section>-->
+        </section>
 
         <section class="blog-homepage minhp-100 pt-70">
           <div class="container">
