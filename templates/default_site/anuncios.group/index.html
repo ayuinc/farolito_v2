@@ -38,7 +38,9 @@
               {/exp:user:stats}
             </div>
             <div class="educacion">
+              {exp:freeform:entries form_name="formacion academica" limit="1" author_id="CURRENT_USER"} 
               <h4 class="text-warning medium-heading">Educación</h4>
+              <p> parrafo: {freeform:field:razon_social_1} </p>
               <h5><strong class="text-gray-light">Carrera:</strong> Administración</h5>
               <h5><strong class="text-gray-light">Nombre de la institución:</strong></h5>
               <h5 class="mt-0">Ricardo Palma</h5>
@@ -49,6 +51,7 @@
               <h5>(Abril 2012 - Junio 2013)</h5>
               <h5><strong class="text-gray-light">Jefe de area de logística</strong></h5>
               <h5>(Abril 2012 - Junio 2013)</h5>
+              {/exp:freeform:entries} 
             </div>
           </div>
           <div class="col-md-7 plp-7">
@@ -95,10 +98,4 @@
       {embed="includes/pie-pagina"}
       </div>
     </div>
-<div>
-  <h1>Prueba</h1>
-  {exp:freeform:entries form_name="cv" limit="1" author_id="CURRENT_USER"}  
-    <p> parrafo: {freeform:field:razon_social_1} </p>
-  {/exp:freeform:entries}   
-</div>
 {embed="includes/footer"}
