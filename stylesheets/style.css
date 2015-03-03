@@ -5150,3 +5150,7 @@ header,
   display: none;
   overflow:hidden;
 }
+
+#empresa_1_2 {
+  cursor: pointer;
+}
