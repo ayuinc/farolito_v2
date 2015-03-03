@@ -1,44 +1,174 @@
-<p>Formación académica</p>
+{embed="includes/header"}
+<div class="site-wrapper">
+  <div class="site-header">
+    <div class="container-fluid p-0">
+    {embed="includes/menu"}
+    </div>
+  </div>
+  <div class="site-content">
+    <div class="container-sm ptp-7">
+      <h1 class="medium-heading text-gray-light text-center">Crea tu perfil</h1>
+      <div class="icons">            
+      </div>
+      <h3 class="text-primary medium-heading">Formación académica</h3>
+      <h4 class="text-danger medium-heading">Formación</h4>
+      {exp:freeform:form
+        form_name="formacion_academica"
+        return="/"
+      }
 
-{exp:freeform:form
-    form_name="formacion_academica"
-    return="/"
-}
-  <input type="hidden" name="member_id" value="{member_id}" />
-  <dl>
-    <dt><label>estado</label></dt>
-    <dd><input type="text" name="estado" value="" id="freeform_estado" maxlength="150"  /></dd>
-
-    <dt><label>estado_estudios</label></dt>
-    <dd><input type="text" name="estado_estudios" value="" id="freeform_estado_estudios" maxlength="150"  /></dd>
-
-    <dt><label>mes_inicio_formacion</label></dt>
-    <dd><input type="text" name="mes_inicio_formacion" value="" id="freeform_mes_inicio_formacion" maxlength="150"  /></dd>
-
-    <dt><label>mes_salida_formacion</label></dt>
-    <dd><input type="text" name="mes_salida_formacion" value="" id="freeform_mes_salida_formacion" maxlength="150"  /></dd>
-
-    <dt><label>nombre_institucion</label></dt>
-    <dd><input type="text" name="nombre_institucion" value="" id="freeform_nombre_institucion" maxlength="150"  /></dd>
-
-    <dt><label>tipo_carrera</label></dt>
-    <dd><input type="text" name="tipo_carrera" value="" id="freeform_tipo_carrera" maxlength="150"  /></dd>
-
-    <dt><label>tipo_formacion</label></dt>
-    <dd><input type="text" name="tipo_formacion" value="" id="freeform_tipo_formacion" maxlength="150"  /></dd>
-
-    <dt><label>year_inicio_formacion</label></dt>
-    <dd><input type="text" name="year_inicio_formacion" value="" id="freeform_year_inicio_formacion" maxlength="150"  /></dd>
-
-    <dt><label>year_salida_formacion</label></dt>
-    <dd><input type="text" name="year_salida_formacion" value="" id="freeform_year_salida_formacion" maxlength="150"  /></dd>        
-  </dl>
-  <p>{freeform:submit}</p>
-  {if freeform:no_results}
-      <p>
-          Specified form was not found. Please make sure you have
-          specified the correct short name of the form in the
-          <b>form_name</b> parameter.
-      </p>
-  {/if}
+      <input type="hidden" name="member_id" value="{member_id}" />
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group">
+              <select class="selectpicker full-width p-7" type="text" name="tipo_formacion" value="" id="freeform_tipo_formacion" maxlength="150">
+                <option>Tipo de formación</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="selectpicker full-width p-7" type="text" name="tipo_carrera" value="" id="freeform_tipo_carrera" maxlength="150">
+                <option>Tipo de carrera</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group">
+              <select class="selectpicker full-width p-7" type="text" name="estado" value="" id="freeform_estado" maxlength="150">
+                <option>Estado</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nombre de la institución" type="text" name="nombre_institucion" value="" id="freeform_nombre_institucion" maxlength="150"> 
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mv-7">
+        <div class="col-md-6">
+          <label for="exampleInputName2" class="text-gray h4">Fecha de inicio</label>
+          <select class="selectpicker p-7"  type="text" name="mes_inicio_formacion" value="" id="freeform_mes_inicio_formacion" maxlength="150">
+            <option>Mes</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <select class="selectpicker p-7" type="text" name="year_inicio_formacion" value="" id="freeform_year_inicio_formacion" maxlength="150">
+            <option>Año</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="exampleInputName2" class="text-gray h4">Fecha de salida</label>
+          <select class="selectpicker p-7" type="text" name="mes_salida_formacion" value="" id="freeform_mes_salida_formacion" maxlength="150">
+            <option>Mes</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <select class="selectpicker p-7" type="text" name="year_salida_formacion" value="" id="freeform_year_salida_formacion" maxlength="150">
+            <option>Año</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-14">
+        <div class="col-md-8">
+          <label for="exampleInputName2" class="text-gray h4 mr-21">Estado</label>
+          <select class="selectpicker p-7" type="text" name="estado_estudios" value="" id="freeform_estado_estudios" maxlength="150">
+            <option>Actualmente estudiando</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-21">
+        <div class="col-md-4 pr-0">
+          <label class="checkbox-inline h4">
+            <input type="checkbox" id="inlineCheckbox2" value="option2" class="mt-7">Agregar otros estudios
+          </label>
+        </div>
+        <div class="col-md-6">
+          <select class="selectpicker p-7 full-width">
+            <option>Curso - taller</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-4">
+          <label for="exampleInputName2" class="text-gray h4">Nombre del curso - taller</label>
+          <input type="text" class="form-control" id="exampleInputName2">
+        </div>
+      </div>
+      <h4 class="text-danger medium-heading mv-35">Información adicional</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group">
+              <select class="selectpicker full-width p-7">
+                <option>Mensaje de software</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="selectpicker full-width p-7">
+                <option>Tipo de carrera</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="form-group">
+              <select class="selectpicker full-width p-7">
+                <option>Conocimiento de normas</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Membresía en colegios">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="pv-21 text-right">
+        <a href="#" class="btn bg-gray-light light mr-7 text-white">ATRÁS</a>
+        <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light">
+        {if freeform:no_results}
+            <p>
+                Specified form was not found. Please make sure you have
+                specified the correct short name of the form in the
+                <b>form_name</b> parameter.
+            </p>
+        {/if}
+      </div>
+    </div>
+  </div>
+</div>
 {/exp:freeform:form}
