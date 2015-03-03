@@ -38,9 +38,8 @@
               {/exp:user:stats}
             </div>
             <div class="educacion">
-              {exp:freeform:entries form_name="formacion academica" limit="1" author_id="CURRENT_USER"} 
-              <h4 class="text-warning medium-heading">Educación</h4>
-              <p> parrafo: {freeform:field:razon_social_1} </p>
+              {exp:freeform:entries form_name="formacion_academica" limit="1" author_id="CURRENT_USER"} 
+              <h4 class="text-warning medium-heading">Educación {freeform:field:nombre_institucion}</h4>
               <h5><strong class="text-gray-light">Carrera:</strong> Administración</h5>
               <h5><strong class="text-gray-light">Nombre de la institución:</strong></h5>
               <h5 class="mt-0">Ricardo Palma</h5>
