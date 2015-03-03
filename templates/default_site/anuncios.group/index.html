@@ -18,7 +18,6 @@
                   <div class="user-info">
                   {exp:user:stats}
                     <h4 class="text-primary m-0">{screen_name}</h4>
-                    <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
                   {/exp:user:stats}
                   </div>
                 </div>
@@ -36,6 +35,7 @@
               <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
               <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
               {/exp:user:stats}
+              <a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR INFORMACION PERSONAL</a>
             </div>
             <div class="educacion">
               {exp:freeform:entries form_name="formacion_academica" limit="1" author_id="CURRENT_USER"} 
