@@ -6,48 +6,91 @@
         </div>
       </div>
       <div class="site-content">
-        <section class="minhp-100 blog-single">
-          <div class="container">
-	          {exp:channel:entries channel="anuncios" limit="1"}
-            <div class="row">
-              <div class="col-sm-1"></div>
-              <div class="col-sm-7">
-                <span>{entry_date format='%d/%m/%Y'}</span>
-                <h1 class="text-primary">{title}</h1>
-                <div class="author-desc">
-                  <div class="author" style="background-image: url({site_url}assets/img/user_male.png);"></div>
-                  <div class="inline-block">
-                    <ul class="list-unstyled">
-                      <li><h3 class="m-0 text-primary">{anuncios_descripcion}</h3></li>
-                      <li><h4 class="m-0"></h4></li>
-                    </ul> 
+        <div class="container pvp-7">
+          <div class="col-md-5 border-right prp-7 ">
+            <div class="info">
+              <div class="user">
+                
+                <div class="user-card user-card-round size xs">
+                  <div class="user-pic flex-middle">                        
+                    <img src="assets/icons/iconos-22.png" alt="">
+                  </div>
+                  <div class="user-info">
+                  {exp:user:stats}
+                    <h4 class="text-primary m-0">{screen_name}</h4>
+                    <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
+                  {/exp:user:stats}
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-3 pl-28">
-                <!--<div class="articulos pb-28">
-                  <h4 class="text-warning medium-heading">Artículos</h4>
-                  <div class="categories">
-                    <ul class="list-unstyled">
-                      <li>Aprendizaje</li>
-                      <li>Avisos</li>
-                      <li>General</li>
-                      <li>General</li>
-                    </ul>
-                  </div>
-                </div>-->
-                <!--<div class="ultimos-articulos">
-                  <h4 class="text-warning medium-heading">Ultimos Artículos</h4>
-                  <div class="article-preview mt-42 text-center">
-                    <div class="author tiny" style="background-image: url({site_url}assets/img/user_male.png);"></div>
-                    <p>Cow frankfurter ham bacon tail chuck turducken.</p>
-                  </div>
-                </div>-->
+                
+              </div>                
+            </div>
+            <div class="informacion-peronal">
+              {exp:user:stats}
+              <h4 class="text-warning medium-heading">Información personal</h4>
+              <h5><strong class="text-gray-light">Fecha de nacimiento:</strong> {mes_nacimiento} de {year_nacimiento}</h5>
+              <h5><strong class="text-gray-light">Sexo:</strong> {sexo}</h5>
+              <h5><strong class="text-gray-light">DNI:</strong> {documento_identidad}</h5>
+              <h5><strong class="text-gray-light">Correo electrónico:</strong> {email}</h5>
+              <h5><strong class="text-gray-light">Telefono fijo:</strong> {telefono_fijo}</h5>
+              <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
+              <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
+              {/exp:user:stats}
+            </div>
+            <div class="educacion">
+              <h4 class="text-warning medium-heading">Educación</h4>
+              <h5><strong class="text-gray-light">Carrera:</strong> Administración</h5>
+              <h5><strong class="text-gray-light">Nombre de la institución:</strong></h5>
+              <h5 class="mt-0">Ricardo Palma</h5>
+            </div>
+            <div class="experiencia">
+              <h4 class="text-warning medium-heading">Experiencia laboral</h4>
+              <h5><strong class="text-gray-light">Lorem ipsum dolor sit amet ADP.SAC</strong></h5>
+              <h5>(Abril 2012 - Junio 2013)</h5>
+              <h5><strong class="text-gray-light">Jefe de area de logística</strong></h5>
+              <h5>(Abril 2012 - Junio 2013)</h5>
+            </div>
+          </div>
+          <div class="col-md-7 plp-7">
+            <div class="vista-preliminar">
+              {exp:channel:entries channel="anuncios" limit="1"}
+              <h1 class="medium-heading text-gray-light text-center mt-0">{title}</h1>
+              <h4 class="text-primary">Empresa:</h4>
+              <p>Lorem ipsum dolor</p>
+              <h4 class="text-primary">Descripción:</h4>
+              <p>{anuncios_descripcion}</p>
+              <h4 class="text-primary">Funciones principales:</h4>
+              <p>{anuncios_funciones_principales}</p>
+              <h4 class="text-primary">Ciudad:</h4>
+              <p>{localidad}</p>
+              <h4 class="text-primary">Salario:</h4>
+              <p>{salario}</p>
+              <h4 class="text-primary">Horario:</h4>
+              <p>{horario}</p>
+              <h4 class="text-primary">Vacantes:</h4>
+              <p>{vacantes}</p>
+              <h4 class="text-primary">Fecha de publicación:</h4>
+              <p>{entry_date format='%d/%m/%Y'}</p>
+              
+              <div class="pv-21 text-right">
+                <a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
+                <a href="#" class="btn btn-postular light">POSTULAR</a>
               </div>
             </div>
-            {/exp:channel:entries}
           </div>
-        </section>
+        </div>
+        <div class="footer clearfix">
+          <div class="pull-left">
+            <ul class="list-unstyled">
+              <li><img class="img-circle img-thumbnail img-responsive" src="assets/img/fcbk.png" alt=""></li>
+              <li><img class="img-circle img-thumbnail img-responsive" src="assets/img/twitter.png" alt=""></li>
+              <li><img class="img-circle img-thumbnail img-responsive" src="assets/img/googleplus.png" alt=""></li>
+            </ul>
+          </div>
+          <div class="pull-right pt-7 ph-21">
+            <h5 class="text-muted">todos los derechos reservados</h5>
+          </div>
+        </div>
       </div>
       {embed="includes/pie-pagina"}
     </div>
