@@ -8,6 +8,7 @@
       <div class="site-content">
         <div class="container pvp-7">
           <div class="col-md-5 border-right prp-7 ">
+          {exp:user:stats}
             <div class="info">
               <div class="user">
                 <em>Parte dinámica</em>
@@ -17,7 +18,7 @@
                   <div class="user-pic flex-middle">                        
                     <img src="assets/icons/iconos-22.png" alt="">
                   </div>
-                  {exp:user:stats}
+
                   <div class="user-info">
                     <h4 class="text-primary m-0">{screen_name}</h4>
                     <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
@@ -101,10 +102,3 @@
       </div>
     </div>
 {embed="includes/footer"}
-
-<div>
-  <h1>Prueba</h1>
-  {exp:freeform:entries form_name="cv" author_id="7"}  
-    <p> parrafo: {freeform:field:razon_social_1} </p>
-  {/exp:freeform:entries}   
-</div>
