@@ -61,7 +61,15 @@
           <div class="col-md-7 plp-7">
             <div class="hoja">
               <h1 class="mt-7 text-center text-gray-light medium-heading">Lista de oportunidades</h1>
-              
+              {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
+              <!-- integrar -->
+                <a href="{site_url}anuncios/anuncio/{url_title}">
+                  <div class="content">
+                    <h5 class="text-primary mt-28">{title}</h5>
+                    <p>{anuncios_descripcion}</p>
+                  </div>
+                </a>
+              {/exp:channel:entries}
               <!-- integrar -->
               <h4>Parte hardcodeada empieza aqui:</h4>
               <div class="clearfix pb-28 pt-28">
@@ -69,7 +77,7 @@
                   <h4 class="text-primary"><u>{title}</u></h4>
                   <h5><strong class="text-gray-light">Empresa:</strong> {nombre_empresa}</h5>
                   <h5><strong class="text-gray-light">Ciudad:</strong> {localidad}</h5>
-                  <h5><strong class="text-gray-light">Salario:</strong> S/. {salario}</h5>
+                  <h5><strong class="text-gray-light">Salario:</strong> {salario}</h5>
                   <h5><strong class="text-gray-light">Horario:</strong> {horario}</h5>
                   <div class="pull-right btn btn-custom danger">
                     <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
