@@ -35,18 +35,15 @@
               <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
               <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
               {/exp:user:stats}
+
               <a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR INFORMACION PERSONAL</a>
             </div>
             {exp:member:custom_profile_data}                
               {embed="includes/educacion" miembro="{member_id}"}
+            {/exp:member:custom_profile_data}   
+            {exp:member:custom_profile_data}                
+              {embed="includes/experiencia" miembro="{member_id}"}
             {/exp:member:custom_profile_data}            
-            <div class="experiencia">
-              <h4 class="text-warning medium-heading">Experiencia laboral</h4>
-              <h5><strong class="text-gray-light">Lorem ipsum dolor sit amet ADP.SAC</strong></h5>
-              <h5>(Abril 2012 - Junio 2013)</h5>
-              <h5><strong class="text-gray-light">Jefe de area de logística</strong></h5>
-              <h5>(Abril 2012 - Junio 2013)</h5>
-            </div>
           </div>
           <div class="col-md-7 plp-7">
             <div class="hoja">
