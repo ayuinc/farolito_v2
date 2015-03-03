@@ -5149,5 +5149,8 @@ header,
 #empresa-2 {
   display: none;
   overflow:hidden;
-  height: 400px;
+}
+
+#empresa_1_2 {
+  cursor: pointer;
 }
