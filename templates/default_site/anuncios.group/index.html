@@ -10,18 +10,18 @@
           <div class="col-md-5 border-right prp-7 ">
             <div class="info">
               <div class="user">
-                <em>Parte dinámica</em>
                 
-                <em>Parte hardcodeada</em>
                 <div class="user-card user-card-round size xs">
                   <div class="user-pic flex-middle">                        
                     <img src="assets/icons/iconos-22.png" alt="">
                   </div>
                   <div class="user-info">
+                  {exp:user:stats}
                     <h4 class="text-primary m-0">{screen_name}</h4>
                     <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
                   </div>
                 </div>
+                
               </div>                
             </div>
             <div class="informacion-peronal">
@@ -29,12 +29,12 @@
               <h5><strong class="text-gray-light">Fecha de nacimiento:</strong> Agosto de 1980</h5>
               <h5><strong class="text-gray-light">Sexo:</strong> Hombre</h5>
               <h5><strong class="text-gray-light">DNI:</strong> 82738272</h5>
-              <h5><strong class="text-gray-light">Correo electrónico:</strong> {email}</h5>
+              <h5><strong class="text-gray-light">Correo electrónico:</strong> abc@gmail.com</h5>
               <h5><strong class="text-gray-light">Telefono fijo:</strong> 4712426</h5>
               <h5><strong class="text-gray-light">Estado civil:</strong> Soltero</h5>
               <h5><strong class="text-gray-light">País:</strong> Perú</h5>
+              {/exp:user:stats}
             </div>
-            {/exp:user:stats}
             <div class="educacion">
               <h4 class="text-warning medium-heading">Educación</h4>
               <h5><strong class="text-gray-light">Carrera:</strong> Administración</h5>
@@ -100,4 +100,9 @@
       </div>
     </div>
 {embed="includes/footer"}
-
+<div>
+  <h1>Prueba</h1>
+  {exp:freeform:entries form_name="cv" author_id="7"}  
+    <p> parrafo: {freeform:field:razon_social_1} </p>
+  {/exp:freeform:entries}   
+</div>
