@@ -8,7 +8,6 @@
       <div class="site-content">
         <div class="container pvp-7">
           <div class="col-md-5 border-right prp-7 ">
-          {exp:user:stats}
             <div class="info">
               <div class="user">
                 <em>Parte dinámica</em>
@@ -18,14 +17,16 @@
                   <div class="user-pic flex-middle">                        
                     <img src="assets/icons/iconos-22.png" alt="">
                   </div>
-
+                  {exp:user:stats}
                   <div class="user-info">
                     <h4 class="text-primary m-0">{screen_name}</h4>
                     <a href="#" class="btn btn-xs btn-default">EDITAR PERFIL</a>
                   </div>
+                  {/exp:user:stats}
                 </div>
               </div>                
             </div>
+            {exp:user:stats}
             <div class="informacion-peronal">
               <h4 class="text-warning medium-heading">Información personal</h4>
               <h5><strong class="text-gray-light">Fecha de nacimiento:</strong> Agosto de 1980</h5>
