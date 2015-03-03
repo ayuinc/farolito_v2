@@ -12,8 +12,12 @@
     </div>
     <h3 class="text-primary medium-heading">Curriculum-vitae</h3>
     <h4 class="text-danger medium-heading">Experiencia laboral</h4>
-    {embed="includes/new_cv"}
+    {exp:freeform:edit limit="1" author_id="CURRENT_USER"
+    form_name="cv" return="perfil/formacion-academica"}
+      {if freeform:no_results}
+        {embed="includes/new_cv"}
+      {/if}
+    {/exp:freeform:form}
   </div>
 </div>
-{/exp:freeform:form}
 {embed="includes/footer"}
