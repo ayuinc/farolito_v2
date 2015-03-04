@@ -5207,3 +5207,11 @@ header,
         text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
+#empresa-2 {
+  display: none;
+  overflow:hidden;
+}
+
+#empresa_1_2 {
+  cursor: pointer;
+}
