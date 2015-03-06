@@ -1,22 +1,7 @@
-{embed="includes/header"}
-<div class="site-wrapper">
-  <div class="site-header">
-    <div class="container-fluid p-0">
-    {embed="includes/menu"}
-    </div>
-  </div>
-  <div class="site-content">
-    <div class="container-sm ptp-7">
-      <h1 class="medium-heading text-gray-light text-center">Edita tu perfil</h1>
-      <div class="icons">            
-      </div>
-      <h3 class="text-primary medium-heading">Formación académica</h3>
-      <h4 class="text-danger medium-heading">Formación</h4>
-<<<<<<< HEAD
-      {exp:freeform:form
-        form_name="formacion_academica"
-        return="perfil/cv"
-      }
+{exp:freeform:form
+  form_name="formacion_academica"
+  return="/"
+}
 
       <input type="hidden" name="member_id" value="{member_id}" />
       <div class="row">
@@ -162,12 +147,4 @@
         {/if}
       </div>
     </div>
-  </div>
-</div>
-        {/exp:freeform:form}
-=======
-      {embed="includes/new_formacion_academica"}
-  </div>
-</div>
-{embed="includes/footer"}
->>>>>>> 5cefc1d3b941ce3f3518a55223a8156d25f000d7
+{/exp:freeform:form}
