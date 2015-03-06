@@ -12,7 +12,9 @@
       </div>
       <h3 class="text-primary medium-heading">Formación académica</h3>
       <h4 class="text-danger medium-heading">Formación</h4>
-      {embed="includes/new_formacion_academica"}
+      {exp:member:custom_profile_data}                
+        {embed="includes/form-edit-formacion" miembro="{member_id}"}
+      {/exp:member:custom_profile_data}   
+    </div>
   </div>
-</div>
 {embed="includes/footer"}
