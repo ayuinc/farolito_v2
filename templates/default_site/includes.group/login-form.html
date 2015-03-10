@@ -8,8 +8,9 @@
   {if auto_login}
     <p><input type="checkbox" name="auto_login" value="1"> Auto-login on future visits</p>
   {/if}
-
-  <input type="submit" name="submit" class="pull-right btn btn-lg btn-primary" value="INGRESAR">
+  <div class="pv-14 text-right">
+    <input type="submit" name="submit" class="pull-right btn btn-lg btn-primary" value="INGRESAR">
+  </div>
   <a href="{path='member/forgot_password'}">¿Olvidaste tu contraseña?</a><br>
   <a href="{site_url}/perfil">¿No estas registrado? Crea tu cuenta aquí</a>
 {/exp:member:login_form}
