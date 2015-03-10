@@ -231,7 +231,12 @@ de los trabajadores</p>
                       <h5><strong class="text-gray-light">Salario:</strong> {salario}</h5>
                       <h5><strong class="text-gray-light">Horario:</strong> {horario}</h5>
                       <div class="pull-right btn btn-custom danger">
-                        <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
+                        {if logged_in}
+                          <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
+                        {/if}
+                        {if logged_out}
+                          <a href="{site_url}login/signup-login">VER MÁS</a>
+                        {/if}
                       </div>
                     {/exp:channel:entries}
                   </div>
