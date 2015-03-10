@@ -25,11 +25,11 @@
               <option value="">EN</option>
             </select>
           </li> -->
+          {if logged_out}
           <li>
-            {if logged_out}
-              <a href="#" class="btn-submit-header" id="ingresar" data-toggle="modal" data-target="#myModal">INGRESAR</a>
-            {/if}
+            <a href="#" class="btn-submit-header" id="ingresar" data-toggle="modal" data-target="#myModal">INGRESAR</a>
           </li>
+          {/if}
         </ul>
       </div>
         <!--/.nav-collapse -->         

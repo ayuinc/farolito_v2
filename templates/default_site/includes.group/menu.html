@@ -7,9 +7,13 @@
                 <li class="pull-left"><span><a href="{site_url}content/somos">Sobre nosotros</a></span></li>
                 <li class="pull-left"> | </li>
                 <li class="pull-left"><span><a href="{site_url}blog">Blog</a></span></li>
-                <!--<li class="pull-left"> | </li>
-                <li class="pull-left"><span><a href="#" target="_blank">Vacantes</a></span></li>
-                <li class="pull-left"><div class="btn btn-custom">SALIR</div></li>-->
+           <!-- <li class="pull-left"> | </li>
+                <li class="pull-left"><span><a href="#" target="_blank">Vacantes</a></span></li> -->
+                {if logged_in}
+                  {exp:member:custom_profile_data}
+                    <li class="pull-left"><a class="btn btn-custom" href="{path='logout'}">SALIR</a></li>
+                  {/exp:member:custom_profile_data}
+                {/if}
               </ul>
             </div>
           </div>
