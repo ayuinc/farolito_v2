@@ -235,7 +235,7 @@ de los trabajadores</p>
                           <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
                         {/if}
                         {if logged_out}
-                          <form method="post" action="{site_url}login/signup-login">
+                          <form method="post" action="{site_url}index.php/login/signup-login">
                             <input type="hidden" value="{XID_HASH}" name="XID">
                             <input type="hidden" value="{entry_id}" name="anuncio_id">
                             <input type="submit" name="submit" value="VER MAS">
