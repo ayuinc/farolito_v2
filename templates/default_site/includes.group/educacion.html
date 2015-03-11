@@ -1,9 +1,14 @@
-            
+					{exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id={embed:miembro}"}
             <div class="educacion mt-21">
+            	{if no_results}
+              <h4 class="text-warning medium-heading">Educación&nbsp;<a href="{site_url}perfil/formacion-academica" class="btn btn-xs btn-default">EDITAR</a></h4>
+            	{if:else}
               <h4 class="text-warning medium-heading">Educación&nbsp;<a href="{site_url}perfil/edit-formacion-academica" class="btn btn-xs btn-default">EDITAR</a></h4>
+            	{/if}
               {exp:freeform:entries form_name="formacion_academica" limit="1" author_id="{embed:miembro}"} 
               <h5><strong class="text-gray-light">Carrera:</strong></h5>
               <h5><strong class="text-gray-light">Nombre de la institución: </strong>{freeform:field:nombre_institucion}</h5>
               {/exp:freeform:entries}
             </div>
+					{/exp:query}            
             

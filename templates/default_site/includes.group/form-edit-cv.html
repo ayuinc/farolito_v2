@@ -1,7 +1,7 @@
 {exp:query sql="SELECT * FROM exp_freeform_form_entries_1 WHERE author_id={embed:miembro}"}
   {exp:freeform:edit 
     form_name="cv"
-    return="/" 
+    return="perfil/edit-formacion-academica" 
     entry_id="{entry_id}" }
 {/exp:query}
 <input type="hidden" name="member_id" value="{member_id}" />
@@ -404,5 +404,5 @@
   <a href="#" class="btn bg-gray-light light mr-7 text-white">ATRÁS</a>
   <input type="submit" name="submit" value="CONTINUAR" class="btn text-white btn-danger light">
 
-{/exp:freeform:edit}
 </div>
+{/exp:freeform:edit}
