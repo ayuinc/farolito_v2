@@ -46,11 +46,8 @@
           <div class="col-md-7 plp-7">
             <div class="hoja">
               <h1 class="mt-7 text-center text-gray-light medium-heading">Lista de oportunidades</h1>
-              <!-- integrar -->
-              <!-- integrar -->
-              <h4>Parte hardcodeada empieza aqui:</h4>
-              <div class="clearfix pb-28 pt-28">
               {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
+              <div class="clearfix pb-28 pt-28">
                   <h4 class="text-primary"><u>{title}</u></h4>
                   <h5><strong class="text-gray-light">Empresa:</strong> {nombre_empresa}</h5>
                   <h5><strong class="text-gray-light">Ciudad:</strong> {localidad}</h5>
@@ -59,28 +56,8 @@
                   <div class="pull-right btn btn-custom danger">
                     <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
                   </div>
+              </div>
               {/exp:channel:entries}
-              </div>
-              <div class="clearfix pb-28 pt-28">
-                  <h4 class="text-primary"><u>Asesor de Servicio</u></h4>
-                  <h5><strong class="text-gray-light">Empresa:</strong> SAC</h5>
-                  <h5><strong class="text-gray-light">Ciudad:</strong> Lima</h5>
-                  <h5><strong class="text-gray-light">Salario:</strong> S/. 00</h5>
-                  <h5><strong class="text-gray-light">Horario:</strong> 8:00 am - 6:00 pm</h5>
-                  <div class="pull-right btn btn-custom danger">
-                    <a href="#">VER MÁS</a>
-                  </div>
-              </div>
-              <div class="pb-28 pt-28">
-                  <h4 class="text-primary"><u>Asesor de Servicio</u></h4>
-                  <h5><strong>Empresa:</strong> SAC</h5>
-                  <h5><strong>Ciudad:</strong> Lima</h5>
-                  <h5><strong>Salario:</strong> S/. 00</h5>
-                  <h5><strong>Horario:</strong> 8:00 am - 6:00 pm</h5>
-                  <div class="pull-right btn btn-custom danger">
-                    <a href="#">VER MÁS</a>
-                  </div>
-              </div>
             </div>
           </div>
         </div>
