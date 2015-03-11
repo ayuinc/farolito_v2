@@ -3728,6 +3728,9 @@ body {
 #postulantes .img-green {
   right: -69px;
   bottom: -69px; }
+  @media only screen and (max-width: 480px) {
+    #postulantes .img-green {
+      width: 100px; } }
 #postulantes .border-down {
   border-right: 2px dashed white;
   min-height: 100px;
@@ -3953,6 +3956,21 @@ input[readonly] {
   -webkit-appearance: none;
   appearance: none;
   -moz-appearance: none; }
+
+a:hover {
+  text-decoration: none; }
+
+#empresa-2 {
+  display: none;
+  overflow: hidden; }
+
+#empresa_1_2 {
+  cursor: pointer; }
+
+#form-link {
+  background: none;
+  border: none;
+  color: #ccc; }
 
 @font-face {
   font-family: 'NeutraText-LightAlt';
@@ -5207,11 +5225,3 @@ header,
         text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
-#empresa-2 {
-  display: none;
-  overflow:hidden;
-}
-
-#empresa_1_2 {
-  cursor: pointer;
-}
