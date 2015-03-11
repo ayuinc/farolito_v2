@@ -26,8 +26,8 @@
             </div>
             <div class="informacion-peronal">
               {exp:user:stats}
-              <h4 class="text-warning medium-heading">Información personal</h4>
-              <h5><strong class="text-gray-light">Fecha de nacimiento:</strong> {mes_nacimiento} de {year_nacimiento}</h5>
+              <h4 class="text-warning medium-heading">Información personal<a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR</a></h4>
+              <h5><strong class="text-gray-light">Fecha de nacimiento:</strong>{dia_nacimiento}/{mes_nacimiento}/{year_nacimiento}</h5>
               <h5><strong class="text-gray-light">Sexo:</strong> {sexo}</h5>
               <h5><strong class="text-gray-light">DNI:</strong> {documento_identidad}</h5>
               <h5><strong class="text-gray-light">Correo electrónico:</strong> {email}</h5>
@@ -35,8 +35,6 @@
               <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
               <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
               {/exp:user:stats}
-
-              <a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR INFORMACION PERSONAL</a>
             </div>
             {exp:member:custom_profile_data}                
               {embed="includes/educacion" miembro="{member_id}"}
