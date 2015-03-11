@@ -1,80 +1,3 @@
-
-Conversation opened. 1 read message.
-
-Skip to content
-Using Ayu Consulting SAC RUC 22551472991 Mail with screen readers
-adelrio@ayuinc.com
-Search
-
-
-
-Mail
-COMPOSE
-Labels
-Inbox (1)
-Starred
-Sent Mail
-Drafts (17)
-accesos
-Belcorp
-js_bootcamp
-Notes
-nyce
-upc
-More 
-  More 
-2 of 488  
- 
-Print all In new window
-(no subject) 
-Inbox
-x 
-
-Mercedes Zubieta
-Attachments2:47 PM (40 minutes ago)
-
-to me 
-
-Attachments area
-Preview attachment style.css
-
-Style Sheet
-style.css
-  
-Click here to Reply or Forward
-0.47 GB (1%) of 30 GB used
-Manage
-©2015 Google - Terms of Service - Privacy - Program Policies
-Powered by 
-Last account activity: 37 minutes ago
-Details
-Mercedes Zubieta
-mercedes.zubieta@ayuinc.com
-
-Recent photos
-View photo in messageView photo in messageView photo in message
-Show details
-Chat
-Andrea Del Rio
-You are invisible.
-Go visible
-
-Available carlos calderon
-Available Denys Rondan Cruz
-Available Rodulfo Prieto
-Idle  Andrea Delrio
-Idle  Herman Marin
-Idle  Luisa Julian
-Idle  Maria Mercedes Zubieta Cordova
-Idle  Nader Tubbeh
-Offline Administrador Informacion
-  Herman Marin
-
-Compose:
-New Message
-MinimizePop-outClose
-style.css
-Open with
 /*
 
   Ayu Consulting Frontend Boilerplate - @MadeByGus
@@ -3718,12 +3641,20 @@ body {
   -webkit-transform: translateY(10px) translateX(2px) rotate(-18deg);
   position: absolute;
   top: 158px;
+  left: 74px;
+  -moz-transform: translateY(10px) translateX(2px) rotate(-18deg);
+  position: absolute;
+  top: 158px;
   left: 74px; }
 #metodologia .container .line2 {
   width: 175px;
   height: 37px;
   border-bottom: 3px dashed #EC6645;
   -webkit-transform: translateY(-10px) translateX(5px) rotate(18deg);
+  position: absolute;
+  bottom: -221px;
+  left: -15px;
+  -moz-transform: translateY(-10px) translateX(5px) rotate(18deg);
   position: absolute;
   bottom: -221px;
   left: -15px; }
@@ -5297,4 +5228,5 @@ header,
       .header-global .pull-right ul li a {
         color: #777777;
         text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
