@@ -3,7 +3,6 @@
       <div class="col-md-6 prp-14 normalize-text">
         <h2 class="text-primary">Ingresa con tu cuenta</h2>
         {exp:member:login_form return="{site_url}anuncios/anuncio/{post:anuncio_id}"}
-        <form>
           <div class="form-group">
               <label for="exampleInputEmail1" class="text-gray h4">Usuario</label>
               <input type="email" class="form-control" name="username" value="" maxlength="32" size="25">
@@ -12,10 +11,10 @@
               <label for="exampleInputPassword1" class="text-gray h4">Contraseña</label>
               <input type="password" class="form-control" name="password" value="" maxlength="32" size="25">
             </div>
-        </form>
         <a href="{path='member/forgot_password'}">¿Olvidaste tu contraseña?</a>
         <div class="pv-14 text-right mtp-7">
           <input type="submit" name="submit" value="INGRESAR" class="btn btn-primary btn-complete light">
+            
         </div>
         {/exp:member:login_form} 
       </div>
