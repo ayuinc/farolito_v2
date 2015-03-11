@@ -1,26 +1,13 @@
-<h4>Anuncio: {post:anuncio_id}</h4>
-<div class="row">
-  <div class="col-sm-6">
-    {exp:member:login_form return="{site_url}anuncios/anuncio/{post:anuncio_id}"}
-      <p>
-        <input type="hidden" value="{post:anuncio_id}" name="anuncio_id">
-        <label>Username</label><br>
-        <input type="text" name="username" value="" maxlength="32" size="25">
-      </p>
-      <p>
-        <label>Password</label><br>
-        <input type="password" name="password" value="" maxlength="32" size="25">
-      </p>
-      {if auto_login}
-        <p><input type="checkbox" name="auto_login" value="1"> Auto-login on future visits</p>
-      {/if}
+{embed="includes/header"}
+{embed="includes/menu"}
+<div class="site-content">
+  <div class="container ptp-7 ph-0">
+    <div class="row pt-35">
 
-      <p><input type="checkbox" name="anon" value="1" checked="checked"> Show my name in the online users list</p>
-      <p><input type="submit" name="submit" value="Submit"></p>
-      <p><a href="{path='member/forgot_password'}">Forgot your password?</a></p>
-    {/exp:member:login_form}   
-  </div>
-  <div class="col-sm-6">
+    {embed="includes/login-form-quick"}
+
     {embed="includes/sign-up-form-quick"}
+
+    </div>
   </div>
 </div>
