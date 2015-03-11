@@ -1,11 +1,10 @@
             
-            <div class="experiencia">
-            	{exp:freeform:entries form_name="cv" limit="1" author_id="{embed:miembro}"} 
-              <h4 class="text-warning medium-heading">Experiencia laboral</h4>
+            <div class="experiencia mt-21">
+              <h4 class="text-warning medium-heading">Experiencia laboral <a href="{site_url}perfil/edit-cv" class="btn btn-xs btn-default">EDITAR</a></h4>
+              {exp:freeform:entries form_name="cv" limit="1" author_id="{embed:miembro}"} 
               <h5><strong class="text-gray-light">Lorem ipsum dolor sit amet ADP.SAC</strong></h5>
               <h5>(Abril 2012 - Junio 2013)</h5>
               <h5><strong class="text-gray-light">Jefe de area de logística</strong></h5>
               <h5>(Abril 2012 - Junio 2013)</h5>
               {/exp:freeform:entries}
-              <a href="{site_url}perfil/edit-cv" class="btn btn-xs btn-default">EDITAR CV</a>
             </div>
