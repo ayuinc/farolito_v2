@@ -1,0 +1,36 @@
+<div class="col-md-5 border-right prp-7 ">
+  <div class="info">
+    <div class="user">
+      
+      <div class="user-card user-card-round size xs">
+        <div class="user-pic flex-middle">                        
+          <img src="{site_url}assets/icons/iconos-22.png" alt="">
+        </div>
+        <div class="user-info">
+        {exp:user:stats}
+          <h4 class="text-primary m-0">{screen_name}</h4>
+        {/exp:user:stats}
+        </div>
+      </div>
+      
+    </div>                
+  </div>
+  <div class="informacion-peronal">
+    {exp:user:stats}
+    <h4 class="text-warning medium-heading">Información personal&nbsp;<a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR</a></h4>
+    <h5><strong class="text-gray-light">Fecha de nacimiento:</strong>{dia_nacimiento}/{mes_nacimiento}/{year_nacimiento}</h5>
+    <h5><strong class="text-gray-light">Sexo:</strong> {sexo}</h5>
+    <h5><strong class="text-gray-light">DNI:</strong> {documento_identidad}</h5>
+    <h5><strong class="text-gray-light">Correo electrónico:</strong> {email}</h5>
+    <h5><strong class="text-gray-light">Telefono fijo:</strong> {telefono_fijo}</h5>
+    <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
+    <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
+    {/exp:user:stats}
+  </div>
+  {exp:member:custom_profile_data}                
+    {embed="includes/educacion" miembro="{member_id}"}
+  {/exp:member:custom_profile_data}   
+  {exp:member:custom_profile_data}                
+    {embed="includes/experiencia" miembro="{member_id}"}
+  {/exp:member:custom_profile_data}            
+</div>
