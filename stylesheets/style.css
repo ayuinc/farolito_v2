@@ -5185,10 +5185,12 @@ header,
     top: 14px; }
 
 .author {
-  height: 63px;
-  width: 63px;
+  height: 40px;
+  width: 40px;
   background-size: cover;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 18px; }
   .author.tiny {
     height: 42px;
     width: 42px;
