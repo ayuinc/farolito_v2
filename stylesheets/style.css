@@ -4027,6 +4027,11 @@ a:hover {
 .file-pdf {
   margin-top: -10px; }
 
+figure {
+  margin: 21px 0; }
+  figure img {
+    margin: 21px; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
