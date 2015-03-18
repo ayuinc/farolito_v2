@@ -3944,7 +3944,9 @@ input[readonly] {
     color: gray !important; }
 
 .vista-preliminar .btn-postular {
-  background: rgba(255, 106, 73, 0.1); }
+  border: 1px solid #FF6A49 !important; }
+  .vista-preliminar .btn-postular:hover {
+    background: rgba(255, 106, 73, 0.1); }
 
 /*progressbar*/
 #progressbar {
