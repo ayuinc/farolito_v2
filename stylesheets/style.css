@@ -4080,17 +4080,17 @@ a:hover {
 .light-heading {
   font-family: 'NeutraText-LightAlt' !important;
   font-style: normal;
-  letter-spacing: -2px; }
+  letter-spacing: -1px; }
 
 .book-heading {
   font-family: 'NeutraText-BookAlt' !important;
   font-style: normal;
-  letter-spacing: -2px; }
+  letter-spacing: -1px; }
 
 .medium-heading {
   font-family: 'NeutraText-DemiAlt' !important;
   font-style: normal;
-  letter-spacing: -2px; }
+  letter-spacing: -1px; }
 
 html {
   font-size: 15px; }
@@ -5261,7 +5261,7 @@ header,
       text-decoration: underline;
       font-family: 'NeutraText-DemiAlt' !important;
       font-style: normal;
-      letter-spacing: -2px; }
+      letter-spacing: -1px; }
     #seccion_5 .container-fluid .row .btn-custom:not(.danger) {
       display: block;
       width: 128px;
