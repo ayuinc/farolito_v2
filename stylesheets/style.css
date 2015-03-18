@@ -5124,8 +5124,10 @@ header,
     border-radius: 16px;
     border: 1px solid #777777; }
 
-.nav li a:hover {
-  background: none !important; }
+.nav li a.h5 {
+  letter-spacing: -1px !important; }
+  .nav li a.h5:hover {
+    background: none !important; }
 
 .footer {
   color: #777777;
@@ -5255,7 +5257,8 @@ header,
   color: #9E9D9D; }
 .blog-homepage li .content {
   padding: 28px;
-  padding-top: 42px; }
+  padding-top: 42px;
+  min-height: 308px; }
 .blog-homepage .btn-custom {
   display: block;
   width: 220px;
