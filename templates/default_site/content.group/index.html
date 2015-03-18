@@ -231,7 +231,7 @@ de los trabajadores</p>
                       <h5><strong class="text-gray-light">Horario:</strong> {horario}</h5>
                       <div class="pull-right btn btn-custom danger">
                         {if logged_in}
-                          <a href="{site_url}anuncios/anuncio/{url_title}">VER MÁS</a>
+                          <a href="{site_url}anuncios/anuncio/{url_title}" class="btn-fold btn btn-postular">VER MÁS</a>
                         {/if}
                         {if logged_out}
                           <form method="post" action="{site_url}index.php/login/signup-login">
@@ -243,8 +243,8 @@ de los trabajadores</p>
                       </div>
                     {/exp:channel:entries}
                   </div>
-                  <div class="mt-35 btn btn-custom">
-                    <a href="#">VER TODOS</a>
+                  <div class="mt-35 text-center">
+                    <a href="#" class="btn bg-gray btn-fold text-white">VER TODOS</a>
                   </div>
                 </div>
               </div>
