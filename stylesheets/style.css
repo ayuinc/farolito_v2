@@ -4032,6 +4032,9 @@ figure {
   figure img {
     margin: 21px; }
 
+.text-blog {
+  color: #555; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
