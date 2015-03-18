@@ -3758,7 +3758,7 @@ body {
   #postulantes .border-down {
     border-right: 2px dashed white;
     min-height: 100px;
-    width: 49%; }
+    width: 40%; }
 
 #empresas .container .dashed-down {
   border-bottom: 2px dashed #bbb; }
@@ -3814,7 +3814,8 @@ body {
 
 .btn-fold {
   padding: 10px 20px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border-radius: 3px; }
 
 .border-left {
   border-left: 2px dotted #9E9D9D; }
@@ -3932,6 +3933,11 @@ input[readonly] {
 .modal-content {
   border-radius: 18px;
   border: 7px solid #C0BFBF; }
+
+.informacion-personal h3 {
+  color: #FFC200 !important; }
+  .informacion-personal h3 a {
+    color: gray !important; }
 
 /*progressbar*/
 #progressbar {
