@@ -3934,9 +3934,13 @@ input[readonly] {
   border-radius: 18px;
   border: 7px solid #C0BFBF; }
 
-.informacion-personal h3 {
+.informacion-personal h3,
+.educacion h3,
+.experiencia h3 {
   color: #FFC200 !important; }
-  .informacion-personal h3 a {
+  .informacion-personal h3 a,
+  .educacion h3 a,
+  .experiencia h3 a {
     color: gray !important; }
 
 /*progressbar*/
