@@ -3943,6 +3943,9 @@ input[readonly] {
   .experiencia h3 a {
     color: gray !important; }
 
+.vista-preliminar .btn-postular {
+  background: rgba(255, 106, 73, 0.1); }
+
 /*progressbar*/
 #progressbar {
   margin-bottom: 30px;
