@@ -286,16 +286,16 @@ de los trabajadores</p>
 						    return="contactos/gracias"
 						}
               <div class="form-group mb-0">
-                <label for="exampleInputEmail1"></label>            
-								{freeform:field:contacto_nombre attr:id="exampleInputEmail1" attr:class="form-control" attr:placeholder="Nombre"}
+                <label for="exampleInputEmail1"></label>
+                <input type="text" class="form-control" name="FREEFORM_contacto_nombre" id="exampleInputEmail1" placeholder="Nombre">                
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1"></label>
-                {freeform:field:contacto_correo attr:id="exampleInputPassword1" attr:class="form-control" attr:placeholder="Correo electronico"}
+                <input type="email" class="form-control" name="FREEFORM_contacto_correo" id="exampleInputPassword1" placeholder="Correo">
               </div>
-              {freeform:field:contacto_mensaje attr:class="form-control" attr:placeholder="Escribe tu mensaje aqui"}
+              <textarea class="form-control" rows="3" name="FREEFORM_contacto_mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
             <div class="text-right php-21">
-              <a href="" class="btn btn-submit mv-14">ENVIAR</a>
+	            <button class="btn btn-submit mv-14">ENVIAR</button>
             </div>
             {/exp:freeform:form}
             <h5 class="plp-21 mv-7 text-gray"> o llámanos al +51 32660564</h5>
