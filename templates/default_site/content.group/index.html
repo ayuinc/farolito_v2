@@ -284,7 +284,17 @@ de los trabajadores</p>
             {exp:freeform:form
 						    form_name="contactos"
 						    return="contactos/gracias"
+								required="contacto_correo"
+						    inline_errors="yes"						    
 						}
+					    {if freeform:general_errors}
+					        <h5>El formulario tiene los siguientes errores:</h5>
+					        <ul>
+					            {freeform:general_errors}
+					            <li>{freeform:error_message}</li>
+					            {/freeform:general_errors}
+					        </ul>
+					    {/if}						
               <div class="form-group mb-0">
                 <label for="exampleInputEmail1"></label>
                 <input type="text" class="form-control" name="FREEFORM_contacto_nombre" id="exampleInputEmail1" placeholder="Nombre">                
