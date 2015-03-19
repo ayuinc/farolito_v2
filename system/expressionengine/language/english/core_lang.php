@@ -10,58 +10,58 @@ $lang = array(
 'No',
 
 'yes' =>
-'Yes',
+'Si',
 
 'on' =>
-'on',
+'encendido',
 
 'off' =>
-'off',
+'apagado',
 
 'first' =>
-'First',
+'Primero',
 
 'last' =>
-'Last',
+'Último',
 
 'enabled' =>
-'enabled',
+'Disponible',
 
 'disabled' =>
 'disabled',
 
 'back' =>
-'Back',
+'Atrás',
 
 'submit' =>
-'Submit',
+'Enviar',
 
 'update' =>
-'Update',
+'Actualizar',
 
 'thank_you' =>
-'Thank You!',
+'Gracias!',
 
 'page' =>
-'Page',
+'Página',
 
 'of' =>
-'of',
+'de',
 
 'by' =>
-'by',
+'por',
 
 'at' =>
-'at',
+'en',
 
 'dot' =>
-'dot',
+'punto',
 
 'and' =>
-'and',
+'y',
 
 'or' =>
-'or',
+'o',
 
 'id' =>
 'ID',
@@ -70,25 +70,25 @@ $lang = array(
 '(JavaScript must be enabled to view this email address)',
 
 'search' =>
-'Search',
+'Buscar',
 
 'system_off_msg' =>
-'This site is currently inactive.',
+'Este sitio se encuentra actualmente inactivo.',
 
 'not_authorized' =>
-'You are not authorized to perform this action',
+'Usted no está autorizado para realizar esta acción',
 
 'auto_redirection' =>
-'You will be redirected automatically in %x seconds',
+'Usted será redirigido automáticamente en %x segundos',
 
 'click_if_no_redirect' =>
-'Click here if you are not redirected automatically',
+'Haga clic aquí si no redirige automáticamente',
 
 'return_to_previous' =>
-'Return to Previous Page',
+'Volver a la página anterior',
 
 'not_available' =>
-'Not available',
+'No disponible',
 
 'setting' =>
 'Setting',
@@ -96,8 +96,8 @@ $lang = array(
 'preference' =>
 'Preference',
 
-'pag_first_link' => '&lsaquo; First',
-'pag_last_link' => 'Last &rsaquo;',
+'pag_first_link' => '&lsaquo; Primero',
+'pag_last_link' => 'Último &rsaquo;',
 
 //----------------------------
 // Errors
@@ -113,22 +113,22 @@ $lang = array(
 'The URL you submitted is not valid.',
 
 'submission_error' =>
-'The form you submitted contained the following errors',
+'La forma que ha enviado contenía los siguientes errores',
 
 'general_error' =>
-'The following errors were encountered',
+'Se han encontrado los siguientes errores',
 
 'invalid_action' =>
-'The action you have requested is invalid.',
+'La acción que ha solicitado no es válido.',
 
 'csrf_token_expired' =>
-'This form has expired. Please refresh and try again.',
+'Esta forma ha expirado. Por favor regenere y vuelva a intentarlo.',
 
 'current_password_required' =>
-'Your current password is required.',
+'Se requiere su contraseña actual.',
 
 'current_password_incorrect' =>
-'Your current password was not submitted correctly.',
+'Su contraseña actual no se presentó correctamente.',
 
 'captcha_required' =>
 'You must submit the word that appears in the image',
@@ -137,11 +137,11 @@ $lang = array(
 'You did not submit the word exactly as it appears in the image',
 
 'nonexistent_page' =>
-'The page you requested was not found',
+'La página solicitada no fue encontrada',
 
 'unable_to_load_field_type' =>
-'Unable to load requested field type file:  %s.<br />
-Confirm the fieldtype file is located in the expressionengine/third_party/ directory',
+'No se puede cargar el archivo solicitado tipo de campo: %s. <br />
+Confirme que el archivo FieldType se encuentra en el directorio ExpressionEngine / third_party /',
 
 'unwritable_cache_folder' =>
 'Your cache folder does not have proper permissions.<br>
@@ -180,16 +180,16 @@ and email %s to report the link that generated this message.',
 //----------------------------
 
 'error_tag_syntax' =>
-'The following tag has a syntax error:',
+'La siguiente etiqueta tiene un error de sintaxis:',
 
 'error_fix_syntax' =>
-'Please correct the syntax in your template.',
+'Por favor, corrija la sintaxis de la plantilla.',
 
 'error_tag_module_processing' =>
-'The following tag cannot be processed:',
+'La siguiente etiqueta no puede ser procesada:',
 
 'error_fix_module_processing' =>
-'Please check that the \'%x\' module is installed and that \'%y\' is an available method of the module',
+'Por favor, compruebe que el \'%x\' módulo está instalado y que \'%y\' es un método disponible del módulo',
 
 'template_loop' =>
 'You have caused a template loop due to improperly nested sub-templates (\'%s\' recursively called)',
@@ -214,22 +214,22 @@ and email %s to report the link that generated this message.',
 //----------------------------
 
 'forgotten_email_sent' =>
-'If this email address is associated with an account, instructions for resetting your password have just been emailed to you.',
+'Si esta dirección de correo electrónico está asociada a una cuenta, instrucciones para restablecer la contraseña sólo se han enviado por correo electrónico.',
 
 'error_sending_email' =>
-'Unable to send email at this time.',
+'No se puede enviar correo electrónico en este momento.',
 
 'no_email_found' =>
-'The email address you submitted was not found in the database.',
+'La dirección de correo electrónico que ha enviado no se encontró en la base de datos.',
 
 'password_reset_flood_lock' =>
-'You have tried to reset your password too many times today. Please check your inbox and spam folders for previous requests, or contact the site administrator.',
+'Usted ha tratado de restablecer su contraseña demasiadas veces hoy. Por favor, compruebe sus carpetas de bandeja de entrada de spam y para solicitudes anteriores, o póngase en contacto con el administrador del sitio.',
 
 'your_new_login_info' =>
-'Login information',
+'Información de acceso',
 
 'password_has_been_reset' =>
-'Your password was reset and a new one has been emailed to you.',
+'Su contraseña se ha restablecido y uno nuevo ha sido enviado por correo electrónico.',
 
 //----------------------------
 // Date
