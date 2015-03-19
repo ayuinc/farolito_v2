@@ -286,14 +286,14 @@ de los trabajadores</p>
 						    return="contactos/gracias"
 						}
               <div class="form-group mb-0">
-                <label for="exampleInputEmail1"></label>
-                <input type="text" class="form-control" name="contacto_nombre" id="exampleInputEmail1" placeholder="Nombre">
+                <label for="exampleInputEmail1"></label>            
+								{freeform:field:contacto_nombre attr:id="exampleInputEmail1" attr:class="form-control" attr:placeholder="Nombre"}
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1"></label>
-                <input type="email" class="form-control" name="contacto_correo" id="exampleInputPassword1" placeholder="Correo">
+                {freeform:field:contacto_correo attr:id="exampleInputPassword1" attr:class="form-control" attr:placeholder="Correo electronico"}
               </div>
-              <textarea class="form-control" rows="3" name="contacto_mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
+              {freeform:field:contacto_mensaje attr:class="form-control" attr:placeholder="Escribe tu mensaje aqui"}
             <div class="text-right php-21">
               <a href="" class="btn btn-submit mv-14">ENVIAR</a>
             </div>
