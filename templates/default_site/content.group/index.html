@@ -281,20 +281,23 @@ de los trabajadores</p>
         <section class="bg-gray-lighter pvp-7">
           <div class="container-sm">
             <h2 class="m-0 medium-heading lead book text-gray text-center">¿Tienes alguna consulta?</h2>
-            <form role="form" class="php-21">
+            {exp:freeform:form
+						    form_name="contactos"
+						    return="contactos/gracias"
+						}
               <div class="form-group mb-0">
                 <label for="exampleInputEmail1"></label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                <input type="text" class="form-control" value="contacto_nombre" id="exampleInputEmail1" placeholder="Nombre">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1"></label>
-                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Correo">
+                <input type="email" class="form-control" value="contacto_correo" id="exampleInputPassword1" placeholder="Correo">
               </div>
-              <textarea class="form-control" rows="3" placeholder="Escribe tu mensaje aqui"></textarea>
-            </form>
+              <textarea class="form-control" rows="3" value="contacto_mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
             <div class="text-right php-21">
               <a href="" class="btn btn-submit mv-14">ENVIAR</a>
             </div>
+            {/exp:freeform:form}
             <h5 class="plp-21 mv-7 text-gray"> o llámanos al +51 32660564</h5>
           </div>
         </section>
