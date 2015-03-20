@@ -10,18 +10,15 @@
           {embed="includes/aside-anuncio"}
           <div class="col-md-7 plp-7">
             <div class="vista-preliminar">
-							<style>
-								.wufoo .section div { 
-									color:red !important;		
-								}
-							</style>	            
-							<div id="wufoo-z10ppcm21ogodgg">
-							Fill out my <a href="https://serviciosfarolito.wufoo.com/forms/z10ppcm21ogodgg">online form</a>.
+            	{get_post:formulario_id}
+							<div id="wufoo-{get_post:formulario_id}">
+							Fill out my <a href="https://serviciosfarolito.wufoo.com/forms/{get_post:formulario_id}">online form</a>.
 							</div>
-							<script type="text/javascript">var z10ppcm21ogodgg;(function(d, t) {
+							
+							<script type="text/javascript">var {get_post:formulario_id};(function(d, t) {
 							var s = d.createElement(t), options = {
 							'userName':'serviciosfarolito',
-							'formHash':'z10ppcm21ogodgg',
+							'formHash':'{get_post:formulario_id}',
 							'autoResize':true,
 							'height':'3100',
 							'async':true,
@@ -31,7 +28,7 @@
 							s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
 							s.onload = s.onreadystatechange = function() {
 							var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-							try { z10ppcm21ogodgg = new WufooForm();z10ppcm21ogodgg.initialize(options);z10ppcm21ogodgg.display(); } catch (e) {}};
+							try { {get_post:formulario_id} = new WufooForm();{get_post:formulario_id}.initialize(options);{get_post:formulario_id}.display(); } catch (e) {}};
 							var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
 							})(document, 'script');</script>
 
