@@ -39,14 +39,16 @@
 
               <div class="pv-21 text-right">
                 <div class="col-md-6">
-                <form method="post" action="{site_url}index.php/anuncios/aplicacion">
-	                <input type="hidden" name="XID" value="{XID_HASH}"> 
+									{exp:freeform:form
+									    form_id="5"
+									    return="anuncios/aplicacion"
+									}
 	                <input type="hidden" name="aplicacion_email" value="{email}">
 	                <input type="hidden" name="aplicacion_nombre" value="{screen_name}">
 	                <input type="hidden" name="aplicacion_user_id" value="{member_id}">
 	                <input type="hidden" name="flag" value="y">
 	                <button class="btn btn-postular light">CONFIRMAR POSTULACIÓN</button>
-                </form>
+                {/exp:freeform:form}
                 </div>
                 <div class="col-md-6">
                 	<a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
