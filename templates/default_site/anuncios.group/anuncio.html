@@ -13,7 +13,7 @@
               {exp:channel:entries channel="anuncios" limit="1"}
               <h1 class="medium-heading text-gray-light text-left mt-0">{title}</h1>
               <h4 class="text-primary">Empresa:</h4>
-              <p>Lorem ipsum dolor</p>
+              <p>{empresa}</p>
               <h4 class="text-primary">Descripción:</h4>
               <p>{anuncios_descripcion}</p>
               <h4 class="text-primary">Funciones principales:</h4>
@@ -36,6 +36,7 @@
 	                <input type="hidden" name="member_id" value="{member_id}">
 	                <input type="hidden" name="formulario_id" value="{formulario_id}">
 	                <input type="hidden" name="posicion" value="{title}">
+	                <input type="hidden" name="empresa" value="{empresa}">
 	                <button class="btn btn-postular light">POSTULAR</button>
                 </form>
                 </div>
