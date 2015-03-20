@@ -1,0 +1,40 @@
+{embed="includes/header"}
+    <div class="site-wrapper">
+      <div class="site-header">
+        <div class="container-fluid p-0">
+          {embed="includes/menu"}
+        </div>
+      </div>
+      <div class="site-content">
+        <div class="container pvp-7">
+          <div class="col-md-10 col-md-offset-1 pv-35">
+	          <h1 class="pv-21 text-center medium-heading">Lista de oportunidades</h1>
+	          {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
+	            <h4 class="text-primary"><u>{title}</u></h4>
+	            <h5>
+		            <strong class="text-gray-light">Empresa:</strong> {nombre_empresa}<br>
+		            <strong class="text-gray-light">Ciudad:</strong> {localidad}<br>
+		            <strong class="text-gray-light">Salario:</strong> {salario}<br>
+		            <strong class="text-gray-light">Horario:</strong> {horario}
+		          </h5>
+	            <div class="pull-right">
+	              {if logged_in}
+	                <a href="{site_url}anuncios/anuncio/{url_title}" class="btn-fold btn btn-postular">VER MÁS</a>
+	              {/if}
+	              {if logged_out}
+	                <form method="post" action="{site_url}index.php/login/signup-login">
+	                  <input type="hidden" value="{XID_HASH}" name="XID">
+	                  <input type="hidden" value="{entry_id}" name="anuncio_id">
+	                  <input type="submit" id="form-link" name="submit" value="VER MAS">
+	                </form>                        
+	              {/if}
+	            </div>
+	          {/exp:channel:entries}
+          </div>
+        </div>
+        {embed="includes/pie-pagina"}
+      {embed="includes/footer"}
+      </div>
+      
+    </div>
+

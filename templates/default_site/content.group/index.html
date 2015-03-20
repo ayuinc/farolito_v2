@@ -225,10 +225,12 @@ de los trabajadores</p>
                   <div class="clearfix pb-28 pt-28">
                     {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
                       <h4 class="text-primary"><u>{title}</u></h4>
-                      <h5><strong class="text-gray-light">Empresa:</strong> {nombre_empresa}</h5>
-                      <h5><strong class="text-gray-light">Ciudad:</strong> {localidad}</h5>
-                      <h5><strong class="text-gray-light">Salario:</strong> {salario}</h5>
-                      <h5><strong class="text-gray-light">Horario:</strong> {horario}</h5>
+					            <h5>
+						            <strong class="text-gray-light">Empresa:</strong> {nombre_empresa}<br>
+						            <strong class="text-gray-light">Ciudad:</strong> {localidad}<br>
+						            <strong class="text-gray-light">Salario:</strong> {salario}<br>
+						            <strong class="text-gray-light">Horario:</strong> {horario}
+						          </h5>
                       <div class="pull-right">
                         {if logged_in}
                           <a href="{site_url}anuncios/anuncio/{url_title}" class="btn-fold btn btn-postular">VER MÁS</a>
@@ -244,7 +246,7 @@ de los trabajadores</p>
                     {/exp:channel:entries}
                   </div>
                   <div class="mt-35 text-center">
-                    <a href="#" class="btn bg-gray btn-fold text-white">VER TODOS</a>
+                    <a href="{site_url}anuncios/todos" class="btn bg-gray btn-fold text-white">VER TODOS</a>
                   </div>
                 </div>
               </div>
