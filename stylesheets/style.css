@@ -4021,8 +4021,13 @@ a:hover {
 
 #form-link {
   background: none;
-  border: none;
-  color: #FF6A49; }
+  color: #FF6A49;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 3px;
+  border: 1px solid #FF6A49; }
+  #form-link:hover {
+    background: rgba(255, 106, 73, 0.1); }
 
 .file-pdf {
   margin-top: -10px; }
