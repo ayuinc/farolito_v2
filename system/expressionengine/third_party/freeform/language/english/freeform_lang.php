@@ -1962,40 +1962,40 @@ Here are the details:
 "The from name is required for notifications",
 
 'email_subject_required' =>
-"The email subject is required for notifications",
+"El asunto del correo electrónico se requiere para las notificaciones",
 
 "no_duplicates" =>
 "No duplicate postings are allowed for this form.",
 
 'required_field_missing' =>
-"Required field missing input",
+"Los campos obligatorios entrada faltante",
 
 'fields_do_not_match' =>
-"The following required matching fields do not match: ",
+"Los siguientes campos coincidentes requeridas no coinciden: ",
 
 'generic_invalid_field_input' =>
-"Invalid input.",
+"Entrada no válida.",
 
 'not_a_number' =>
-"Not a number",
+"No es un número",
 
 'not_an_integer' =>
-"Not an integer",
+"No es un número entero",
 
 'not_a_decimal' =>
-"Not a decimal",
+"No es un decimal",
 
 'not_valid_email' =>
-"Not a valid email",
+"No es una dirección de correo electrónico válida",
 
 'number_exceeds_limit' =>
-"Number exceeds allowed maximum",
+"Número excede máximo permitido",
 
 'max_length_exceeded' =>
-"Maximum field length of %num% exceeded.",
+"Longitud máxima del campo de %num% superó.",
 
 'field_settings_error' =>
-"Options for this field type had errors.",
+"Opciones para este tipo de campo tenían errores.",
 
 //this is for concatenating to a standard field with a required match
 'confirm' =>

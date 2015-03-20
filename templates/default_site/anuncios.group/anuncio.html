@@ -13,7 +13,7 @@
               {exp:channel:entries channel="anuncios" limit="1"}
               <h1 class="medium-heading text-gray-light text-left mt-0">{title}</h1>
               <h4 class="text-primary">Empresa:</h4>
-              <p>Lorem ipsum dolor</p>
+              <p>{empresa}</p>
               <h4 class="text-primary">Descripción:</h4>
               <p>{anuncios_descripcion}</p>
               <h4 class="text-primary">Funciones principales:</h4>
@@ -30,8 +30,19 @@
               <p>{entry_date format='%d/%m/%Y'}</p>
               
               <div class="pv-21 text-right">
-                <a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
-                <a href="#" class="btn btn-postular light">POSTULAR</a>
+                <div class="col-md-6">
+                <form method="post" action="{site_url}index.php/anuncios/aplicacion">
+	                <input type="hidden" name="XID" value="{XID_HASH}"> 
+	                <input type="hidden" name="member_id" value="{member_id}">
+	                <input type="hidden" name="formulario_id" value="{formulario_id}">
+	                <input type="hidden" name="posicion" value="{title}">
+	                <input type="hidden" name="empresa" value="{empresa}">
+	                <button class="btn btn-postular light">POSTULAR</button>
+                </form>
+                </div>
+                <div class="col-md-6">
+                	<a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
+                </div>
               </div>
             </div>
           </div>
