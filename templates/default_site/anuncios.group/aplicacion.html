@@ -10,6 +10,12 @@
           {embed="includes/aside-anuncio"}
           <div class="col-md-7 plp-7">
             <div class="vista-preliminar">
+	            
+	            {if get_post:flag!='y'}
+	            
+	            <h3>Tu aplicación ha sido recibida</h3>
+	            
+	            {if:else}
 							<div id="wufoo-{get_post:formulario_id}">
 							Fill out my <a href="https://serviciosfarolito.wufoo.com/forms/{get_post:formulario_id}">online form</a>.
 							</div>
@@ -32,9 +38,21 @@
 							})(document, 'script');</script>
 
               <div class="pv-21 text-right">
-                <a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
-                <a href="#" class="btn btn-postular light">POSTULAR</a>
+                <div class="col-md-6">
+                <form method="post" action="{site_url}index.php/anuncios/aplicacion">
+	                <input type="hidden" name="XID" value="{XID_HASH}"> 
+	                <input type="hidden" name="aplicacion_email" value="{email}">
+	                <input type="hidden" name="aplicacion_nombre" value="{screen_name}">
+	                <input type="hidden" name="aplicacion_user_id" value="{member_id}">
+	                <input type="hidden" name="flag" value="y">
+	                <button class="btn btn-postular light">CONFIRMAR POSTULACIÓN</button>
+                </form>
+                </div>
+                <div class="col-md-6">
+                	<a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
+                </div>
               </div>
+              {/if}
             </div>
           </div>
         </div>
