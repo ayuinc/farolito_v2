@@ -1,0 +1,56 @@
+{embed="includes/header"}
+    <div class="site-wrapper">
+      <div class="site-header">
+        <div class="container-fluid p-0">
+          {embed="includes/menu"}
+        </div>
+      </div>
+      <div class="site-content">
+        <div class="container pvp-7">
+          {embed="includes/aside-anuncio"}
+          <div class="col-md-7 plp-7">
+            <div class="vista-preliminar">
+              {exp:channel:entries channel="anuncios" limit="1"}
+              <h1 class="medium-heading text-gray-light text-left mt-0">{title}</h1>
+              <h4 class="text-primary">Empresa:</h4>
+              <p>{empresa}</p>
+              <h4 class="text-primary">Descripción:</h4>
+              <p>{anuncios_descripcion}</p>
+              <h4 class="text-primary">Funciones principales:</h4>
+              <p>{anuncios_funciones_principales}</p>
+              <h4 class="text-primary">Ciudad:</h4>
+              <p>{localidad}</p>
+              <h4 class="text-primary">Salario:</h4>
+              <p>{salario}</p>
+              <h4 class="text-primary">Horario:</h4>
+              <p>{horario}</p>
+              <h4 class="text-primary">Vacantes:</h4>
+              <p>{vacantes}</p>
+              <h4 class="text-primary">Fecha de publicación:</h4>
+              <p>{entry_date format='%d/%m/%Y'}</p>
+              
+              <div class="pv-21 text-right">
+                <div class="col-md-6">
+                <form method="post" action="{site_url}index.php/anuncios/aplicacion">
+	                <input type="hidden" name="XID" value="{XID_HASH}"> 
+	                <input type="hidden" name="member_id" value="{member_id}">
+	                <input type="hidden" name="formulario_id" value="{formulario_id}">
+	                <input type="hidden" name="posicion" value="{title}">
+	                <input type="hidden" name="empresa" value="{empresa}">
+	                <button class="btn btn-postular light">POSTULAR</button>
+                </form>
+                </div>
+                <div class="col-md-6">
+                	<a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/exp:channel:entries}
+        {embed="includes/pie-pagina"}
+      {embed="includes/footer"}
+      </div>
+      
+    </div>
+
