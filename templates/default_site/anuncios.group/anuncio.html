@@ -6,11 +6,11 @@
         </div>
       </div>
       <div class="site-content">
+	      {exp:channel:entries channel="anuncios" limit="1"}
         <div class="container pvp-7">
           {embed="includes/aside-anuncio"}
           <div class="col-md-7 plp-7">
             <div class="vista-preliminar">
-              {exp:channel:entries channel="anuncios" limit="1"}
               <h1 class="medium-heading text-gray-light text-left mt-0">{title}</h1>
               <h4 class="text-primary">Empresa:</h4>
               <p>{empresa}</p>
