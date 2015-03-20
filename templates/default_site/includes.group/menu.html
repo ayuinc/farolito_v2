@@ -9,9 +9,14 @@
                 <li class="pull-left"><span><a href="{site_url}blog">Blog</a></span></li>
            <!-- <li class="pull-left"> | </li>
                 <li class="pull-left"><span><a href="#" target="_blank">Vacantes</a></span></li> -->
+                {if logged_out}
+                <li>
+                  <a href="#" class="btn-submit-header" id="ingresar" data-toggle="modal" data-target="#myModal">INGRESAR</a>
+                </li>
+                {/if}
                 {if logged_in}
                   {exp:member:custom_profile_data}
-                    <li class="pull-left"><a class="btn btn-custom" href="{path='logout'}">{primer_nombre} | SALIR</a></li>
+                    <li class="pull-left"><a class="btn-submit-header" href="{path='logout'}">Hola {primer_nombre} | SALIR</a></li>
                   {/exp:member:custom_profile_data}
                 {/if}
               </ul>
