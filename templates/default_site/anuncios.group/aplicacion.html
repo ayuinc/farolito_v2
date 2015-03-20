@@ -7,15 +7,11 @@
       </div>
       <div class="site-content">
         <div class="container pvp-7">
-          {embed="includes/aside-anuncio"}
-          <div class="col-md-7 plp-7">
+          <div class="col-md-10 col-md-offset-1">
             <div class="vista-preliminar">
 	            
-	            {if get_post:flag=='y'}
+	            <h1 class="medium-heading text-gray-light text-left mt-0">{get_post:posicion}</h1>
 	            
-	            <h3>Tu aplicación ha sido recibida</h3>
-	            
-	            {if:else}
 							<div id="wufoo-{get_post:formulario_id}">
 							Fill out my <a href="https://serviciosfarolito.wufoo.com/forms/{get_post:formulario_id}">online form</a>.
 							</div>
@@ -37,7 +33,7 @@
 							var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
 							})(document, 'script');</script>
 
-              <div class="pv-21 text-right">
+              <div class="pv-21 text-center">
                 <div class="col-md-6">
 									{exp:freeform:form
 									    form_id="5"
@@ -57,7 +53,7 @@
                 	<a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
                 </div>
               </div>
-              {/if}
+
             </div>
           </div>
         </div>

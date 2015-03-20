@@ -18,17 +18,11 @@
               <p>{anuncios_descripcion}</p>
               <h4 class="text-primary">Funciones principales:</h4>
               <p>{anuncios_funciones_principales}</p>
-              <h4 class="text-primary">Ciudad:</h4>
-              <p>{localidad}</p>
-              <h4 class="text-primary">Salario:</h4>
-              <p>{salario}</p>
-              <h4 class="text-primary">Horario:</h4>
-              <p>{horario}</p>
-              <h4 class="text-primary">Vacantes:</h4>
-              <p>{vacantes}</p>
-              <h4 class="text-primary">Fecha de publicación:</h4>
-              <p>{entry_date format='%d/%m/%Y'}</p>
-              
+              <h4 class="text-primary">Ciudad: <span>{localidad}</span></h4>
+              <h4 class="text-primary">Salario: <span>{salario}</span></h4>
+              <h4 class="text-primary">Horario: <span>{horario}</span></h4>
+              <h4 class="text-primary">Vacantes: <span>{vacantes}</span></h4>
+              <h4 class="text-primary">Fecha de publicación: <span>{entry_date format='%d/%m/%Y'}</span></h4>
               <div class="pv-21 text-right">
                 <div class="col-md-6">
                 <form method="post" action="{site_url}index.php/anuncios/aplicacion">
