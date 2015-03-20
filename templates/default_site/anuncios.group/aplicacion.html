@@ -10,9 +10,8 @@
           {embed="includes/aside-anuncio"}
           <div class="col-md-7 plp-7">
             <div class="vista-preliminar">
-	            {post:formulario_id}
 							{exp:freeform:form
-							    form_id=""
+							    form_id="{post:formulario_id}"
 							}
 					    {freeform:all_form_fields}
 					        <dt><label>{freeform:field_label}</label></dt>
