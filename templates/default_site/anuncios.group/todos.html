@@ -5,6 +5,7 @@
           {embed="includes/menu"}
         </div>
       </div>
+      {if logged_in}
       <div class="site-content">
         <div class="container pvp-7">
           {embed="includes/aside-anuncio"}
@@ -30,6 +31,9 @@
         </div>
       {embed="includes/pie-pagina"}
       </div>
+      {if:else}
+      	{redirect="login"}
+      {/if}
     </div>
 {embed="includes/footer"}
 
