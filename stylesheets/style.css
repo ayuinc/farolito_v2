@@ -5336,6 +5336,9 @@ header,
 .header-scroll {
   background: #F0FBFD;
   position: fixed;
-  height: 69px; }
+  height: 69px;
+  opacity: 0; }
+  .header-scroll.active {
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,13 @@
 (function() {
   'use-strict';
   $(document).ready(function() {
-    var scrollToController;
-    scrollToController = new ScrollMagic.Controller();
-    console.log(scrollToController);
+    var scrollToController = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({triggerElement: "#metodologia"})
+          .setClassToggle(".header-scroll", "active") // add class toggle
+          .addTo(scrollToController);
+
+    /*console.log(scrollToController);
     scrollToController.scrollTo(function(newpos) {
       console.log(newpos);
       TweenMax.to(window, 0.5, {
@@ -11,7 +15,7 @@
           y: newpos
         }
       });
-    });
+    });*/
     $(document).on('click', 'a[href^=#]', function(e) {
       var id;
       id = $(this).attr('href');
