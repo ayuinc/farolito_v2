@@ -1,0 +1,25 @@
+{embed="includes/header"}
+    <div class="site-wrapper">
+      <div class="site-header">
+        <div class="container-fluid p-0">
+          {embed="includes/menu"}
+        </div>
+      </div>
+      <div class="site-content">
+        <section class="minhp-100 blog-single">
+          <div class="container">
+	          {exp:channel:entries channel="metodologia" limit="1"}
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-7">
+                <h1 class="text-primary">{title}</h1>
+                {metodologia-contenido}
+              </div>
+            </div>
+            {/exp:channel:entries}
+          </div>
+        </section>
+      {embed="includes/pie-pagina"}
+      </div>
+    </div>
+{embed="includes/footer"}
