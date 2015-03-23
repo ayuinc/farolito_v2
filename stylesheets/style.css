@@ -4045,6 +4045,14 @@ img.img-thumbnail:hover {
   background: #58C6E7;
   border: 1px solid #58C6E7; }
 
+.btn-ingresar {
+  color: white !important;
+  padding: 6px 15px;
+  background: #aaa;
+  border-radius: 3px; }
+  .btn-ingresar:hover {
+    opacity: 0.8; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
