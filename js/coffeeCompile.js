@@ -2,7 +2,7 @@
   'use-strict';
   $(document).ready(function() {
     var scrollToController;
-    scrollToController = new ScrollMagic();
+    scrollToController = new ScrollMagic.Controller();
     console.log(scrollToController);
     scrollToController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
