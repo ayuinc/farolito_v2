@@ -3944,7 +3944,8 @@ input[readonly] {
     color: gray !important; }
 
 .vista-preliminar .btn-postular {
-  border: 1px solid #FF6A49 !important; }
+  border: 1px solid #FF6A49 !important;
+  background: none !important; }
   .vista-preliminar .btn-postular:hover {
     background: rgba(255, 106, 73, 0.1); }
 
