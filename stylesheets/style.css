@@ -5171,10 +5171,8 @@ header,
     border-radius: 16px;
     border: 1px solid #777777; }
 
-.nav li a.h5 {
-  letter-spacing: -1px !important; }
-  .nav li a.h5:hover {
-    background: none !important; }
+.nav li a.h5:hover {
+  background: none !important; }
 
 .footer {
   color: #777777;
