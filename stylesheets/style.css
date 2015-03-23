@@ -5337,7 +5337,8 @@ header,
   background: #F0FBFD;
   position: fixed;
   height: 69px;
-  opacity: 0; }
+  opacity: 0;
+  transition: 0.3s all ease-in-out; }
   .header-scroll.active {
     opacity: 1; }
 
