@@ -4053,6 +4053,9 @@ img.img-thumbnail:hover {
   .btn-ingresar:hover {
     opacity: 0.8; }
 
+.nav li a.h5 {
+  letter-spacing: 0px !important; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
@@ -5168,10 +5171,8 @@ header,
     border-radius: 16px;
     border: 1px solid #777777; }
 
-.nav li a.h5 {
-  letter-spacing: -1px !important; }
-  .nav li a.h5:hover {
-    background: none !important; }
+.nav li a.h5:hover {
+  background: none !important; }
 
 .footer {
   color: #777777;
