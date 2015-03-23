@@ -4056,6 +4056,9 @@ img.img-thumbnail:hover {
 .nav li a.h5 {
   letter-spacing: 0px !important; }
 
+a:focus {
+  text-decoration: none !important; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
