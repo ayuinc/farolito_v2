@@ -5,6 +5,7 @@
     scrollToController = new ScrollMagic.Controller();
     console.log(scrollToController);
     scrollToController.scrollTo(function(newpos) {
+      console.log(newpos);
       TweenMax.to(window, 0.5, {
         scrollTo: {
           y: newpos
