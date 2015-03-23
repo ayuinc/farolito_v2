@@ -5333,4 +5333,9 @@ header,
         color: #777777;
         text-decoration: none; }
 
+.header-scroll {
+  background: #F0FBFD;
+  position: fixed;
+  height: 69px; }
+
 /*# sourceMappingURL=style.css.map */
