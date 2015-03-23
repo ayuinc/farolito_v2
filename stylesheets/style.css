@@ -4040,7 +4040,7 @@ figure {
 .text-blog {
   color: #555; }
 
-img .img-thumbnail:hover {
+img.img-thumbnail:hover {
   opacity: 0.8;
   background: #58C6E7;
   border: 1px solid #58C6E7; }
