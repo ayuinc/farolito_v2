@@ -3,6 +3,7 @@
   $(document).ready(function() {
     var scrollToController;
     scrollToController = new ScrollMagic();
+    console.log(scrollToController);
     scrollToController.scrollTo(function(newpos) {
       TweenMax.to(window, 0.5, {
         scrollTo: {
