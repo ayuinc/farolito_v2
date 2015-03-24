@@ -4051,7 +4051,7 @@ img.img-thumbnail:hover {
 
 .btn-ingresar {
   color: white !important;
-  padding: 6px 15px;
+  padding: 6px 15px !important;
   background: #aaa;
   border-radius: 3px; }
   .btn-ingresar:hover {
