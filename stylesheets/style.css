@@ -4063,8 +4063,8 @@ img.img-thumbnail:hover {
 a:focus {
   text-decoration: none !important; }
 
-nav li a:hover,
-nav li a:focus {
+.nav li a:hover,
+.nav li a:focus {
   background-color: none !important; }
 
 @font-face {
