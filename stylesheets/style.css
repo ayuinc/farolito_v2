@@ -4063,6 +4063,10 @@ img.img-thumbnail:hover {
 a:focus {
   text-decoration: none !important; }
 
+nav li a:hover,
+nav li a:focus {
+  background-color: none !important; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
