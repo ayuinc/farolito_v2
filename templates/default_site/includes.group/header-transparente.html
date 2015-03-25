@@ -35,7 +35,8 @@
           {/if}
           {if logged_in}
             {exp:member:custom_profile_data}
-              <li class="pull-left">HOLA {primer_nombre} <a class="btn-submit-header uppercase btn-ingresar mt-7" href="{path='logout'}">SALIR</a></li>
+              <li>HOLA {primer_nombre}</li>
+              <li class="pull-left"><a class="btn-submit-header uppercase btn-ingresar mt-7" href="{path='logout'}">SALIR</a></li>
             {/exp:member:custom_profile_data}
           {/if}
         </ul>
