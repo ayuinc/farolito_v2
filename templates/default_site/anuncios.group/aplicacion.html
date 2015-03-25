@@ -12,11 +12,11 @@
 	            
 	            <h1 class="medium-heading text-gray-light text-left mt-0">{get_post:posicion}</h1>
 	            
-	            {get_post:formulario_id}
-	            {get_post:composer_id}
+	            
+	            
 	            {exp:freeform:composer
-							    form_id="6"
-							    composer_template_name="otto_grill_lima"
+							    form_id="{get_post:formulario_id}"
+							    composer_template_name="{get_post:composer_id}"
 							    return="anuncios/gracias-por-postular"
 							}							
             </div>
