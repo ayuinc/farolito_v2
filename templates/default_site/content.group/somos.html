@@ -19,9 +19,9 @@
         </div>
         <section class="fundadores pt-70 pb-70" id="fundadores">
           <div class="container">
-            <h1 class="medium-heading text-primary text-center">Test Advisory Committee</h1>
+            <h3 class="medium-heading text-primary text-center">Equipo</h3>
             <ul class="grid-list grid-list-3">
-              {exp:channel:entries channel="fundador" limit="10" category="3" orderby="title" sort="DESC"}
+              {exp:channel:entries channel="fundador" limit="10" category="1" orderby="title" sort="DESC"}
               <li class="text-center">
                 <img src="{imagen-fundador}" class="fundador img-circle img-thumbnail img-responsive" alt="{title} - {cargo-fundador}">
                 <h3 class="text-primary book-heading mb-0">{title}</h3>
@@ -40,10 +40,10 @@
                 <p>{descripcion_fundador}</p>
               </li>
               {/exp:channel:entries}
-            </ul> 
-            <h3 class="medium-heading text-primary text-center">Equipo</h3>
+            </ul>
+            <h3 class="medium-heading text-primary text-center">Test Advisory Committee</h3>
             <ul class="grid-list grid-list-3">
-              {exp:channel:entries channel="fundador" limit="10" category="1" orderby="title" sort="DESC"}
+              {exp:channel:entries channel="fundador" limit="10" category="3" orderby="title" sort="DESC"}
               <li class="text-center">
                 <img src="{imagen-fundador}" class="fundador img-circle img-thumbnail img-responsive" alt="{title} - {cargo-fundador}">
                 <h3 class="text-primary book-heading mb-0">{title}</h3>
@@ -51,7 +51,7 @@
                 <p>{descripcion_fundador}</p>
               </li>
               {/exp:channel:entries}
-            </ul>                         
+            </ul> 
           </div>
         </section>
         <div class="flecha">
