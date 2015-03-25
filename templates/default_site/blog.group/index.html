@@ -11,7 +11,6 @@
             <h1 class="text-center">Blog Farolito</h1>
             <ul class="grid-list grid-list-3 grid-list-1-xs isotope-grid blog-grid pv-70">
 	            {if segment_2}
-	            {segment_2}
 	            {exp:channel:entries channel="blog" limit="10" dynamic="off" category="4"}
 	            {if:else}
 	            {exp:channel:entries channel="blog" limit="10" dynamic="off"}
