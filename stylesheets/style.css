@@ -4044,7 +4044,7 @@ figure {
 .text-blog {
   color: #555; }
 
-img.img-thumbnail:hover {
+.footer img.img-thumbnail:hover {
   opacity: 0.8;
   background: #58C6E7;
   border: 1px solid #58C6E7; }
@@ -5335,7 +5335,7 @@ header,
   height: 56px !important;
   position: fixed;
   padding-top: 10px;
-  z-index: 2;
+  z-index: 1000;
   width: 100%; }
   .header-global .pull-right {
     padding-right: 35px; }
