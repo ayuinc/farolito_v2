@@ -5,6 +5,7 @@
           {embed="includes/menu"}
         </div>
       </div>
+      {if logged_in}
       <div class="site-content">
 	      {exp:channel:entries channel="anuncios" limit="1"}
         <div class="container pvp-7">
@@ -45,6 +46,8 @@
         {embed="includes/pie-pagina"}
       {embed="includes/footer"}
       </div>
-      
+      {if:else}
+      	{redirect="/?/login/signup-login"}
+      {/if}
     </div>
 
