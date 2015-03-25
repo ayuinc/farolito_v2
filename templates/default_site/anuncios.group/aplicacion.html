@@ -12,39 +12,19 @@
 	            
 	            <h1 class="medium-heading text-gray-light text-left mt-0">{get_post:posicion}</h1>
 	            
-	            {if get_post:formulario_id!=''}
-		            <p>Completa el siguiente formulario y al finalizar confirma tu tu postulación</p>
-		            
-								<div id="wufoo-{get_post:formulario_id}">
-								Fill out my <a href="https://serviciosfarolito.wufoo.com/forms/{get_post:formulario_id}">online form</a>.
-								</div>
-								
-								<script type="text/javascript">var {get_post:formulario_id};(function(d, t) {
-								var s = d.createElement(t), options = {
-								'userName':'serviciosfarolito',
-								'formHash':'{get_post:formulario_id}',
-								'autoResize':true,
-								'height':'3100',
-								'async':true,
-								'host':'wufoo.com',
-								'header':'show',
-								'ssl':true};
-								s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-								s.onload = s.onreadystatechange = function() {
-								var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-								try { {get_post:formulario_id} = new WufooForm();{get_post:formulario_id}.initialize(options);{get_post:formulario_id}.display(); } catch (e) {}};
-								var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-								})(document, 'script');</script>
-              {if:else}
-              <p>Estás aplicando a este empleo. Por favor confirma to postulación para terminar el proceso.</p>
-							{/if}
+	            {exp:freeform:composer
+							    form_id="6"
+							    composer_template_name="atencion_al_cliente_full_time_otto_grill_lima"
+							    return="anuncios/gracias-por-postular"
+							}
+	            
 							
 							<div class="pv-21 text-left">
 	              <div class="col-md-6">
-									{exp:freeform:form
+									{!--exp:freeform:form
 									    form_id="5"
 									    return="anuncios/gracias-por-postular"
-									}
+									--}
 	                <input type="hidden" name="aplicacion_email" value="{email}">
 	                <input type="hidden" name="aplicacion_nombre" value="{screen_name}">
 	                <input type="hidden" name="aplicacion_user_id" value="{member_id}">
@@ -53,7 +33,7 @@
 	                <input type="hidden" name="aplicacion_empresa" value="{get_post:empresa}">
 	                <input type="hidden" name="flag" value="y">
 	                <button class="btn btn-postular light">CONFIRMAR POSTULACIÓN</button>
-	              {/exp:freeform:form}
+	              {!--/exp:freeform:form--}
 	              </div>
 	              <div class="col-md-6">
 	              	<a href="#" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
