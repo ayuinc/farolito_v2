@@ -4067,6 +4067,12 @@ a:focus {
 .nav li a:focus {
   background-color: none !important; }
 
+.flecha-somos {
+  position: relative;
+  z-index: 100;
+  bottom: 35px;
+  text-align: center; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
