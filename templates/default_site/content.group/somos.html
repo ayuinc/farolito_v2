@@ -19,7 +19,7 @@
         </div>
         <section class="fundadores pt-70 pb-70" id="fundadores">
           <div class="container">
-            <h3 class="medium-heading text-primary text-center">Equipo</h3>
+            <h1 class="medium-heading text-primary text-center">Equipo</h1>
             <ul class="grid-list grid-list-3">
               {exp:channel:entries channel="fundador" limit="10" category="1" orderby="title" sort="DESC"}
               <li class="text-center">
@@ -30,8 +30,8 @@
               </li>
               {/exp:channel:entries}
             </ul> 
-            <h3 class="medium-heading text-primary text-center">Asesores</h3>
-            <ul class="grid-list grid-list-3">
+            <h1 class="medium-heading text-primary text-center">Asesores</h1>
+            <ul class="grid-list grid-list-2">
               {exp:channel:entries channel="fundador" limit="10" category="2" orderby="title" sort="DESC"}
               <li class="text-center">
                 <img src="{imagen-fundador}" class="fundador img-circle img-thumbnail img-responsive" alt="{title} - {cargo-fundador}">
@@ -41,7 +41,7 @@
               </li>
               {/exp:channel:entries}
             </ul>
-            <h3 class="medium-heading text-primary text-center">Test Advisory Committee</h3>
+            <h1 class="medium-heading text-primary text-center">Test Advisory Committee</h1>
             <ul class="grid-list grid-list-3">
               {exp:channel:entries channel="fundador" limit="10" category="3" orderby="title" sort="DESC"}
               <li class="text-center">
