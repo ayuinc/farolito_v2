@@ -8,10 +8,11 @@
       <div class="site-content">
         <section class="minhp-100 blog-single">
           <div class="container pb-35">
-	          {exp:channel:entries channel="blog" limit="1"}
+	          
             <div class="row">
               <div class="col-sm-8">
-                <span>{entry_date format='%d/%m/%Y'}</span>
+	              {exp:channel:entries channel="blog" limit="1"}
+                <span>Publicado el {entry_date format='%d-%m-%Y'}</span>
                 <h2 class="text-primary">{title}</h2>
                 <div class="author-desc">
                   <div class="author" style="background-image: url({site_url}assets/img/user_male.png);"></div>
@@ -24,15 +25,15 @@
                 </div>
                 {contenido-blog}
               </div>
+              {/exp:channel:entries}
               <div class="col-sm-4 pl-28">
                 <div class="articulos pb-28">
                   <h4 class="text-warning medium-heading">Artículos</h4>
                   <div class="categories">
                     <ul class="list-unstyled">
-                      <li>Aprendizaje</li>
-                      <li>Avisos</li>
-                      <li>General</li>
-                      <li>General</li>
+                      <li><a href="{site_url}/blog/aprendizaje">Aprendizaje</a></li>
+                      <li><a href="{site_url}/blog/coaching">Coaching</li>
+                      <li><a href="{site_url}/blog/tips-tricks">Tips & Tricks</li>
                     </ul>
                   </div>
                 </div>
@@ -45,7 +46,7 @@
                 </div>
               </div>
             </div>
-            {/exp:channel:entries}
+            
           </div>
         </section>
       {embed="includes/pie-pagina"}
