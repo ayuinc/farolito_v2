@@ -12,6 +12,7 @@
 	      {if logged_in}
 	      <div class="container pvp-7">
 	        {embed="includes/aside-anuncio"}
+	        <div class="col-md-7 plp-7">
         {/if}
           <div class="hoja">
             <h1 class="mt-7 text-center text-gray-light medium-heading">Lista de oportunidades</h1>
@@ -30,6 +31,9 @@
             </div>
             {/exp:channel:entries}
           </div>
+        {if logged_in}
+	        </div>
+        {/if}  
         </div>
       </div>
       {embed="includes/pie-pagina"}
