@@ -17,9 +17,11 @@
 	            {/if}
               <li>
                 <a href="{site_url}blog/post/{url_title}">
+	                {autor}
 	                <div class="pic">
-	                  <div style="background-image: url({site_url}assets/img/user_male.png);"></div>
+	                  <div style="background-image: url({autor:imagen-fundador});"></div>
 	                </div>
+	                {/autor}
 	                <div class="content">
 	                  <h5 class="text-black pt-21">{title}</h5>
 	                  <p class="text-primary">{descripcion-blog}</p>
