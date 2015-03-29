@@ -6,8 +6,13 @@
         </div>
       </div>
       <div class="site-content">
+	      {if logged_out}
         <div class="container-sm pvp-7">
+	      {/if}
+	      {if logged_in}
+	      <div class="container pvp-7">
 	        {embed="includes/aside-anuncio"}
+        {/if}
           <div class="hoja">
             <h1 class="mt-7 text-center text-gray-light medium-heading">Lista de oportunidades</h1>
             {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
