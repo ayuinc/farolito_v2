@@ -489,7 +489,7 @@ content associated with your account will also be deleted.',
 'Your membership account has not been activated yet.',
 
 'mbr_you_are_logged_in' =>
-'Ahora está en el sistema.',
+'Ahora está en el sistema.',  
 
 'mbr_you_are_logged_out' =>
 'Usted se ha desconectado.',
