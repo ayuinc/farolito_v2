@@ -20,7 +20,7 @@
         <section class="fundadores pt-35 pb-70" id="fundadores">
           <div class="container">
             <h1 class="medium-heading text-gray text-center">Equipo</h1>
-            <ul class="grid-list grid-list-3">
+            <ul class="grid-list grid-list-3 border-bottom pb-35">
               {exp:channel:entries channel="fundador" limit="10" category="1" orderby="title" sort="ASC"}
               <li class="text-center">
                 <img src="{imagen-fundador}" class="fundador img-circle img-thumbnail img-responsive" alt="{title} - {cargo-fundador}">
@@ -30,8 +30,8 @@
               </li>
               {/exp:channel:entries}
             </ul> 
-            <h1 class="medium-heading text-gray text-center">Asesores</h1>
-            <ul class="grid-list grid-list-2">
+            <h1 class="medium-heading text-gray text-center mt-56">Asesores</h1>
+            <ul class="grid-list grid-list-2 border-bottom pb-35">
               {exp:channel:entries channel="fundador" limit="10" category="2" orderby="title" sort="DESC"}
               <li class="text-center">
                 <img src="{imagen-fundador}" class="fundador img-circle img-thumbnail img-responsive" alt="{title} - {cargo-fundador}">
@@ -41,7 +41,7 @@
               </li>
               {/exp:channel:entries}
             </ul>
-            <h1 class="medium-heading text-gray text-center">Test Advisory Committee</h1>
+            <h1 class="medium-heading text-gray text-center mt-56">Test Advisory Committee</h1>
             <ul class="grid-list grid-list-3">
               {exp:channel:entries channel="fundador" limit="10" category="3" orderby="title" sort="DESC"}
               <li class="text-center">
