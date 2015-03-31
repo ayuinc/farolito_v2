@@ -3817,6 +3817,8 @@ body {
   padding: 6px 21px !important;
   font-size: 1rem;
   border-radius: 14px !important; }
+  .btn-postular:hover {
+    background: rgba(255, 106, 73, 0.1); }
 
 .btn-crear {
   padding: 11px 29px !important;
