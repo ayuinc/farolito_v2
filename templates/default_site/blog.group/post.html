@@ -35,9 +35,9 @@
                   <h4 class="text-warning medium-heading">Artículos</h4>
                   <div class="categories">
                     <ul class="list-unstyled">
-                      <li class="mb-7"><a href="{site_url}blog/aprendizaje">Aprendizaje</a></li>
-                      <li class="mb-7"><a href="{site_url}blog/coaching">Coaching</li>
-                      <li class="mb-7"><a href="{site_url}blog/tips-tricks">Tips & Tricks</li>
+                      <li class="mb-7"><a href="{site_url}blog/aprendizaje" class="text-gray">Aprendizaje</a></li>
+                      <li class="mb-7"><a href="{site_url}blog/coaching" class="text-gray">Coaching</li>
+                      <li class="mb-7"><a href="{site_url}blog/tips-tricks" class="text-gray">Tips & Tricks</li>
                     </ul>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
                   {exp:channel:entries channel="blog" limit="2"}
                   <div class="article-preview mt-42 text-center">
                     <div class="author tiny" style="background-image: url({site_url}assets/img/user_male.png);"></div>
-                    <p>{title}</p>
+                    <p class="text-gray">{title}</p>
                   </div>
                   {/exp:channel:entries}
                 </div>
