@@ -5271,9 +5271,11 @@ header,
     padding: 28px 21px; }
     .categories ul li {
       color: #777777;
-      border-bottom: 1px solid #777777;
+      border-bottom: 1px solid #ccc;
       font-size: 18px;
       font-size: 1.2rem; }
+      .categories ul li a:hover {
+        color: #58C6E7; }
 
 .article-preview {
   background-color: #eeeeee;
@@ -5282,6 +5284,8 @@ header,
     text-align: left;
     font-size: 18px;
     font-size: 1.2rem; }
+    .article-preview p:hover {
+      color: #58C6E7; }
 
 .blog-single {
   padding-top: 98px; }
