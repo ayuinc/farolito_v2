@@ -3821,6 +3821,9 @@ body {
     background: rgba(255, 106, 73, 0.1);
     color: #FF6A49; }
 
+.border-bottom {
+  border-bottom: 2px dashed #bbb; }
+
 .btn-crear {
   padding: 11px 29px !important;
   font-size: 1rem !important;
