@@ -6,12 +6,19 @@
         </div>
       </div>
       <div class="site-content">
+	      {if logged_out}
         <div class="container-sm pvp-7">
+	      {/if}
+	      {if logged_in}
+	      <div class="container pvp-7">
+	        {embed="includes/aside-anuncio"}
+	        <div class="col-md-7 plp-7">
+        {/if}
           <div class="hoja">
             <h1 class="mt-7 text-center text-gray-light medium-heading">Lista de oportunidades</h1>
             {exp:channel:entries channel="anuncios" limit="10" dynamic="off"}
             <div class="clearfix pb-28 pt-28">
-                <h3 class="text-primary"><u>{title}</u></h3>
+                <h4 class="text-primary"><u>{title}</u></h4>
 		            <h5>
 			            <strong class="text-gray-light">Empresa:</strong> {nombre_empresa}<br>
 			            <strong class="text-gray-light">Ciudad:</strong> {localidad}<br>
@@ -24,6 +31,9 @@
             </div>
             {/exp:channel:entries}
           </div>
+        {if logged_in}
+	        </div>
+        {/if}  
         </div>
       </div>
       {embed="includes/pie-pagina"}

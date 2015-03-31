@@ -15,13 +15,17 @@
                 <span>Publicado el {entry_date format='%d-%m-%Y'}</span>
                 <h2 class="text-primary">{title}</h2>
                 <div class="author-desc">
-                  <div class="author ml-0" style="background-image: url({site_url}assets/img/user_male.png);"></div>
+	                {autor}
+	                <div class="pic">
+                  	<div class="author ml-0" style="background-image: url({autor:imagen-fundador});"></div>
+	                </div>
                   <div class="inline-block">
                     <ul class="list-unstyled">
-                      <li><h4 class="m-0 text-primary medium-heading">{autor-blog}</h4></li>
-                      <li><h5 class="m-0 book-heading">{posicion-autor-blog}</h5></li>
+                      <li><h4 class="m-0 text-primary medium-heading">{autor:title}</h4></li>
+                      <li><h5 class="m-0 book-heading">{autor:cargo-fundador}</h5></li>
                     </ul> 
                   </div>
+                  {/autor}
                 </div>
                 {contenido-blog}
               </div>
