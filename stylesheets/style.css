@@ -3621,11 +3621,11 @@ body {
     background-color: white;
     transition: all 0.3s ease; }
   #metodologia .container .external-circle .internal-circle {
-    border: 3px dashed white;
+    border: 2px dashed white;
     border-radius: 50%;
     height: 428px; }
     #metodologia .container .external-circle .internal-circle:hover {
-      border: 3px dashed #FF6A49;
+      border: 2px dashed #FF6A49;
       background-color: white;
       transition: all 0.3s ease; }
     #metodologia .container .external-circle .internal-circle .circle-text-hover h3 {
@@ -3634,12 +3634,12 @@ body {
       bottom: -5px;
       left: 65px; }
 #metodologia .container .border-middle {
-  border-left: 3px dashed #EC6645;
+  border-left: 2px dashed #EC6645;
   height: 121px; }
 #metodologia .container .line1 {
   width: 175px;
   height: 47px;
-  border-bottom: 3px dashed #EC6645;
+  border-bottom: 2px dashed #EC6645;
   -webkit-transform: translateY(10px) translateX(2px) rotate(-18deg);
   position: absolute;
   top: 158px;
@@ -3651,7 +3651,7 @@ body {
 #metodologia .container .line2 {
   width: 175px;
   height: 37px;
-  border-bottom: 3px dashed #EC6645;
+  border-bottom: 2px dashed #EC6645;
   -webkit-transform: translateY(-10px) translateX(5px) rotate(18deg);
   position: absolute;
   bottom: -221px;
@@ -3812,9 +3812,11 @@ body {
   border-radius: 3px; }
 
 .btn-postular {
-  border: 1px solid #FF6A49;
-  border-radius: 3px;
-  color: #FF6A49; }
+  border: 2px solid #FF6A49;
+  color: #FF6A49;
+  padding: 6px 21px !important;
+  font-size: 1rem;
+  border-radius: 14px !important; }
 
 .btn-crear {
   padding: 11px 29px !important;
