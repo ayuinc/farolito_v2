@@ -3720,7 +3720,7 @@ body {
     .blog-grid li:hover .content p {
       color: white; }
     .blog-grid li:hover .content h5 {
-      color: black; }
+      color: #FF6A49; }
 
 #postulantes {
   background: #6db3f2;
