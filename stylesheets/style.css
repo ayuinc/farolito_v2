@@ -4093,6 +4093,10 @@ a:focus {
   bottom: 35px;
   text-align: center; }
 
+.flecha-home img {
+  top: -68px;
+  position: relative; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
