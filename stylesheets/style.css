@@ -2000,7 +2000,8 @@ tbody.collapse.in {
       display: block;
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
-        text-decoration: none; }
+        text-decoration: none;
+        background-color: #eeeeee; }
     .nav > li.disabled > a {
       color: #777777; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
@@ -3681,7 +3682,7 @@ body {
   .blog-grid li .content {
     background-color: #eeeeee;
     padding: 14px;
-    min-height: 210px;
+    min-height: 228px;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -3762,8 +3763,8 @@ body {
 #empresas .container .dashed-down {
   border-bottom: 2px dashed #FF6A49; }
 #empresas .container .btn-empresas {
-  padding: 10px 20px;
-  border-radius: 3px;
+  padding: 12px 29px;
+  border-radius: 20px;
   font-size: 1rem; }
 #empresas .container .pasos-empresa h3 {
   font-size: 1.5rem !important; }
@@ -3776,23 +3777,31 @@ body {
   #educativos .container .dashed-down {
     border-bottom: 2px dashed white; }
   #educativos .container .btn-educativos {
-    border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 3px;
-    font-size: 1.2rem; }
+    padding: 12px 29px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid white; }
 
 .text-black {
   color: black; }
 
+.btn-blog-todos {
+  padding: 12px 51px !important;
+  border-radius: 18px !important; }
+
+.btn-todos {
+  border-radius: 17px !important;
+  padding: 10px 25px !important; }
+
 .btn-more {
-  padding: 12px 47px;
-  border-radius: 3px; }
+  padding: 12px 56px !important;
+  border-radius: 18px !important; }
 
 .btn-oportunidades {
-  padding: 12px 47px;
-  border-radius: 3px;
+  padding: 12px 42px !important;
+  border-radius: 17px !important;
   font-size: 1rem;
-  border: 2px solid white; }
+  border: 1px solid white; }
 
 .btn-relative {
   position: relative;
@@ -3806,6 +3815,11 @@ body {
   border: 1px solid #FF6A49;
   border-radius: 3px;
   color: #FF6A49; }
+
+.btn-crear {
+  padding: 11px 29px !important;
+  font-size: 1rem !important;
+  border-radius: 11px !important; }
 
 .btn-default {
   border-radius: 3px;
@@ -4022,10 +4036,10 @@ a:hover {
 #form-link {
   background: none;
   color: #FF6A49;
-  padding: 8px 20px;
+  padding: 5px 21px;
   font-size: 1rem;
-  border-radius: 3px;
-  border: 1px solid #FF6A49; }
+  border-radius: 14px;
+  border: 2px solid #FF6A49; }
   #form-link:hover {
     background: rgba(255, 106, 73, 0.1); }
 
@@ -4048,11 +4062,18 @@ figure {
   background: #58C6E7;
   border: 1px solid #58C6E7; }
 
+.btn-submit {
+  background: #9e9d9d;
+  color: white;
+  padding: 7px 39px;
+  border-radius: 14px; }
+
 .btn-ingresar {
   color: white !important;
   padding: 6px 15px !important;
   background: #aaa;
-  border-radius: 3px; }
+  border-radius: 17px;
+  border: 1px solid #9f9f9f; }
   .btn-ingresar:hover {
     opacity: 0.8; }
 
