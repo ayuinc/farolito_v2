@@ -4141,6 +4141,16 @@ a:focus {
   top: -68px;
   position: relative; }
 
+.primera-comilla {
+  position: relative;
+  right: -185px;
+  top: -10px; }
+
+.segunda-comilla {
+  left: -46px;
+  position: relative;
+  bottom: -48px; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
