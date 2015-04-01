@@ -4098,6 +4098,9 @@ figure {
 .text-blog {
   color: #555; }
 
+.border-gray-light {
+  border: 1px solid #ccc !important; }
+
 .footer img.img-thumbnail:hover {
   opacity: 0.8;
   background: #58C6E7;
