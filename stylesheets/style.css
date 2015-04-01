@@ -3614,6 +3614,39 @@ body {
   .size.xl.hero-unit .overlay {
     height: 701px; }
 
+.unit #freeform_otto_lima_primer_nombre,
+.unit #freeform_otto_lima_segundo_nombre,
+.unit #freeform_otto_pucalpa_direccion_del_domicilio_donde_vive,
+.unit #freeform_otto_lima_telefono_fijo,
+.unit #freeform_otto_lima_fecha_de_nacimiento,
+.unit #freeform_otto_lima_primer_apellido,
+.unit #freeform_otto_lima_segundo_apellido,
+.unit #freeform_otto_lima_correo_electronico,
+.unit #freeform_otto_lima_celular,
+.unit #freeform_otto_lima_estado_civil,
+.unit #freeform_otto_lima_oferta_salarial,
+.unit #freeform_otto_lima_cumplimiento_de_horarios,
+.unit #freeform_otto_lima_nivel_de_estudios,
+.unit #freeform_otto_lima_nombre_instituto,
+.unit #freeform_otto_lima_especificar_otros_medico,
+.unit #freeform_otto_lima_describa_su_expriencia {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.42857;
+  color: #9E9D9D;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+
 #metodologia .container .external-circle {
   background-color: #FF6A49;
   border-radius: 50%; }
