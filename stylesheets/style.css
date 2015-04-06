@@ -4152,6 +4152,11 @@ a:focus {
   position: relative;
   bottom: -48px; }
 
+label[for="freeform_otto_lima_experiencia"] {
+  color: #58C6E7;
+  font-size: 1.26667rem;
+  font-family: 'NeutraText-BookAlt' !important; }
+
 @font-face {
   font-family: 'NeutraText-LightAlt';
   src: url("../../app/assets/fonts/NeutraText-LightAlt.eot");
