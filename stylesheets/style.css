@@ -3860,7 +3860,8 @@ body {
 .btn-crear {
   padding: 11px 29px !important;
   font-size: 1rem !important;
-  border-radius: 11px !important; }
+  border-radius: 11px !important;
+  border: 1px solid white; }
 
 .btn-default {
   border-radius: 17px;
