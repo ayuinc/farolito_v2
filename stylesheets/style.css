@@ -4167,7 +4167,7 @@ label[for="freeform_otto_lima_centro_comerciales"] {
   padding: 6px 0px 6px 12px !important;
   background: #aaa;
   border-radius: 22px 0 1px 22px;
-  border: 1px solid #9f9f9f; }
+  border-left: 1px solid #9f9f9f; }
 
 .btn-mitad-right {
   color: white !important;
