@@ -13,12 +13,15 @@
                 <li class="pull-left"><span><a href="#" target="_blank">Vacantes</a></span></li> -->
                 {if logged_out}
                 <li class="pull-left">
-                  <a href="#" class="btn-submit-header btn-ingresar h5" id="ingresar" data-toggle="modal" data-target="#myModal">INGRESAR</a>
+                  <a class="btn-submit-header btn-ingresar h5" id="ingresar" data-toggle="modal" data-target="#myModal">INGRESAR</a>
                 </li>
                 {/if}
                 {if logged_in}
                   {exp:member:custom_profile_data}
-                    <li class="pull-left"><a class="btn-submit-header uppercase h5 btn-ingresar" href="{path='logout'}">Hola {primer_nombre} | SALIR</a></li>
+                    <li class="pull-left">
+                      <a href="btn-submit-header uppercase h5 btn-ingresar">Hola {primer_nombre} </a>
+                      <a class="btn-submit-header uppercase h5 btn-ingresar" href="{path='logout'}">| SALIR</a>
+                    </li>
                   {/exp:member:custom_profile_data}
                 {/if}
               </ul>
