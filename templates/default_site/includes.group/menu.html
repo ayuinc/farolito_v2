@@ -19,8 +19,8 @@
                 {if logged_in}
                   {exp:member:custom_profile_data}
                     <li class="pull-left">
-                      <a href="#" class="btn-submit-header uppercase h5 btn-ingresar">Hola {primer_nombre} </a>
-                      <a class="btn-submit-header uppercase h5 btn-ingresar" href="{path='logout'}">| SALIR</a>
+                      <a href="{site_url}perfil" class="btn-submit-header uppercase h5 btn-mitad-left">Hola {primer_nombre} </a>
+                      <a class="btn-submit-header uppercase h5 btn-mitad-right" href="{path='logout'}">| SALIR</a>
                     </li>
                   {/exp:member:custom_profile_data}
                 {/if}
