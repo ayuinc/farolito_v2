@@ -4169,7 +4169,8 @@ label[for="freeform_otto_lima_centro_comerciales"] {
   border-radius: 22px 0 1px 22px;
   border-left: 1px solid #9f9f9f; }
   .btn-mitad-left:hover {
-    color: #eee !important; }
+    color: #eee !important;
+    background-color: #bbb; }
 
 .btn-mitad-right {
   color: white !important;
@@ -4178,7 +4179,8 @@ label[for="freeform_otto_lima_centro_comerciales"] {
   border-radius: 0px 22px 22px 0px;
   border-right: 1px solid #9f9f9f; }
   .btn-mitad-right:hover {
-    color: #eee !important; }
+    color: #eee !important;
+    background-color: #bbb; }
 
 .line {
   display: inline !important; }
