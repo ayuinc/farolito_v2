@@ -5301,7 +5301,7 @@ header,
     border: 1px solid #777777; }
 
 .nav li a.h5:hover {
-  background: none !important; }
+  background: #aaa !important; }
 
 .footer {
   color: #777777;
