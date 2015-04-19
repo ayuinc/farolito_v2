@@ -51,6 +51,9 @@
             </div>
             <div class="col-md-2">
               <select class="selectpicker p-7 full-width border-gray-light" name="dia_nacimiento" value="{dia_nacimiento}">
+	              {if dia_nacimiento!=''}
+	              	<option value="{dia_nacimiento}" selected>{dia_nacimiento}</option>
+	              {/if}
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -321,7 +324,7 @@
             </div>
           </div>
           <div class="pv-21 text-right">
-            <a href="#" class="btn bg-gray-light light mr-7 text-white btn-crear">ATRÁS</a>
+            <!--<a href="#" class="btn bg-gray-light light mr-7 text-white btn-crear">ATRÁS</a>-->
             <input class="btn text-white btn-danger light btn-crear" type="submit" value="CONTINUAR">
           </div>
         </div>
