@@ -2,7 +2,11 @@
             <div class="experiencia mt-21">
               <h3 class="medium-heading">Experiencia laboral&nbsp;<a href="{site_url}perfil/edit-cv" class="btn btn-xs btn-default">EDITAR</a></h3>
               {exp:freeform:entries form_name="cv" limit="1" author_id="{embed:miembro}"} 
-              <h5><strong class="text-gray-light">Nombre de la empresa:</strong> {freeform:field:nombre_empresa_1}</h5>
-              <h5><strong class="text-gray-light">Fecha Inicio/Fin:</strong>({freeform:field:mes_inicio_empresa_1}/{freeform:field:year_inicio_empresa_1} -{freeform:field:mes_salida_empresa_1}/{freeform:field:year_salida_empresa_1})</h5>
+              {if freeform:field:nombre_empresa_1!=''}
+              	<h5><strong class="text-gray-light">Nombre de la empresa:</strong> {freeform:field:nombre_empresa_1}</h5>
+              {/if}
+              {if freeform:field:mes_inicio_empresa_1!=''}
+              	<h5><strong class="text-gray-light">Fecha Inicio/Fin:</strong>({freeform:field:mes_inicio_empresa_1}/{freeform:field:year_inicio_empresa_1} -{freeform:field:mes_salida_empresa_1}/{freeform:field:year_salida_empresa_1})</h5>
+              {/if}
               {/exp:freeform:entries}
             </div>
