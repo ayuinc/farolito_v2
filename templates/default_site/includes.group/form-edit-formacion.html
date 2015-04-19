@@ -202,7 +202,22 @@
       <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre" name="nombre_estudios_opcion_2" value="{freeform:edit_data:nombre_estudios_opcion_2}">
     </div>
   </div>  
-
+	<div class="row mt-21">
+    <div class="col-md-6">
+      <select class="selectpicker p-7 full-width border-gray" name="otros_estudios_opcion_3">
+        {if freeform:edit_data:otros_estudios_opcion_3!=''}
+        	<option value="{freeform:edit_data:otros_estudios_opcion_3}" selected>{freeform:edit_data:otros_estudios_opcion_3}</option>
+        {/if}  	 	      
+        <option value="Concurso">Curso</option>
+        <option value="Taller">Taller</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre" name="nombre_estudios_opcion_3" value="{freeform:edit_data:nombre_estudios_opcion_3}">
+    </div>
+  </div> 
 
   <h2 class="text-primary medium-heading pt-35">Información adicional</h2>
   <div class="row">
