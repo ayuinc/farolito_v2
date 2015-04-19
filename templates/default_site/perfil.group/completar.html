@@ -1,7 +1,5 @@
 {embed="includes/header"}
 {exp:user:edit return="perfil/cv"}
-
-
 <div class="site-wrapper">
       <div class="site-header">
         <div class="container-fluid p-0">
@@ -169,10 +167,10 @@
               <label for="exampleInputName2" class="text-gray h4 mr-14">Sexo</label>
               <label class="radio-inline h4 mt-0"> 
               {sexo}     	
-                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" name="sexo" value="Femenino" class="mt-7" {if sexo=='Femenino'}checked{/if}> Femenino
+                <input type="radio" id="inlineRadio1" name="sexo" value="Femenino" class="mt-7" {if sexo=='Femenino'}checked{/if}> Femenino
               </label>
               <label class="radio-inline h4">
-                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" name="sexo" value="Masculino" class="mt-7" {if sexo=='Masculino'}checked{/if}> Masculino
+                <input type="radio" id="inlineRadio2" name="sexo" value="Masculino" class="mt-7" {if sexo=='Masculino'}checked{/if}> Masculino
               </label>
             </div>
           </div>
