@@ -13,17 +13,31 @@
           <div class="col-md-7 plp-7">
             <div class="vista-preliminar">
               <h2 class="medium-heading text-gray-light text-left mt-0">{title}</h2>
-              <h4 class="text-primary">Empresa:</h4>
-              <p>{empresa}</p>
-              <h4 class="text-primary">Descripción:</h4>
-              <p>{anuncios_descripcion}</p>
-              <h4 class="text-primary">Funciones principales:</h4>
-              <p>{anuncios_funciones_principales}</p>
+              {if empresa!=''}
+	              <h4 class="text-primary">Empresa:</h4>
+	              <p>{empresa}</p>
+              {/if}
+              {if anuncios_descripcion!=''}
+	              <h4 class="text-primary">Descripción:</h4>
+	              <p>{anuncios_descripcion}</p>
+              {/if}
+              {if anuncios_funciones_principales!=''}
+	              <h4 class="text-primary">Funciones principales:</h4>
+	              <p>{anuncios_funciones_principales}</p>
+              {/if}
 	            <h5>
-		            <strong class="text-gray-light inline-block mb-7">Empresa:</strong> {nombre_empresa}<br>
-		            <strong class="text-gray-light inline-block mb-7">Ciudad:</strong> {localidad}<br>
-		            <strong class="text-gray-light inline-block mb-7">Salario:</strong> {salario}<br>
-		            <strong class="text-gray-light inline-block mb-7">Horario:</strong> {horario}<br>
+		            {if nombre_empresa!=''}
+		            	<strong class="text-gray-light inline-block mb-7">Empresa:</strong> {nombre_empresa}<br>
+		            {/if}
+		            {if localidad!=''}
+		            	<strong class="text-gray-light inline-block mb-7">Ciudad:</strong> {localidad}<br>
+		            {/if}
+		            {if salario!=''}
+		            	<strong class="text-gray-light inline-block mb-7">Salario:</strong> {salario}<br>
+		            {/if}
+		            {if horario!=''}
+		            	<strong class="text-gray-light inline-block mb-7">Horario:</strong> {horario}<br>
+		            {/if}
 		            <strong class="text-gray-light inline-block mb-7">Fecha de publicación:</strong> {entry_date format='%d/%m/%Y'}
 		          </h5>              
               <div class="pv-21 text-right">
