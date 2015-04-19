@@ -1,22 +1,18 @@
 {embed:miembro}
 {exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id={embed:miembro}"}
-
-{if entry_id}
-sadfadsfasd
-{if:else}
   {exp:freeform:edit 
     form_name="formacion_academica"
     return="/" 
     entry_id="{entry_id}" 
   }
-{/if}  
+  {count}
 {/exp:query}
 <input type="hidden" name="member_id" value="{member_id}" />
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
         <select class="selectpicker full-width p-7 border-gray" type="text" name="tipo_formacion" value="{freeform:edit_data:tipo_formacion}" id="freeform_tipo_formacion" maxlength="150">
-          <option>Tipo de formación</option>
+          <option>Seleccionar el tipo de formación</option>
           <option>Universitario</option>
           <option>Técnico</option>
           <option>Secundario</option>
@@ -30,7 +26,7 @@ sadfadsfasd
     <div class="col-md-6">
       <div class="form-group">
         <select class="selectpicker full-width p-7 border-gray" type="text" name="estado" value="{freeform:edit_data:estado}" id="freeform_estado" maxlength="150">
-          <option>Estado</option>
+          <option>Seleccionar el estado de tu formación</option>
           <option>Concluido</option>
           <option>En curso</option>
           <option>Trunco</option>

@@ -1,6 +1,6 @@
 {exp:freeform:form
   form_name="formacion_academica"
-  return="/"
+  return="/perfil"
 }
 
       <input type="hidden" name="member_id" value="{member_id}" />
@@ -206,15 +206,8 @@
         </div>
       </div>
       <div class="pv-21 text-right">
-        <a href="{site_url}perfil/edit-cv" class="btn bg-gray-light light mr-7 text-white btn-crear">ATRÁS</a>
-        <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light btn-crear">
-        {if freeform:no_results}
-            <p>
-                Specified form was not found. Please make sure you have
-                specified the correct short name of the form in the
-                <b>form_name</b> parameter.
-            </p>
-        {/if}
+        <a href="{site_url}perfil" class="btn bg-gray-light light mr-7 text-white btn-crear">IR AL PERFIL</a>
+        <input type="submit" name="submit" value="ENVIAR" class="btn text-white btn-danger light btn-crear">
       </div>
     </div>
 {/exp:freeform:form}
