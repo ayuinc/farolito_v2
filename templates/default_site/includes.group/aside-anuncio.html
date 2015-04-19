@@ -8,7 +8,11 @@
         </div>
         <div class="user-info">
         {exp:user:stats}
-          <h4 class="text-primary m-0">{screen_name}</h4>
+        	{if primer_nombre!=""}
+          	<h4 class="text-primary m-0">{primer_nombre} {apellido_paterno}</h4>
+          {if:else}
+          	<h4 class="text-primary m-0"><a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR TU DATOS PERSONALES</a></h4>
+          {/if}
         {/exp:user:stats}
         </div>
       </div>
