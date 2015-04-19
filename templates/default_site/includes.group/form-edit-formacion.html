@@ -224,46 +224,58 @@
     <div class="col-md-6">
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Manejo de software:</label>
-        <select class="selectpicker p-7 full-width border-gray" name="manejo_software" value="{freeform:edit_data:manejo_software}" id="freeform_manejo_software">
-          <option>software...</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+        <select class="selectpicker p-7 full-width border-gray" name="manejo_software" id="freeform_manejo_software">
+	        {if freeform:edit_data:manejo_software!=''}
+	        	<option value="{freeform:edit_data:manejo_software}" selected>{freeform:edit_data:manejo_software}</option>
+	        {/if}  	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
         </select>
       </div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Carrera:</label>
-        <select class="selectpicker p-7 full-width border-gray" name="tipo_carrera_adicional" value="{freeform:edit_data:tipo_carrera_adicional}" id="freeform_tipo_carrera_adicional">
-          <option>software...</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+        <select class="selectpicker p-7 full-width border-gray" name="tipo_carrera_adicional" id="freeform_tipo_carrera_adicional">
+	        {if freeform:edit_data:tipo_carrera_adicional!=''}
+	        	<option value="{freeform:edit_data:tipo_carrera_adicional}" selected>{freeform:edit_data:tipo_carrera_adicional}</option>
+	        {/if}  	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
         </select> 
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Conocimiento de normas:</label>
-        <select class="selectpicker p-7 full-width border-gray" name="conocimiento_normas" value="{freeform:edit_data:conocimiento_normas}" id="freeform_conocimiento_normas">
-          <option>software...</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+        <select class="selectpicker p-7 full-width border-gray" name="conocimiento_normas" id="freeform_conocimiento_normas">
+	        {if freeform:edit_data:conocimiento_normas!=''}
+	        	<option value="{freeform:edit_data:conocimiento_normas}" selected>{freeform:edit_data:conocimiento_normas}</option>
+	        {/if}  	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
         </select> 
       </div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Membresía en colegios:</label>
-        <select class="selectpicker p-7 full-width border-gray" value="{freeform:edit_data:membresias_colegios}" id="exampleInputName2">
-          <option>software...</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+        <select class="selectpicker p-7 full-width border-gray" id="exampleInputName2">
+	        {if freeform:edit_data:membresias_colegios!=''}
+	        	<option value="{freeform:edit_data:membresias_colegios}" selected>{freeform:edit_data:membresias_colegios}</option>
+	        {/if}  	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
         </select> 
       </div>
     </div>
   </div>
   <div class="pv-21 text-right">
-    <a href="#" class="btn bg-gray-light light mr-7 text-white btn-crear">ATRÁS</a>
+    <a href="#" class="btn bg-gray-light light mr-7 text-white btn-crear">IR AL PERFIL</a>
     <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light btn-crear">
   </div>
 {/exp:freeform:edit}     
