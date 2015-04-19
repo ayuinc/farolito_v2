@@ -156,29 +156,62 @@
   <div class="row mb-14">
     <div class="col-md-12">
       <label for="exampleInputName2" class="text-gray h4 mr-21">Estado</label>
-      <select class="selectpicker  pv-7 pl-7 pr-42 border-gray" type="text" name="estado_estudios" value="{freeform:edit_data:estado_estudios}" id="freeform_estado_estudios" maxlength="150">
-        <option>Actualmente estudiando</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+      <select class="selectpicker  pv-7 pl-7 pr-42 border-gray" type="text" name="estado_estudios" id="freeform_estado_estudios" maxlength="150">
+        {if freeform:edit_data:edit_data:estado_estudios!=''}
+        	<option value="{freeform:edit_data:edit_data:estado_estudios}" selected>{freeform:edit_data:edit_data:estado_estudios}</option>
+        {/if}  	      
+        <option value="Actualmente estudiando">Actualmente estudiando</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
       </select>
     </div>
   </div>
   <div class="row mt-21">
-    <div class="col-md-4 pr-0">
-      <label class="checkbox-inline h4">
-        <input type="checkbox" id="inlineCheckbox2" value="option2" class="mt-7">Agregar otros estudios
-      </label>
+    <div class="col-md-12 pr-0">
+      <label class="checkbox-inline h4">Agregar otros estudios</label>
     </div>
     <div class="col-md-6">
       <select class="selectpicker p-7 full-width border-gray">
+        {if freeform:edit_data:edit_data:estado_estudios!=''}
+        	<option value="{freeform:edit_data:edit_data:estado_estudios}" selected>{freeform:edit_data:edit_data:estado_estudios}</option>
+        {/if}  	 	      
         <option>Curso - taller</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
       </select>
     </div>
+    <div class="col-md-6"></div>
   </div>
+  <div class="row mt-21">
+    <div class="col-md-6">
+      <select class="selectpicker p-7 full-width border-gray">
+        {if freeform:edit_data:edit_data:estado_estudios!=''}
+        	<option value="{freeform:edit_data:edit_data:estado_estudios}" selected>{freeform:edit_data:edit_data:estado_estudios}</option>
+        {/if}  	 	      
+        <option>Curso - taller</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+  <div class="row mt-21">
+    <div class="col-md-6">
+      <select class="selectpicker p-7 full-width border-gray">
+        {if freeform:edit_data:edit_data:estado_estudios!=''}
+        	<option value="{freeform:edit_data:edit_data:estado_estudios}" selected>{freeform:edit_data:edit_data:estado_estudios}</option>
+        {/if}  	 	      
+        <option>Curso - taller</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div class="col-md-6"></div>
+  </div>  
   <div class="row">
     <div class="col-md-6 col-md-offset-4">
       <label for="exampleInputName2" class="text-gray h4">Nombre del curso - taller</label>
