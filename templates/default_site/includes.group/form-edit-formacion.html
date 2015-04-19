@@ -157,8 +157,8 @@
     <div class="col-md-12">
       <label for="exampleInputName2" class="text-gray h4 mr-21">Estado</label>
       <select class="selectpicker  pv-7 pl-7 pr-42 border-gray" type="text" name="estado_estudios" id="freeform_estado_estudios" maxlength="150">
-        {if freeform:edit_data:edit_data:estado_estudios!=''}
-        	<option value="{freeform:edit_data:edit_data:estado_estudios}" selected>{freeform:edit_data:edit_data:estado_estudios}</option>
+        {if freeform:edit_data:estado_estudios!=''}
+        	<option value="{freeform:edit_data:estado_estudios}" selected>{freeform:edit_data:estado_estudios}</option>
         {/if}  	      
         <option value="Actualmente estudiando">Actualmente estudiando</option>
         <option value="2">2</option>
@@ -173,8 +173,8 @@
     </div>
     <div class="col-md-6">
       <select class="selectpicker p-7 full-width border-gray">
-        {if freeform:edit_data:edit_data:otros_estudios_opcion_1!=''}
-        	<option value="{freeform:edit_data:otros_estudios_opcion_1}" selected>{freeform:edit_data:edit_data:otros_estudios_opcion_1}</option>
+        {if freeform:edit_data:otros_estudios_opcion_1!=''}
+        	<option value="{freeform:edit_data:otros_estudios_opcion_1}" selected>{freeform:edit_data:otros_estudios_opcion_1}</option>
         {/if}  	 	      
         <option>Curso</option>
         <option>Taller</option>
@@ -189,7 +189,7 @@
   <div class="row mt-21">
     <div class="col-md-6">
       <select class="selectpicker p-7 full-width border-gray">
-        {if freeform:edit_data:edit_data:otros_estudios_opcion_2!=''}
+        {if freeform:edit_data:otros_estudios_opcion_2!=''}
         	<option value="{freeform:edit_data:otros_estudios_opcion_2}" selected>{freeform:edit_data:otros_estudios_opcion_2}</option>
         {/if}  	 	      
         <option>Curso</option>
@@ -205,7 +205,7 @@
   <div class="row mt-21">
     <div class="col-md-6">
       <select class="selectpicker p-7 full-width border-gray">
-        {if freeform:edit_data:edit_data:otros_estudios_opcion_3!=''}
+        {if freeform:edit_data:otros_estudios_opcion_3!=''}
         	<option value="{freeform:edit_data:otros_estudios_opcion_3}" selected>{freeform:edit_data:otros_estudios_opcion_3}</option>
         {/if}  	 	      
         <option>Curso</option>
