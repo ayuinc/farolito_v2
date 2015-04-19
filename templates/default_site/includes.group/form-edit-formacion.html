@@ -1,7 +1,7 @@
 {exp:query sql="SELECT entry_id FROM exp_freeform_form_entries_2 WHERE author_id={embed:miembro}"}
   {exp:freeform:edit 
     form_name="formacion_academica"
-    return="/" 
+    return="perfil/formacion-academica" 
     entry_id="{entry_id}" 
   }
   {if no_results}
@@ -153,7 +153,7 @@
       </select>
     </div>
   </div>
-  <div class="row mb-14">
+  <!--<div class="row mb-14">
     <div class="col-md-12">
       <label for="exampleInputName2" class="text-gray h4 mr-21">Estado</label>
       <select class="selectpicker  pv-7 pl-7 pr-42 border-gray" type="text" name="estado_estudios" id="freeform_estado_estudios" maxlength="150">
@@ -167,7 +167,7 @@
       </select>
     </div>
   </div>
-  <!--<div class="row mt-21">
+  <div class="row mt-21">
     <div class="col-md-12 pb-14">
       <h4>Agregar otros estudios</h4>
     </div>
