@@ -19,7 +19,7 @@
       </div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Puesto</label>
-        <input type="text" class="form-control" name="puesto_empresa_1" value="" id="freeform_puesto_empresa_1" maxlength="150">
+        <input type="text" class="form-control" name="puesto_empresa_1" value="{freeform:edit_data:puesto_empresa_1}" id="freeform_puesto_empresa_1" maxlength="150">
       </div>
     </div>
   </div>
@@ -27,11 +27,14 @@
     <div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Area del puesto</label><br>
-        <select class="selectpicker full-width p-7" name="area_puesto_empresa_1" value="" id="freeform_area_puesto_empresa_1" maxlength="150">
-          <option>Area del puesto</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+        <select class="selectpicker full-width p-7" name="area_puesto_empresa_1" id="freeform_area_puesto_empresa_1" maxlength="150">
+	        {if freeform:edit_data:area_puesto_empresa_1!=''}
+	        	<option value="{freeform:edit_data:area_puesto_empresa_1}">{freeform:edit_data:area_puesto_empresa_1}</option>
+	        {/if}
+          <option value="Area del puesto">Area del puesto</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
         </select>
       </div>
     </div>
@@ -405,8 +408,7 @@
   </div>
 </div>
 <div class="pv-21 text-right">
-  <a href="#" class="btn bg-gray-light light mr-7 text-white">ATRÁS</a>
-  <input type="submit" name="submit" value="CONTINUAR" class="btn text-white btn-danger light">
-
+  <a href="{site_url}anuncios/todos" class="btn bg-gray-light light mr-7 text-white btn-crear">IR AL PERFIL</a>
+  <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light btn-crear">
 </div>
 {/exp:freeform:edit}

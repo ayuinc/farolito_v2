@@ -2066,7 +2066,7 @@ to the module's control panel in the ExpressionEngine Control Panel",
 "You did not select a file to upload.",
 
 'upload_invalid_filetype' =>
-"The uploaded file exceeds the maximum allowed size in your PHP ",
+"El archivo subido excede el tamaño máximo permitido en su PHP ",
 
 'upload_invalid_filesize' =>
 "The file you are attempting to upload is larger than the permitted size.",
