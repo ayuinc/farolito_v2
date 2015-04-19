@@ -346,11 +346,14 @@
           <div class="row">
             <div class="col-md-6">
               <label for="exampleInputEmail1" class="text-gray h4">Ciudades en donde busca trabajo:</label><br>
-              <select class="selectpicker p-7 full-width border-gray-light ">
-                <option>Arequipa</option>
-                <option>Chiclayo</option>
-                <option>Lima</option>
-                <option>Trujillo</option>
+              <select class="selectpicker p-7 full-width border-gray-light" name="{ciudades}">
+	              {if ciudades!=''}
+	              	<option value="{ciudades}">{ciudades}</option>
+	              {/if}
+                <option value="Arequipa">Arequipa</option>
+                <option value="Chiclayo">Chiclayo</option>
+                <option value="Lima">Lima</option>
+                <option value="Trujillo">Trujillo</option>
               </select>
             </div>
           </div>
