@@ -181,13 +181,12 @@
             </div>
             <div class="col-md-2">
 	            {tipo_documento}
-              <select class="selectpicker p-7 full-width pr-0 border-gray-light" name="tipo_documento" value="{tipo_documento}">
-	              
+              <select class="selectpicker p-7 full-width pr-0 border-gray-light" name="tipo_documento">
 	              {if tipo_documento!=''}
 	              	<option selected>{tipo_documento}</option>
 	              {/if}
-                <option>D.N.I</option>
-                <option>C.E.</option>
+                <option value="D.N.I">D.N.I</option>
+                <option value="C.E.">C.E.</option>
               </select>
             </div>
             <div class="col-md-4">
