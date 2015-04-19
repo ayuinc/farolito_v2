@@ -167,11 +167,11 @@
           <div class="row mv-7">
             <div class="col-md-8">
               <label for="exampleInputName2" class="text-gray h4 mr-14">Sexo</label>
-              <label class="radio-inline h4 mt-0">
-                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" name="sexo" value="{sexo}" class="mt-7"> Femenino
+              <label class="radio-inline h4 mt-0">      	
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" name="sexo" value="{sexo}" class="mt-7" {if sexo=='Femenino'}checked{/if}> Femenino
               </label>
               <label class="radio-inline h4">
-                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" name="sexo" value="{sexo}" class="mt-7"> Masculino
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" name="sexo" value="{sexo}" class="mt-7" {if sexo=='Masculino'}checked{/if}> Masculino
               </label>
             </div>
           </div>
