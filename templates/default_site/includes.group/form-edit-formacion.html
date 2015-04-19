@@ -13,10 +13,13 @@
     <div class="col-md-6">
       <div class="form-group">
         <select class="selectpicker full-width p-7 border-gray" type="text" name="tipo_formacion" value="{freeform:edit_data:tipo_formacion}" id="freeform_tipo_formacion" maxlength="150">
+	        {if freeform:edit_data:tipo_formacion!=''}
+	        	<option value="{freeform:edit_data:tipo_formacion}" selected>{freeform:edit_data:tipo_formacion}</option>
+	        {/if}
           <option>Seleccionar el tipo de formación</option>
-          <option>Universitario</option>
-          <option>Técnico</option>
-          <option>Secundario</option>
+          <option value="Universitario">Universitario</option>
+          <option value="Técnico">Técnico</option>
+          <option value="Secundario">Secundario</option>
         </select>
       </div>
       <div class="form-group">
