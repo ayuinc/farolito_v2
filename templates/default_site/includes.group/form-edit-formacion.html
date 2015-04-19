@@ -1,12 +1,15 @@
 {embed:miembro}
 {exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id={embed:miembro}"}
 
-{entry_id}
+{if entry_id==''}
+sadfadsfasd
+{if:else}
   {exp:freeform:edit 
     form_name="formacion_academica"
     return="/" 
     entry_id="{entry_id}" 
   }
+{/if}  
 {/exp:query}
 <input type="hidden" name="member_id" value="{member_id}" />
   <div class="row">
