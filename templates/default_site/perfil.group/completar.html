@@ -229,43 +229,49 @@
           <div class="row">
             <div class="col-md-4">
               <label for="exampleInputEmail1" class="text-gray h4">País</label><br>
-              <select class="selectpicker p-7 full-width border-gray-light" name="pais" value="{pais}">
-                <option>Perú</option>
+              <select class="selectpicker p-7 full-width border-gray-light" name="pais">
+                <option value="{pais}" selected>Perú</option>
               </select>
             </div>
             <div class="col-md-4">
               <label for="exampleInputEmail1" class="text-gray h4">Departamento</label><br>
-              <select class="selectpicker p-7 full-width border-gray-light" id="departamento-1" name="departamento" value="{departamento}">
-                <option>Amazonas</option>
-                <option>Ancash</option>
-                <option>Apurimac</option>
-                <option>Arequipa</option>
-                <option>Ayacucho</option>
-                <option>Cajamarca</option>
-                <option>Callao</option>
-                <option>Cusco</option>
-                <option>Huancavelica</option>
-                <option>Huanuco</option>
-                <option>Ica</option>
-                <option>Junin</option>
-                <option>La Libertad</option>
-                <option>Lambayeque</option>
-                <option>Lima</option>
-                <option>Loreto</option>
-                <option>Madre De Dios</option>
-                <option>Moquegua</option>
-                <option>Pasco</option>
-                <option>Piura</option>
-                <option>Puno</option>
-                <option>San Martin</option>
-                <option>Tacna</option>
-                <option>Tumbes</option>
-                <option>Ucayali</option>
+              <select class="selectpicker p-7 full-width border-gray-light" id="departamento-1" name="departamento">
+	              {if departamento!=''}
+	              	<option value="{departamento}">{departamento}</option>
+	              {/if}
+                <option value="Amazonas">Amazonas</option>
+                <option value="Ancash">Ancash</option>
+                <option value="Apurimac">Apurimac</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Ayacucho">Ayacucho</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Callao">Callao</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Huancavelica">Huancavelica</option>
+                <option value="Huanuco">Huanuco</option>
+                <option value="Ica">Ica</option>
+                <option value="Junin">Junin</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="Lambayeque">Lambayeque</option>
+                <option value="Lima">Lima</option>
+                <option value="Loreto">Loreto</option>
+                <option value="Madre de Dios">Madre De Dios</option>
+                <option value="Moquegua">Moquegua</option>
+                <option value="Pasco">Pasco</option>
+                <option value="Piura">Piura</option>
+                <option value="Puno">Puno</option>
+                <option value="San Martin">San Martin</option>
+                <option value="Tacna">Tacna</option>
+                <option value="Tumbes">Tumbes</option>
+                <option value="Ucayali">Ucayali</option>
               </select>
             </div>
             <div class="col-md-4">
               <label for="exampleInputEmail1" class="text-gray h4">Provincia</label><br>
               <select class="selectpicker p-7 full-width border-gray-light" id="provincia-1" name="provincia" value="{provincia}">
+	              {if provincia!=''}
+	              	<option value="{provincia}">{provincia}</option>
+	              {/if}	              
               </select>
             </div>
           </div>
