@@ -1,22 +1,24 @@
 <div class="col-md-5 border-right prp-7 ">
   <div class="info">
     <div class="user">
-      
+      {exp:user:stats}
       <div class="user-card user-card-round size xs">
-        <div class="user-pic flex-middle">                        
-          <img src="{site_url}assets/icons/iconos-22.png" alt="">
+        <div class="user-pic flex-middle">    
+	        {if avatar_filename!=''}                    
+	        <img src="{avatar_url}{avatar_filename}" width="{avatar_width}" height="{avatar_height}" alt="{primer_nombre} {apellido_paterno}"/>
+	        {if:else}
+          <img src="{site_url}assets/icons/iconos-22.png" alt="{primer_nombre} {apellido_paterno}">
+          {/if}
         </div>
         <div class="user-info">
-        {exp:user:stats}
         	{if primer_nombre!=""}
           	<h4 class="text-primary m-0">{primer_nombre} {apellido_paterno}</h4>
           {if:else}
           	<h4 class="text-primary m-0"><a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR TU DATOS PERSONALES</a></h4>
           {/if}
-        {/exp:user:stats}
         </div>
       </div>
-      
+      {/exp:user:stats}
     </div>                
   </div>
   <div class="informacion-personal">
