@@ -40,11 +40,11 @@
 		            {/if}
 		            <strong class="text-gray-light inline-block mb-7">Fecha de publicación:</strong> {entry_date format='%d/%m/%Y'}
 		          </h5>              
-              <div class="pv-21 text-right">
-                <div class="col-md-6">
+              <div class="pv-21">
+                <div class="col-md-6 p-0">
                 	<a href="{site_url}anuncios/todos" class="btn btn-default light mr-7">VOLVER A LA LISTA</a>
                 </div>	              
-                <div class="col-md-6">
+                <div class="col-md-6 p-0 text-right">
 	                <form method="post" action="{site_url}index.php/anuncios/aplicacion">
 		                <input type="hidden" name="XID" value="{XID_HASH}"> 
 		                <input type="hidden" name="member_id" value="{member_id}">
