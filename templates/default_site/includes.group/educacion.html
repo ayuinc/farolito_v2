@@ -1,7 +1,8 @@
             <div class="educacion mt-21">
               <h3 class="medium-heading">Educación&nbsp;<a href="{site_url}perfil/edit-formacion-academica" class="btn btn-xs btn-default">EDITAR</a></h3>
+              {member_id}
               {exp:freeform:entries form_name="formacion_academica" limit="1" author_id="{embed:miembro}"} 
-              <h5><strong class="text-gray-light">Carrera:</strong></h5>
+              <h5><strong class="text-gray-light">Carrera:</strong> {freeform:field:tipo_carrera}</h5>
               <h5><strong class="text-gray-light">Nombre de la institución: </strong>{freeform:field:nombre_institucion}</h5>
               {/exp:freeform:entries}
             </div>
