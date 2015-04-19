@@ -24,13 +24,13 @@ $lang = array(
 'Display smiley images in entries.',
 
 'invalid_email_address' =>
-'You did not submit a valid email address',
+'Usted no envíe un email válido',
 
 'disallowed_screen_chars' =>
-'Screen Name contains illegal characters',
+'Nombre de pantalla contiene caracteres no válidos',
 
 'return_to_forum' =>
-'Return to the forums',
+'Regreso a los foros',
 
 'settings_update' =>
 'Settings Update Form',
