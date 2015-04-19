@@ -52,7 +52,7 @@
             <div class="col-md-2">
               <select class="selectpicker p-7 full-width border-gray-light" name="dia_nacimiento" value="{dia_nacimiento}">
 	              {if dia_nacimiento!=''}
-	              	<option value="{dia_nacimiento}" selected>{dia_nacimiento}</option>
+	              	<option selected>{dia_nacimiento}</option>
 	              {/if}
                 <option>1</option>
                 <option>2</option>
@@ -89,6 +89,9 @@
             </div>
             <div class="col-md-2">
               <select class="selectpicker p-7 full-width border-gray-light" name="mes_nacimiento" value="{mes_nacimiento}">
+	              {if mes_nacimiento!=''}
+	              	<option selected>{mes_nacimiento}</option>
+	              {/if}	              
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -105,6 +108,19 @@
             </div>
             <div class="col-md-2">
               <select class="selectpicker p-7 full-width border-gray-light" name="year_nacimiento" value="{year_nacimiento}">
+	              {if year_nacimiento!=''}
+	              	<option selected>{year_nacimiento}</option>
+	              {/if}	 	              
+                <option>1950</option>
+                <option>1951</option>
+                <option>1952</option>
+                <option>1953</option>
+                <option>1954</option>
+                <option>1955</option>
+                <option>1956</option>
+                <option>1957</option>
+                <option>1958</option>
+                <option>1959</option>
                 <option>1960</option>
                 <option>1961</option>
                 <option>1962</option>
