@@ -18,13 +18,25 @@
   <div class="informacion-personal">
     {exp:user:stats}
     <h3 class=" medium-heading">Información personal&nbsp;<a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR</a></h3>
+    {if dia_nacimiento!=''}
     <h5><strong class="text-gray-light">Fecha de nacimiento:</strong>{dia_nacimiento}/{mes_nacimiento}/{year_nacimiento}</h5>
+    {/if}
+    {if sexo!=''}
     <h5><strong class="text-gray-light">Sexo:</strong> {sexo}</h5>
+    {/if}
+    {if documento_identidad!=''}
     <h5><strong class="text-gray-light">DNI:</strong> {documento_identidad}</h5>
+    {/if}
     <h5><strong class="text-gray-light">Correo electrónico:</strong> {email}</h5>
+    {if telefono_fijo!=''}
     <h5><strong class="text-gray-light">Telefono fijo:</strong> {telefono_fijo}</h5>
+    {/if}
+    {if estado_civil!=''}
     <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
+    {/if}
+    {if pais!=''}
     <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
+    {/if}
     {/exp:user:stats}
   </div>
   {exp:member:custom_profile_data}                
