@@ -273,7 +273,7 @@ $lang = array(
 'Avatar has been updated',
 
 'avatar_upload_disallowed' =>
-'Avatar uploads are not currently enabled.',
+'Uploads Avatar no están habilitadas actualmente',
 
 'image_max_size_exceeded' =>
 'The maximum allowed size for images is %s kilobytes',
