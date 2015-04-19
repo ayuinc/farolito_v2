@@ -165,8 +165,7 @@
           <div class="row mv-7">
             <div class="col-md-8">
               <label for="exampleInputName2" class="text-gray h4 mr-14">Sexo</label>
-              <label class="radio-inline h4 mt-0"> 
-              {sexo}     	
+              <label class="radio-inline h4 mt-0">     	
                 <input type="radio" id="inlineRadio1" name="sexo" value="Femenino" class="mt-7" {if sexo=='Femenino'}checked{/if}> Femenino
               </label>
               <label class="radio-inline h4">
@@ -182,6 +181,9 @@
             </div>
             <div class="col-md-2">
               <select class="selectpicker p-7 full-width pr-0 border-gray-light" name="tipo_documento" value="{tipo_documento}">
+	              {if tipo_documento!=''}
+	              	<option sleceted>{tipo_documento}</option>
+	              {/if}
                 <option>D.N.I</option>
                 <option>C.E.</option>
               </select>
