@@ -17,14 +17,14 @@
           
 					<h1 class="light-heading text-primary">¿Perdiste tu contraeña?</h1>
 					<p>
-					    Si ha olvidado su contraseña, introduzca su dirección de correo electrónico registraste y recibirás un correo electrónico con instrucciones para restablecer tu contraseña.
+					    Si has olvidado tu contraseña, introduce la dirección de correo electrónico que registraste y recibirás un correo electrónico con instrucciones para restablecer tu contraseña.
 					</p>
 					
 					{exp:user:forgot_password
 					    password_reset_template="login/resetear-contrasena/%id%"
 					    password_reset_email_subject="Pedido de cambio de contraseña"
-					    password_reset_email_template=".user_inc/password_reset_email_template"
-					    return="user/thanks"
+					    password_reset_email_template="login/email-reseteo-contrasena"
+					    return="login/gracias"
 					}
 					
 					<p>
