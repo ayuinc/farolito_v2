@@ -13,6 +13,40 @@
           <div class="pv-14 text-center mtp-7">
             <a href="{site_url}anuncios/todos" class="btn btn-danger btn-complete btn-lg light btn-relative btn-crear">REGRESAR A LOS ANUNCIOS</a>
           </div>
+          
+          
+          
+					<h1 class="light-heading text-primary">Restablecer Contraseña</h1>
+					<p>
+					    Este formulario te permitirá cambiar tu contraseña.
+					</p>
+					
+					{exp:user:reset_password
+					    reset_code="{segment_3}"
+					    return="login/gracias-restablecer"
+					}
+					    {if user_no_results}
+					        <h4>El token de restabecimiento es inválido.</h4>
+					    {/if}
+					
+					    <h4>Restablecer</h4>
+					
+					    <p>
+					        <label for="password">Nueva contraseña</label><br/>
+					        <input type="password" name="password" />
+					    </p>
+					
+					    <p>
+					        <label for="password_confirm">Confirmar la nueva contraseña</label><br/>
+					        <input
+					        <input type="password" name="password_confirm" />
+					    </p>
+					
+					    <p>
+					        <input type="submit" value="Enviar" class="submit" class="btn btn-danger btn-complete btn-lg light btn-crear"/>
+					    </p>
+					{/exp:user:reset_password}          
+          
         </div>
         {embed="includes/pie-pagina"}
       {embed="includes/footer"}        
