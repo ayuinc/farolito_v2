@@ -13,6 +13,32 @@
           <div class="pv-14 text-center mtp-7">
             <a href="{site_url}anuncios/todos" class="btn btn-danger btn-complete btn-lg light btn-relative btn-crear">REGRESAR A LOS ANUNCIOS</a>
           </div>
+          
+          
+					<h1 class="light-heading text-primary">¿Perdiste tu contraeña?</h1>
+					<p>
+					    Si ha olvidado su contraseña, introduzca su dirección de correo electrónico registraste y recibirás un correo electrónico con instrucciones para restablecer tu contraseña.
+					</p>
+					
+					{exp:user:forgot_password
+					    password_reset_template="login/resetear-contrasena/%id%"
+					    password_reset_email_subject="Pedido de cambio de contraseña"
+					    password_reset_email_template=".user_inc/password_reset_email_template"
+					    return="user/thanks"
+					}
+					
+					<p>
+					    <label for="email">
+					        Correo electrónico <span class="required">*</span>
+					    </label>
+					    <input type="text" name="email" id="email" />
+					</p>
+					<p>
+					    <input type="submit" name="submit" value="Submit" />
+					</p>
+					
+					{/exp:user:forgot_password}          
+          
         </div>
         {embed="includes/pie-pagina"}
       {embed="includes/footer"}        
