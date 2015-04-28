@@ -174,3 +174,6 @@ $config['rewrite_short_tags'] = TRUE;
 
 /* End of file config.php */
 /* Location: ./system/expressionengine/config/config.php */
+
+$config['email_newline'] = "\r\n"; 
+$config['email_crlf'] = "\r\n";
