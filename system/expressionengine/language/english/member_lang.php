@@ -75,7 +75,7 @@ $lang = array(
 'You must submit all fields',
 
 'invalid_existing_un_pw' =>
-'The existing username and/or password you submitted are not valid',
+'El nombre de usuario existente y / o la contraseña que indicó no son válidos',
 
 'unpw_updated' =>
 'Your settings have been updated.  You may now log-in.',
