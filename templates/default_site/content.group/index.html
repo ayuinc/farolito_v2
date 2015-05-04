@@ -1,8 +1,8 @@
 {embed="includes/header"}
     <div class="site-wrapper">
       <div class="site-menu"></div>
-      {exp:channel:entries channel="home" limit="1"}
       <div class="site-content">
+      {exp:channel:entries channel="home" limit="1"}
         <section style="background-image: url({imagen_home})" class="bg-img-block minhp-100  flex-middle">
           <div class="container-fluid">
             {embed="includes/header-transparente"}
@@ -20,6 +20,7 @@
             <img src="{site_url}assets/img/arrow_down.png" alt="">
           </div> -->
         </section>
+        {/exp:channel:entries}
         <div class="flecha flecha-home">
           <a href="#metodologia"><img src="http://farolito.co/assets/img/arrow_down.png" alt=""></a>
         </div>
@@ -348,6 +349,6 @@
         </section>
         {embed="includes/pie-pagina"}
       </div>
-      {/exp:channel:entries}
+
     </div> 
  {embed="includes/footer"}
