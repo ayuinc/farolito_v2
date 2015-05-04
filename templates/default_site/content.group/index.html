@@ -1,6 +1,7 @@
 {embed="includes/header"}
     <div class="site-wrapper">
       <div class="site-menu"></div>
+      {exp:channel:entries channel="home" limit="1"}
       <div class="site-content">
         <section style="background-image: url({imagen_home})" class="bg-img-block minhp-100  flex-middle">
           <div class="container-fluid">
@@ -347,5 +348,6 @@
         </section>
         {embed="includes/pie-pagina"}
       </div>
+      {/exp:channel:entries}
     </div> 
  {embed="includes/footer"}
