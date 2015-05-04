@@ -19,7 +19,7 @@
                 {if logged_in}
                   {exp:member:custom_profile_data}
                     <li class="pull-left">
-                      <a href="{site_url}perfil" class="btn-submit-header uppercase h5 btn-mitad-left">Hola {primer_nombre} </a>
+                      <a href="{site_url}perfil" class="btn-submit-header uppercase h5 btn-mitad-left">{if primer_nombre!=''}Hola {primer_nombre}{if:else}INGRESA A TU PERFIL{/if} </a>
                       <a class="btn-submit-header uppercase h5 btn-mitad-right" href="{path='logout'}">| SALIR</a>
                     </li>
                   {/exp:member:custom_profile_data}

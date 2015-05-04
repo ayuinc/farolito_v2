@@ -1,0 +1,38 @@
+{embed="includes/header"}
+    <div class="site-wrapper">
+      <div class="site-header">
+        <div class="container-fluid p-0">
+          {embed="includes/menu"}
+        </div>
+      </div>
+      <div class="site-content">
+        <div class="container text-center flex-middle-center minhp-100 ptp-7 ph-21">
+					<h1 class="light-heading text-primary">¿Perdiste tu contraeña?</h1>
+					<p>
+					    Si has olvidado tu contraseña, introduce la dirección de correo electrónico que registraste y recibirás un correo electrónico con instrucciones para restablecer tu contraseña.
+					</p>
+					
+					{exp:user:forgot_password
+					    password_reset_template="login/resetear-contrasena/%id%"
+					    password_reset_email_subject="Pedido de cambio de contraseña"
+					    password_reset_email_template="login/email-reseteo-contrasena"
+					    return="login/gracias-cambio-contrasena"
+					}
+					
+					<p>
+					    <label for="email">
+					        Correo electrónico <span class="required">*</span>
+					    </label>
+					    <input type="text" name="email" id="email" />
+					</p>
+					<p>
+					    <input type="submit" name="submit" value="Cambiar Contraseña" class="btn btn-danger btn-complete btn-lg light btn-crear" />
+					</p>
+					
+					{/exp:user:forgot_password}          
+          
+        </div>
+        {embed="includes/pie-pagina"}
+      {embed="includes/footer"}        
+      </div>
+    </div>

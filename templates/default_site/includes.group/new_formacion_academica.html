@@ -1,220 +1,237 @@
 {exp:freeform:form
   form_name="formacion_academica"
-  return="/"
+  return="/anuncios/todos"
 }
-
-      <input type="hidden" name="member_id" value="{member_id}" />
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <select class="selectpicker full-width p-7 border-gray-light" type="text" name="tipo_formacion" value=" " id="freeform_tipo_formacion" maxlength="150">
-              <option>Tipo de formación</option>
-              <option>Universitario</option>
-              <option>Técnico</option>
-              <option>Secundario</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Carrera:</label>
-            <input type="text" class="form-control" placeholder="Ingresar carrera" name="tipo_carrera" value=" " id="freeform_tipo_carrera">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <select class="selectpicker full-width p-7 border-gray-light" type="text" name="estado" value=" " id="freeform_estado" maxlength="150">
-              <option>Estado</option>
-              <option>Concluido</option>
-              <option>En curso</option>
-              <option>Trunco</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Nombre de la institución:</label>
-            <input type="text" class="form-control" placeholder="Nombre de la institución" type="text" name="nombre_institucion" value=" " id="freeform_nombre_institucion" maxlength="150"> 
-          </div>
-        </div>
+<input type="hidden" name="member_id" value="{member_id}" />
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <select class="selectpicker full-width p-7 border-gray" type="text" name="tipo_formacion" id="freeform_tipo_formacion" maxlength="150">
+          <option>Seleccionar el tipo de formación</option>
+          <option value="Universitario">Universitario</option>
+          <option value="Técnico">Técnico</option>
+          <option value="Secundario">Secundario</option>
+        </select>
       </div>
-      <div class="row mv-7">
-        <div class="col-md-6">
-          <label for="exampleInputName2" class="text-gray h4">Fecha de inicio</label>
-          <select class="selectpicker pv-7 pr-35 pl-7 border-gray-light"  type="text" name="mes_inicio_formacion" value=" " id="freeform_mes_inicio_formacion" maxlength="150">
-            <option>Mes</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-          </select>
-          <select class="selectpicker pv-7 pr-28 pl-7 border-gray-light" type="text" name="year_inicio_formacion" value=" " id="freeform_year_inicio_formacion" maxlength="150">
-            <option>Año</option>
-            <option>1990</option>
-            <option>1991</option>
-            <option>1992</option>
-            <option>1993</option>
-            <option>1994</option>
-            <option>1995</option>
-            <option>1996</option>
-            <option>1997</option>
-            <option>1998</option>
-            <option>1999</option>
-            <option>2000</option>
-            <option>2001</option>
-            <option>2002</option>
-            <option>2003</option>
-            <option>2004</option>
-            <option>2005</option>
-            <option>2006</option>
-            <option>2007</option>
-            <option>2008</option>
-            <option>2009</option>
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="exampleInputName2" class="text-gray h4">Fecha de salida</label>
-          <select class="selectpicker pv-7 pr-35 pl-7 border-gray-light" type="text" name="mes_salida_formacion" value=" " id="freeform_mes_salida_formacion" maxlength="150">
-            <option>Mes</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-          </select>
-          <select class="selectpicker pv-7 pr-28 pl-7 border-gray-light" type="text" name="year_salida_formacion" value=" " id="freeform_year_salida_formacion" maxlength="150">
-            <option>Año</option>
-            <option>1990</option>
-            <option>1991</option>
-            <option>1992</option>
-            <option>1993</option>
-            <option>1994</option>
-            <option>1995</option>
-            <option>1996</option>
-            <option>1997</option>
-            <option>1998</option>
-            <option>1999</option>
-            <option>2000</option>
-            <option>2001</option>
-            <option>2002</option>
-            <option>2003</option>
-            <option>2004</option>
-            <option>2005</option>
-            <option>2006</option>
-            <option>2007</option>
-            <option>2008</option>
-            <option>2009</option>
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-          </select>
-        </div>
-      </div>
-      <div class="row mb-14">
-        <div class="col-md-8">
-          <label for="exampleInputName2" class="text-gray h4 mr-21">Estado</label>
-          <select class="selectpicker  pv-7 pl-7 pr-42 border-gray-light" type="text" name="estado_estudios" value=" " id="freeform_estado_estudios" maxlength="150">
-            <option>Actualmente estudiando</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-        </div>
-      </div>
-      <div class="row mt-21">
-        <div class="col-md-4 pr-0">
-          <label class="checkbox-inline h4">
-            <input type="checkbox" id="inlineCheckbox2" value="option2" class="mt-7">Agregar otros estudios
-          </label>
-        </div>
-        <div class="col-md-6">
-          <select class="selectpicker p-7 full-width border-gray-light">
-            <option>Curso - taller</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-4">
-          <label for="exampleInputName2" class="text-gray h4">Nombre del curso - taller</label>
-          <input type="text" class="form-control" id="exampleInputName2">
-        </div>
-      </div>
-      <h4 class="text-danger medium-heading mv-35">Información adicional</h4>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Manejo de software:</label>
-            <select class="selectpicker p-7 full-width border-gray" name="manejo_software" value="{freeform:edit_data:manejo_software}" id="freeform_manejo_software">
-              <option>software...</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Carrera:</label>
-            <select class="selectpicker p-7 full-width border-gray" name="tipo_carrera_adicional" value="{freeform:edit_data:tipo_carrera_adicional}" id="freeform_tipo_carrera_adicional">
-              <option>software...</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select> 
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Conocimiento de normas:</label>
-            <select class="selectpicker p-7 full-width border-gray" name="conocimiento_normas" value="{freeform:edit_data:conocimiento_normas}" id="freeform_conocimiento_normas">
-              <option>software...</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select> 
-          </div>
-          <div class="form-group">
-            <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Membresía en colegios:</label>
-            <select class="selectpicker p-7 full-width border-gray" value="{freeform:edit_data:membresias_colegios}" id="exampleInputName2">
-              <option>software...</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select> 
-          </div>
-        </div>
-      </div>
-      <div class="pv-21 text-right">
-        <a href="{site_url}perfil/edit-cv" class="btn bg-gray-light light mr-7 text-white btn-crear">ATRÁS</a>
-        <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light btn-crear">
-        {if freeform:no_results}
-            <p>
-                Specified form was not found. Please make sure you have
-                specified the correct short name of the form in the
-                <b>form_name</b> parameter.
-            </p>
-        {/if}
+      <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Carrera:</label>
+        <input type="text" class="form-control" placeholder="Ingresar carrera" name="tipo_carrera" value=" " id="freeform_tipo_carrera">
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <select class="selectpicker full-width p-7 border-gray" type="text" name="estado" id="freeform_estado" maxlength="150">     
+          <option>Seleccionar el estado de tu formación</option>
+          <option value="Concluido">Concluido</option>
+          <option value="En curso">En curso</option>
+          <option value="Truncó">Truncó</option>
+
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Nombre de la institución:</label>
+        <input type="text" class="form-control" placeholder="Nombre de la institución" type="text" name="nombre_institucion" value=" " id="freeform_nombre_institucion" maxlength="150"> 
+      </div>
+    </div>
+  </div>
+  <div class="row mv-7">
+    <div class="col-md-6">
+      <label for="exampleInputName2" class="text-gray h4">Fecha de inicio</label>
+      <select class="selectpicker pv-7 pr-35 pl-7 border-gray"  type="text" name="mes_inicio_formacion" id="freeform_mes_inicio_formacion" maxlength="150">	        	      
+        <option>Mes</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select class="selectpicker pv-7 pr-28 pl-7 boder-gray" type="text" name="year_inicio_formacion" id="freeform_year_inicio_formacion" maxlength="150">
+        <option>Año</option>       
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="exampleInputName2" class="text-gray h4">Fecha de salida</label>
+      <select class="selectpicker pv-7 pr-35 pl-7 border-gray" type="text" name="mes_salida_formacion" id="freeform_mes_salida_formacion" maxlength="150">        
+        <option>Mes</option>        
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select class="selectpicker pv-7 pr-28 pl-7 border-gray" type="text" name="year_salida_formacion" id="freeform_year_salida_formacion" maxlength="150">      
+        <option>Año</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+      </select>
+    </div>
+  </div>
+  <div class="row mb-14">
+  <!--
+    <div class="col-md-12">
+      <label for="exampleInputName2" class="text-gray h4 mr-21">Estado</label>
+      <select class="selectpicker  pv-7 pl-7 pr-42 border-gray" type="text" name="estado_estudios" id="freeform_estado_estudios" maxlength="150"> 	      
+        <option value="Actualmente estudiando">Actualmente estudiando</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    -->
+  </div>
+  <div class="row mt-21">
+    <div class="col-md-12 pb-14">
+      <h4>Agregar otros estudios</h4>
+    </div>
+    <div class="col-md-6">
+      <select class="selectpicker p-7 full-width border-gray" name="otros_estudios_opcion_1">	 	      
+        <option value="Concurso">Curso</option>
+        <option value="Taller">Taller</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre" name="nombre_estudios_opcion_1" value=" ">
+    </div>
+  </div>
+	<div class="row mt-21">
+    <div class="col-md-6">
+      <select class="selectpicker p-7 full-width border-gray" name="otros_estudios_opcion_2">  	 	      
+        <option value="Concurso">Curso</option>
+        <option value="Taller">Taller</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre" name="nombre_estudios_opcion_2" value=" ">
+    </div>
+  </div>  
+	<div class="row mt-21">
+    <div class="col-md-6">
+      <select class="selectpicker p-7 full-width border-gray" name="otros_estudios_opcion_3">  	 	      
+        <option value="Concurso">Curso</option>
+        <option value="Taller">Taller</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" id="exampleInputName2" placeholder="Nombre" name="nombre_estudios_opcion_3" value=" ">
+    </div>
+  </div> 
+
+  <h2 class="text-primary medium-heading pt-35">Información adicional</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Manejo de software:</label>
+        <select class="selectpicker p-7 full-width border-gray" name="manejo_software" id="freeform_manejo_software"> 	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Carrera:</label>
+        <select class="selectpicker p-7 full-width border-gray" name="tipo_carrera_adicional" id="freeform_tipo_carrera_adicional">       
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> 
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Conocimiento de normas:</label>
+        <select class="selectpicker p-7 full-width border-gray" name="conocimiento_normas" id="freeform_conocimiento_normas"> 	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> 
+      </div>
+      <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Membresía en colegios:</label>
+        <select class="selectpicker p-7 full-width border-gray" name="membresias_colegios" id="exampleInputName2">	        
+          <option value="software...">software...</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select> 
+      </div>
+    </div>
+  </div>
+  <div class="pv-21 text-right">
+    <a href="{site_url}anuncios/todos" class="btn bg-gray-light light mr-7 text-white btn-crear">IR AL PERFIL</a>
+    <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light btn-crear">
+  </div>
 {/exp:freeform:form}

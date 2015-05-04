@@ -24,13 +24,13 @@ $lang = array(
 'Display smiley images in entries.',
 
 'invalid_email_address' =>
-'You did not submit a valid email address',
+'Usted no envíe un email válido',
 
 'disallowed_screen_chars' =>
-'Screen Name contains illegal characters',
+'Nombre de pantalla contiene caracteres no válidos',
 
 'return_to_forum' =>
-'Return to the forums',
+'Regreso a los foros',
 
 'settings_update' =>
 'Settings Update Form',
@@ -75,7 +75,7 @@ $lang = array(
 'You must submit all fields',
 
 'invalid_existing_un_pw' =>
-'The existing username and/or password you submitted are not valid',
+'El nombre de usuario existente y / o la contraseña que indicó no son válidos',
 
 'unpw_updated' =>
 'Your settings have been updated.  You may now log-in.',
@@ -273,7 +273,7 @@ $lang = array(
 'Avatar has been updated',
 
 'avatar_upload_disallowed' =>
-'Avatar uploads are not currently enabled.',
+'Uploads Avatar no están habilitadas actualmente',
 
 'image_max_size_exceeded' =>
 'The maximum allowed size for images is %s kilobytes',

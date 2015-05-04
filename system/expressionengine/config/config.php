@@ -37,13 +37,13 @@ $config['theme_folder_url'] = $config['site_url']."/themes/";
 $config['theme_folder_path'] = $config['server_path']."/themes/";
 $config['save_tmpl_files'] = "y";
 $config['tmpl_file_basepath'] = $config['server_path']."/templates/";
-$config['avatar_url'] = $base_url."/uploads/system/avatars/";
-$config['avatar_path'] = $config['server_path']."/uploads/system/avatars/";
-$config['photo_url'] = $base_url."/uploads/system/member_photos/";
-$config['photo_path'] = $config['server_path']."/uploads/system/member_photos/";
-$config['sig_img_url'] = $base_url."/uploads/system/signature_attachments/";
-$config['sig_img_path'] = $config['server_path']."/uploads/system/signature_attachments/";
-$config['prv_msg_upload_path'] = $config['server_path']."/uploads/system/pm_attachments/";
+$config['avatar_url'] = $base_url."/images/fotos_usuarios";
+$config['avatar_path'] = "/var/www/html/images/fotos_usuarios";
+//$config['photo_url'] = $base_url."/images/uploads/system/member_photos/";
+//$config['photo_path'] = $config['server_path']."images/uploads/system/member_photos/";
+//$config['sig_img_url'] = $base_url."/images/uploads/system/signature_attachments/";
+//$config['sig_img_path'] = $config['server_path']."images/uploads/system/signature_attachments/";
+$config['prv_msg_upload_path'] = $config['server_path']."images/uploads/system/pm_attachments/";
 
 /*
 |--------------------------------------------------------------------------
@@ -174,3 +174,6 @@ $config['rewrite_short_tags'] = TRUE;
 
 /* End of file config.php */
 /* Location: ./system/expressionengine/config/config.php */
+
+$config['email_newline'] = "\r\n"; 
+$config['email_crlf'] = "\r\n";

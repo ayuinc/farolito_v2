@@ -1,30 +1,48 @@
 <div class="col-md-5 border-right prp-7 ">
   <div class="info">
     <div class="user">
-      
+      {exp:user:stats}
       <div class="user-card user-card-round size xs">
-        <div class="user-pic flex-middle">                        
-          <img src="{site_url}assets/icons/iconos-22.png" alt="">
+        <div class="user-pic flex-middle">    
+	        {if avatar_filename!=''}                    
+	        <img src="{avatar_url}{avatar_filename}" width="{avatar_width}" height="{avatar_height}" alt="{primer_nombre} {apellido_paterno}"/>
+	        {if:else}
+          <img src="{site_url}assets/icons/iconos-22.png" alt="{primer_nombre} {apellido_paterno}">
+          {/if}
         </div>
         <div class="user-info">
-        {exp:user:stats}
-          <h4 class="text-primary m-0">{screen_name}</h4>
-        {/exp:user:stats}
+        	{if primer_nombre!=""}
+          	<h4 class="text-primary m-0">{primer_nombre} {apellido_paterno}</h4>
+          {if:else}
+          	<h4 class="text-primary m-0"><a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR TU DATOS PERSONALES</a></h4>
+          {/if}
         </div>
       </div>
-      
+      {/exp:user:stats}
     </div>                
   </div>
   <div class="informacion-personal">
     {exp:user:stats}
     <h3 class=" medium-heading">Información personal&nbsp;<a href="{site_url}perfil/completar" class="btn btn-xs btn-default">EDITAR</a></h3>
+    {if dia_nacimiento!=''}
     <h5><strong class="text-gray-light">Fecha de nacimiento:</strong>{dia_nacimiento}/{mes_nacimiento}/{year_nacimiento}</h5>
+    {/if}
+    {if sexo!=''}
     <h5><strong class="text-gray-light">Sexo:</strong> {sexo}</h5>
+    {/if}
+    {if documento_identidad!=''}
     <h5><strong class="text-gray-light">DNI:</strong> {documento_identidad}</h5>
+    {/if}
     <h5><strong class="text-gray-light">Correo electrónico:</strong> {email}</h5>
+    {if telefono_fijo!=''}
     <h5><strong class="text-gray-light">Telefono fijo:</strong> {telefono_fijo}</h5>
+    {/if}
+    {if estado_civil!=''}
     <h5><strong class="text-gray-light">Estado civil:</strong> {estado_civil}</h5>
+    {/if}
+    {if pais!=''}
     <h5><strong class="text-gray-light">País:</strong> {pais}</h5>
+    {/if}
     {/exp:user:stats}
   </div>
   {exp:member:custom_profile_data}                

@@ -281,7 +281,7 @@ $lang = array(
 "The following fields are required: <ul><li>%fields%</li></ul>",
 
 "avatar_uploads_not_enabled"	=>
-"Avatar uploads are not currently enabled.",
+"Uploads Avatar no están habilitadas actualmente.",
 
 "photo_uploads_not_enabled"		=>
 "Member photo uploads are not currently enabled.",
@@ -296,7 +296,7 @@ $lang = array(
 "The maximum filesize for image uploads is %s. Please go back and choose a different file to upload.",
 
 "missing_upload_path"			=>
-"The upload path for this type of image is missing or incorrect. Please contact customer support.",
+"El camino de subida para este tipo de imagen es que falta o incorrecta. Por favor, póngase en contacto con atención al cliente.",
 
 "invalid_image_type"			=>
 "The type of image you are attempting to upload is not an allowed type.",
