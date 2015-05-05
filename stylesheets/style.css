@@ -5485,13 +5485,13 @@ header,
 
 #progressbar li {
   list-style-type: none;
-  color: white;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 17px;
   width: 33.33%;
   float: left;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  text-align: center; }
 
 #progressbar li:before {
   content: counter(step);
