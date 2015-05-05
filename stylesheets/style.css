@@ -5454,8 +5454,7 @@ header,
   background: #aaa;
   border-radius: 50%;
   margin: 0 auto 5px auto;
-  text-align: center;
-  line-height: 1.2; }
+  text-align: center;}
 
 /*progressbar connectors*/
 #progressbar li:after {
@@ -5478,5 +5477,9 @@ header,
 #progressbar li.active:before, #progressbar li.active:after {
   background: #28c5e6;
   color: white; }
+
+.icons-pasos {
+  border-bottom: 1px dashed #bbb;
+}
 
 /*# sourceMappingURL=style.css.map */
