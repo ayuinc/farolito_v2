@@ -9,7 +9,13 @@
     <div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Tipo de trabajo</label>
-        <input type="text" class="form-control" name="nombre_empresa_1" value=" " id="freeform_nombre_empresa_1" maxlength="150">
+        <select class="selectpicker full-width p-7 border-gray-light" maxlength="150">
+          <option>Trabajo independiente</option>
+          <option>Trabajo de tiempo completo</option>
+          <option>Trabajo de tiempo parcial</option>
+          <option>Consultoría</option>
+          <option>Prácticas Profesionales</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Puesto</label>
@@ -26,7 +32,6 @@
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Area del puesto</label><br>
         <select class="selectpicker full-width p-7 border-gray-light" name="area_puesto_empresa_1" value=" " id="freeform_area_puesto_empresa_1" maxlength="150">
-          <option>Area del puesto</option>
           <option>Administración</option>
           <option>Atención al Cliente</option>
           <option>Almacén</option>
