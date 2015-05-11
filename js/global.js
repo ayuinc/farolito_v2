@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
   var $empresa3a4 = $('#empresa_3_4');
   $empresa3a4.click(function(){
-    $('#empresa-3').slideToggle();
+    $('#empresa-4').slideToggle();
   });
 	//dptos by Alejandro
   $("#departamento").on("change", function() {
