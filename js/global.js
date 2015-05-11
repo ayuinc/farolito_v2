@@ -9,6 +9,14 @@ $(document).ready(function(){
 	$empresa1a2.click(function(){
 		$('#empresa-2').slideToggle();
 	});
+  var $empresa2a3 = $('#empresa_2_3');
+  $empresa2a3.click(function(){
+    $('#empresa-3').slideToggle();
+  });
+  var $empresa3a4 = $('#empresa_3_4');
+  $empresa3a4.click(function(){
+    $('#empresa-3').slideToggle();
+  });
 	//dptos by Alejandro
   $("#departamento").on("change", function() {
     var value = $(this).val();
