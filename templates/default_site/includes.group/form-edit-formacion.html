@@ -36,7 +36,7 @@
           <option>Seleccionar el estado de tu formación</option>
           <option value="Concluido">Concluido</option>
           <option value="En curso">En curso</option>
-          <option value="Truncó">Truncó</option>
+          <option value="Truncó">No Concluido</option>
 
 
         </select>
@@ -152,6 +152,12 @@
         <option value="2013">2013</option>
         <option value="2014">2014</option>
         <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
       </select>
     </div>
   </div>
@@ -173,17 +179,18 @@
   </div>
   <div class="row mt-21">
     <div class="col-md-12 pb-14">
-      <h4>Agregar otros estudios</h4>
+      <h4>Agregar otros Estudios-Especializacioness</h4>
     </div>
     <div class="col-md-6">
       <select class="selectpicker p-7 full-width border-gray" name="otros_estudios_opcion_1">
         {if freeform:edit_data:otros_estudios_opcion_1!=''}
         	<option value="{freeform:edit_data:otros_estudios_opcion_1}" selected>{freeform:edit_data:otros_estudios_opcion_1}</option>
         {/if}  	 	      
-        <option value="Concurso">Curso</option>
-        <option value="Taller">Taller</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
+        <option value="Concurso">Nombre de la Especialización</option>
+        <option value="Taller">Especialización</option>
+        <option value="3">Diplomado</option>
+        <option value="4">Maestría</option>
+        <option value="4">Doctorado</option>
       </select>
     </div>
     <div class="col-md-6">
@@ -196,10 +203,11 @@
         {if freeform:edit_data:otros_estudios_opcion_2!=''}
         	<option value="{freeform:edit_data:otros_estudios_opcion_2}" selected>{freeform:edit_data:otros_estudios_opcion_2}</option>
         {/if}  	 	      
-        <option value="Concurso">Curso</option>
-        <option value="Taller">Taller</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
+        <option value="Concurso">Nombre de la Especialización</option>
+        <option value="Taller">Especialización</option>
+        <option value="3">Diplomado</option>
+        <option value="4">Maestría</option>
+        <option value="4">Doctorado</option>
       </select>
     </div>
     <div class="col-md-6">
@@ -212,10 +220,11 @@
         {if freeform:edit_data:otros_estudios_opcion_3!=''}
         	<option value="{freeform:edit_data:otros_estudios_opcion_3}" selected>{freeform:edit_data:otros_estudios_opcion_3}</option>
         {/if}  	 	      
-        <option value="Concurso">Curso</option>
-        <option value="Taller">Taller</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
+        <option value="Concurso">Nombre de la Especialización</option>
+        <option value="Taller">Especialización</option>
+        <option value="3">Diplomado</option>
+        <option value="4">Maestría</option>
+        <option value="4">Doctorado</option>
       </select>
     </div>
     <div class="col-md-6">
@@ -232,54 +241,69 @@
 	        {if freeform:edit_data:manejo_software!=''}
 	        	<option value="{freeform:edit_data:manejo_software}" selected>{freeform:edit_data:manejo_software}</option>
 	        {/if}  	        
-          <option value="software...">software...</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+          <option>Microsoft Office</option>
+          <option>Excel</option>
+          <option>Word</option>
+          <option>Power Point</option>
+          <option>Publisher</option>
+          <option>Corel Draw</option>
+          <option>One Note</option>
+          <option>Access</option>
+          <option>Info Path Designer</option>
+          <option>Microsoft Windows Server</option>
+          <option>Base de Datos</option>
+          <option>Share Point Workspace</option>
+          <option>Photoshop</option>
+          <option>Autocad</option>
+          <option>Neodata</option>
+          <option>Otro</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Carrera:</label>
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Conocimiento de Idiomas:</label>
         <select class="selectpicker p-7 full-width border-gray" name="tipo_carrera_adicional" id="freeform_tipo_carrera_adicional">
 	        {if freeform:edit_data:tipo_carrera_adicional!=''}
 	        	<option value="{freeform:edit_data:tipo_carrera_adicional}" selected>{freeform:edit_data:tipo_carrera_adicional}</option>
 	        {/if}  	        
-          <option value="software...">software...</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+          <option>Inglés</option>
+          <option>Francés</option>
+          <option>Portugués</option>
+          <option>Italiano</option>
+          <option>Alemán</option>
+          <option>Chino Mandarín</option>
+          <option>Quechua</option>
+          <option>Aymara</option>
         </select> 
       </div>
     </div>
     <div class="col-md-6">
-      <div class="form-group">
-        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Conocimiento de normas:</label>
+      <!-- <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Conocimiento de Idiomas:</label>
         <select class="selectpicker p-7 full-width border-gray" name="conocimiento_normas" id="freeform_conocimiento_normas">
 	        {if freeform:edit_data:conocimiento_normas!=''}
 	        	<option value="{freeform:edit_data:conocimiento_normas}" selected>{freeform:edit_data:conocimiento_normas}</option>
 	        {/if}  	        
-          <option value="software...">software...</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+          <option>Inglés</option>
+          <option>Francés</option>
+          <option>Portugués</option>
+          <option>Italiano</option>
+          <option>Alemán</option>
+          <option>Chino Mandarín</option>
+          <option>Quechua</option>
+          <option>Aymara</option>
         </select> 
-      </div>
+      </div> -->
       <div class="form-group">
-        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Membresía en colegios:</label>
-        <select class="selectpicker p-7 full-width border-gray" name="membresias_colegios" id="exampleInputName2">
+        <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Colegiatura Profesional Activa:</label>
+        <input class="selectpicker p-7 full-width border-gray" name="membresias_colegios" id="exampleInputName2">
 	        {if freeform:edit_data:membresias_colegios!=''}
-	        	<option value="{freeform:edit_data:membresias_colegios}" selected>{freeform:edit_data:membresias_colegios}</option>
+	         {freeform:edit_data:membresias_colegios}
 	        {/if}  	        
-          <option value="software...">software...</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select> 
       </div>
     </div>
   </div>
   <div class="pv-21 text-right">
-    <a href="{site_url}anuncios/todos" class="btn bg-gray-light light mr-7 text-white btn-crear">IR AL PERFIL</a>
+    <a href="{site_url}anuncios/todos" class="btn bg-gray-light light mr-7 text-white btn-crear uppercase">Ir a Oportunidades Laborales</a>
     <input type="submit" name="submit" value="TERMINAR" class="btn text-white btn-danger light btn-crear">
   </div>
 {/exp:freeform:edit}     

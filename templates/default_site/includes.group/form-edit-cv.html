@@ -14,8 +14,17 @@
   <div class="col-md-6">
     <div>
       <div class="form-group">
-        <label for="exampleInputName2" class="text-gray h4">Nombre de la empresa</label>
-        <input type="text" class="form-control" name="nombre_empresa_1" value="{freeform:edit_data:nombre_empresa_1}" id="freeform_nombre_empresa_1" maxlength="150">
+        <label for="exampleInputName2" class="text-gray h4">Tipo de trabajo</label>
+        <select class="selectpicker full-width p-7 border-gray-light" maxlength="150" name="tipo_trabajo_1" value=" " id="freeform_tipo_trabajo_1">
+          {if freeform:edit_data:tipo_trabajo_1!=''}
+              <option value="{freeform:edit_data:tipo_trabajo_1}">{freeform:edit_data:tipo_trabajo_1}</option>
+            {/if}
+          <option>Trabajo independiente</option>
+          <option>Trabajo de tiempo completo</option>
+          <option>Trabajo de tiempo parcial</option>
+          <option>Consultoría</option>
+          <option>Prácticas Profesionales</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Puesto</label>
@@ -26,15 +35,43 @@
   <div class="col-md-6">
     <div>
       <div class="form-group">
+        <label for="exampleInputName2" class="text-gray h4">Nombre de la empresa</label>
+        <input type="text" class="form-control" name="nombre_empresa_1" value="{freeform:edit_data:nombre_empresa_1}" id="freeform_nombre_empresa_1" maxlength="150">
+      </div>
+      <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4">Area del puesto</label><br>
         <select class="selectpicker full-width p-7" name="area_puesto_empresa_1" id="freeform_area_puesto_empresa_1" maxlength="150">
 	        {if freeform:edit_data:area_puesto_empresa_1!=''}
 	        	<option value="{freeform:edit_data:area_puesto_empresa_1}">{freeform:edit_data:area_puesto_empresa_1}</option>
 	        {/if}
-          <option value="Area del puesto">Area del puesto</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+          <option>Administración</option>
+          <option>Atención al Cliente</option>
+          <option>Almacén</option>
+          <option>Aseo y Seguridad</option>
+          <option>Comercio Exterior y Aduanas</option>
+          <option>Comunicación</option>
+          <option>Construcción</option>
+          <option>Contabilidad</option>
+          <option>Diseño</option>
+          <option>Docencia</option>
+          <option>Diseño</option>
+          <option>Banca y Finanzas</option>
+          <option>Gastronomía y Turismo</option>
+          <option>Ingeniería</option>
+          <option>Comunicación y Telecomunicaciones</option>
+          <option>Legal</option>
+          <option>Logística</option>
+          <option>Marketing</option>
+          <option>Mantenimiento de Equipos y Maquinarías</option>
+          <option>Medicina</option>
+          <option>Minería</option>
+          <option>Operaciones</option>
+          <option>Producción</option>
+          <option>Proyectos</option>
+          <option>Recursos Humanos</option>
+          <option>Secretaría</option>
+          <option>Tecnología</option>
+          <option>Ventas y Comercial</option>
         </select>
       </div>
     </div>
@@ -168,13 +205,13 @@
     </select>
   </div>
 </div>
-<div class="row mb-14">
+<!-- <div class="row mb-14">
   <div class="col-md-6">
     <label class="checkbox-inline h4">
       <input type="checkbox" name="actualmente_empresa_1" value="y" id="freeform_actualmente_empresa_1" class="mt-7" {if freeform:edit_data:actualmente_empresa_1!=''}checked{/if}>Actualmente trabajando
     </label>
   </div>
-</div>
+</div> -->
 <div class="row mt-21">
   <div class="col-md-6 pr-0">
     <div class="form-group mb-0">
@@ -190,6 +227,8 @@
   </div>
 </div>
 <!-- empresa 1 termina -->
+
+
 <p id="empresa_1_2" class="h4"><strong class="text-primary">+</strong> Agregar otra experiencia laboral</p>
 <!-- empresa 2 inicia -->
 <div id="empresa-2">
@@ -197,8 +236,17 @@
     <div class="col-md-6">
       <div>
         <div class="form-group">
-          <label for="exampleInputName2" class="text-gray h4">Nombre de la empresa</label>
-          <input type="text" class="form-control" name="nombre_empresa_2" value="{freeform:edit_data:nombre_empresa_2}" id="freeform_nombre_empresa_2" maxlength="150">
+          <label for="exampleInputName2" class="text-gray h4">Tipo de trabajo</label>
+          <select class="selectpicker full-width p-7 border-gray-light" maxlength="150" name="tipo_trabajo_2" value=" " id="freeform_tipo_trabajo_2">
+            {if freeform:edit_data:tipo_trabajo_2!=''}
+              <option value="{freeform:edit_data:tipo_trabajo_2}">{freeform:edit_data:tipo_trabajo_2}</option>
+            {/if}
+            <option>Trabajo independiente</option>
+            <option>Trabajo de tiempo completo</option>
+            <option>Trabajo de tiempo parcial</option>
+            <option>Consultoría</option>
+            <option>Prácticas Profesionales</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="exampleInputName2" class="text-gray h4">Puesto</label>
@@ -209,15 +257,43 @@
     <div class="col-md-6">
       <div>
         <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Nombre de la empresa</label>
+          <input type="text" class="form-control" name="nombre_empresa_2" value="{freeform:edit_data:nombre_empresa_2}" id="freeform_nombre_empresa_2" maxlength="150">
+        </div>
+        <div class="form-group">
           <label for="exampleInputName2" class="text-gray h4">Area del puesto</label><br>
           <select class="selectpicker full-width p-7" name="area_puesto_empresa_2" id="freeform_area_puesto_empresa_2" maxlength="150">
 		        {if freeform:edit_data:area_puesto_empresa_2!=''}
 		        	<option value="{freeform:edit_data:area_puesto_empresa_2}">{freeform:edit_data:area_puesto_empresa_2}</option>
 		        {/if}
-	          <option value="Area del puesto">Area del puesto</option>
-	          <option value="2">2</option>
-	          <option value="3">3</option>
-	          <option value="4">4</option>
+	          <option>Administración</option>
+            <option>Atención al Cliente</option>
+            <option>Almacén</option>
+            <option>Aseo y Seguridad</option>
+            <option>Comercio Exterior y Aduanas</option>
+            <option>Comunicación</option>
+            <option>Construcción</option>
+            <option>Contabilidad</option>
+            <option>Diseño</option>
+            <option>Docencia</option>
+            <option>Diseño</option>
+            <option>Banca y Finanzas</option>
+            <option>Gastronomía y Turismo</option>
+            <option>Ingeniería</option>
+            <option>Comunicación y Telecomunicaciones</option>
+            <option>Legal</option>
+            <option>Logística</option>
+            <option>Marketing</option>
+            <option>Mantenimiento de Equipos y Maquinarías</option>
+            <option>Medicina</option>
+            <option>Minería</option>
+            <option>Operaciones</option>
+            <option>Producción</option>
+            <option>Proyectos</option>
+            <option>Recursos Humanos</option>
+            <option>Secretaría</option>
+            <option>Tecnología</option>
+            <option>Ventas y Comercial</option>
           </select>
         </div>
       </div>
@@ -351,13 +427,13 @@
       </select>
     </div>
   </div>
-  <div class="row mb-14">
+  <!-- <div class="row mb-14">
     <div class="col-md-6">
       <label class="checkbox-inline h4">
         <input type="checkbox" name="actualmente_empresa_1" value="y" id="freeform_actualmente_empresa_2" class="mt-7" {if freeform:edit_data:actualmente_empresa_2!=''}checked{/if}>Actualmente trabajando
       </label>
     </div>
-  </div>
+  </div> -->
   <div class="row mt-21">
     <div class="col-md-6 pr-0">
       <div class="form-group mb-0">
@@ -374,6 +450,441 @@
   </div>
 </div>
 <!-- empresa 2 termina -->
+
+
+<p id="empresa_2_3" class="h4 text-primary"><strong class="text-primary">+</strong> Agregar otra experiencia laboral</p>
+<!-- empresa 3 inicia -->
+<div id="empresa-3">
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Tipo de trabajo</label>
+          <select class="selectpicker full-width p-7 border-gray-light" maxlength="150" name="tipo_trabajo_3" value=" " id="freeform_tipo_trabajo_3">
+            {if freeform:edit_data:tipo_trabajo_3!=''}
+              <option value="{freeform:edit_data:tipo_trabajo_3}">{freeform:edit_data:tipo_trabajo_3}</option>
+            {/if}
+            <option>Trabajo independiente</option>
+            <option>Trabajo de tiempo completo</option>
+            <option>Trabajo de tiempo parcial</option>
+            <option>Consultoría</option>
+            <option>Prácticas Profesionales</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Puesto</label>
+          <input type="text" class="form-control" name="puesto_empresa_3" value="{freeform:edit_data:puesto_empresa_3}" id="freeform_puesto_empresa_3" maxlength="150">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Nombre de la empresa</label>
+          <input type="text" class="form-control" name="nombre_empresa_3" value="{freeform:edit_data:nombre_empresa_3}" id="freeform_nombre_empresa_3" maxlength="150">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Area del puesto</label><br>
+          <select class="selectpicker full-width p-7" name="area_puesto_empresa_3" value=" " id="freeform_area_puesto_empresa_3" maxlength="150">
+            {if freeform:edit_data:area_puesto_empresa_3!=''}
+              <option value="{freeform:edit_data:area_puesto_empresa_3}">{freeform:edit_data:area_puesto_empresa_3}</option>
+            {/if}
+            <option>Administración</option>
+            <option>Atención al Cliente</option>
+            <option>Almacén</option>
+            <option>Aseo y Seguridad</option>
+            <option>Comercio Exterior y Aduanas</option>
+            <option>Comunicación</option>
+            <option>Construcción</option>
+            <option>Contabilidad</option>
+            <option>Diseño</option>
+            <option>Docencia</option>
+            <option>Diseño</option>
+            <option>Banca y Finanzas</option>
+            <option>Gastronomía y Turismo</option>
+            <option>Ingeniería</option>
+            <option>Comunicación y Telecomunicaciones</option>
+            <option>Legal</option>
+            <option>Logística</option>
+            <option>Marketing</option>
+            <option>Mantenimiento de Equipos y Maquinarías</option>
+            <option>Medicina</option>
+            <option>Minería</option>
+            <option>Operaciones</option>
+            <option>Producción</option>
+            <option>Proyectos</option>
+            <option>Recursos Humanos</option>
+            <option>Secretaría</option>
+            <option>Tecnología</option>
+            <option>Ventas y Comercial</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mv-7">
+  <div class="col-md-6">
+    <div class="col-md-5 ph-0">
+      <label for="exampleInputName2" class="text-gray h4">Fecha de inicio</label>
+    </div>
+    <div class="col-md-4 pl-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="mes_inicio_empresa_3" value=" " id="freeform_mes_inicio_empresa_3" maxlength="150">
+        {if freeform:edit_data:mes_inicio_empresa_3!=''}
+          <option value="{freeform:edit_data:mes_inicio_empresa_3}" selected>{freeform:edit_data:mes_inicio_empresa_3}</option>
+        {/if} 
+        <option>Mes</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+    </div>
+    <div class="col-md-3 ph-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="year_inicio_empresa_3" value=" " id="freeform_year_inicio_empresa_3" maxlength="150">
+       {if freeform:edit_data:year_inicio_empresa_3!=''}
+          <option value="{freeform:edit_data:year_inicio_empresa_3}" selected>{freeform:edit_data:year_inicio_empresa_3}</option>
+        {/if}
+        <option>Año</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-5 ph-0">
+      <label for="exampleInputName2" class="text-gray h4">Fecha de salida</label>
+    </div>
+    <div class="col-md-4 pl-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="mes_salida_empresa_3" value=" " id="freeform_mes_salida_empresa_3" maxlength="150">
+        {if freeform:edit_data:mes_salida_empresa_3!=''}
+          <option value="{freeform:edit_data:mes_salida_empresa_3}" selected>{freeform:edit_data:mes_salida_empresa_3}</option>
+        {/if}
+        <option>Mes</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+    </div>
+    <div class="col-md-3 ph-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="year_salida_empresa_3" value=" " id="freeform_year_inicio_empresa_3" maxlength="150">
+        {if freeform:edit_data:year_salida_empresa_3!=''}
+          <option value="{freeform:edit_data:year_salida_empresa_3}" selected>{freeform:edit_data:year_salida_empresa_3}</option>
+        {/if} 
+        <option>Año</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+      </select>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row mb-14">
+    <div class="col-md-6">
+      <label class="checkbox-inline h4">
+        <input type="hidden" name="actualmente_empresa_2" value="n" class="mt-7" />
+        <input type="checkbox" name="actualmente_empresa_2" value="y" id="freeform_actualmente_empresa_2" class="mt-7">Actualmente trabajando
+      </label>
+    </div>
+  </div> -->
+  <div class="row mt-21">
+    <div class="col-md-6 pr-0">
+      <div class="form-group mb-0">
+        <label for="exampleInputFile" class="h4 mt-0">Subir constancia de trabajo escaneada</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-btn">
+          {freeform:field:constancia_empresa_3}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- empresa 3 termina -->
+
+
+<p id="empresa_3_4" class="h4 text-primary"><strong class="text-primary">+</strong> Agregar otra experiencia laboral</p>
+<!-- empresa 4 inicia -->
+<div id="empresa-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Tipo de trabajo</label>
+          <select class="selectpicker full-width p-7 border-gray-light" maxlength="150" name="tipo_trabajo_4" value=" " id="freeform_tipo_trabajo_4">
+            {if freeform:edit_data:tipo_trabajo_4!=''}
+              <option value="{freeform:edit_data:tipo_trabajo_4}">{freeform:edit_data:tipo_trabajo_4}</option>
+            {/if}
+            <option>Trabajo independiente</option>
+            <option>Trabajo de tiempo completo</option>
+            <option>Trabajo de tiempo parcial</option>
+            <option>Consultoría</option>
+            <option>Prácticas Profesionales</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Puesto</label>
+          <input type="text" class="form-control" name="puesto_empresa_4" value="{freeform:edit_data:puesto_empresa_4}" id="freeform_puesto_empresa_4" maxlength="150">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Nombre de la empresa</label>
+          <input type="text" class="form-control" name="nombre_empresa_4" value="{freeform:edit_data:nombre_empresa_4}" id="freeform_nombre_empresa_4" maxlength="150">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName2" class="text-gray h4">Area del puesto</label><br>
+          <select class="selectpicker full-width p-7" name="area_puesto_empresa_4" value=" " id="freeform_area_puesto_empresa_4" maxlength="150">
+            {if freeform:edit_data:area_puesto_empresa_4!=''}
+              <option value="{freeform:edit_data:area_puesto_empresa_4}">{freeform:edit_data:area_puesto_empresa_4}</option>
+            {/if}
+            <option>Administración</option>
+            <option>Atención al Cliente</option>
+            <option>Almacén</option>
+            <option>Aseo y Seguridad</option>
+            <option>Comercio Exterior y Aduanas</option>
+            <option>Comunicación</option>
+            <option>Construcción</option>
+            <option>Contabilidad</option>
+            <option>Diseño</option>
+            <option>Docencia</option>
+            <option>Diseño</option>
+            <option>Banca y Finanzas</option>
+            <option>Gastronomía y Turismo</option>
+            <option>Ingeniería</option>
+            <option>Comunicación y Telecomunicaciones</option>
+            <option>Legal</option>
+            <option>Logística</option>
+            <option>Marketing</option>
+            <option>Mantenimiento de Equipos y Maquinarías</option>
+            <option>Medicina</option>
+            <option>Minería</option>
+            <option>Operaciones</option>
+            <option>Producción</option>
+            <option>Proyectos</option>
+            <option>Recursos Humanos</option>
+            <option>Secretaría</option>
+            <option>Tecnología</option>
+            <option>Ventas y Comercial</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mv-7">
+  <div class="col-md-6">
+    <div class="col-md-5 ph-0">
+      <label for="exampleInputName2" class="text-gray h4">Fecha de inicio</label>
+    </div>
+    <div class="col-md-4 pl-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="mes_inicio_empresa_4" value=" " id="freeform_mes_inicio_empresa_4" maxlength="150">
+        {if freeform:edit_data:mes_inicio_empresa_4!=''}
+          <option value="{freeform:edit_data:mes_inicio_empresa_4}" selected>{freeform:edit_data:mes_inicio_empresa_4}</option>
+        {/if} 
+        <option>Mes</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+    </div>
+    <div class="col-md-3 ph-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="year_inicio_empresa_4" value=" " id="freeform_year_inicio_empresa_4" maxlength="150">
+        {if freeform:edit_data:year_inicio_empresa_4!=''}
+          <option value="{freeform:edit_data:year_inicio_empresa_4}" selected>{freeform:edit_data:year_inicio_empresa_4}</option>
+        {/if} 
+        <option>Año</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-5 ph-0">
+      <label for="exampleInputName2" class="text-gray h4">Fecha de salida</label>
+    </div>
+    <div class="col-md-4 pl-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="mes_salida_empresa_4" value=" " id="freeform_mes_salida_empresa_4" maxlength="150">
+        {if freeform:edit_data:mes_salida_empresa_4!=''}
+          <option value="{freeform:edit_data:mes_salida_empresa_4}" selected>{freeform:edit_data:mes_salida_empresa_4}</option>
+        {/if} 
+        <option>Mes</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+    </div>
+    <div class="col-md-3 ph-0">
+      <select class="selectpicker p-7 full-width border-gray-light" name="year_salida_empresa_4" value=" " id="freeform_year_inicio_empresa_4" maxlength="150">
+        {if freeform:edit_data:year_salida_empresa_4!=''}
+          <option value="{freeform:edit_data:year_salida_empresa_4}" selected>{freeform:edit_data:year_salida_empresa_4}</option>
+        {/if} 
+        <option>Año</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+      </select>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row mb-14">
+    <div class="col-md-6">
+      <label class="checkbox-inline h4">
+        <input type="hidden" name="actualmente_empresa_2" value="n" class="mt-7" />
+        <input type="checkbox" name="actualmente_empresa_2" value="y" id="freeform_actualmente_empresa_2" class="mt-7">Actualmente trabajando
+      </label>
+    </div>
+  </div> -->
+  <div class="row mt-21">
+    <div class="col-md-6 pr-0">
+      <div class="form-group mb-0">
+        <label for="exampleInputFile" class="h4 mt-0">Subir constancia de trabajo escaneada</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="input-group">
+        <span class="input-group-btn">
+          {freeform:field:constancia_empresa_4}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- empresa 4 termina -->
+
+
 <div class="row mt-21">
   <div class="col-md-3 pr-0">
     <div class="form-group mb-0">
@@ -407,6 +918,26 @@
   <div class="col-md-6">
     <label for="exampleInputEmail1" class="text-gray h4">Teléfono</label>
     <input type="text" class="form-control" name="telefono_referencia_2" value="{freeform:edit_data:telefono_referencia_2}" id="freeform_telefono_referencia_2" maxlength="150">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <label for="exampleInputEmail1" class="text-gray h4">Nombre de referencia 3</label>
+    <input type="text" class="form-control" name="nombre_referencia_3" value="{freeform:edit_data:nombre_referencia_3}" id="freeform_nombre_referencia_3" maxlength="150">
+  </div>
+  <div class="col-md-6">
+    <label for="exampleInputEmail1" class="text-gray h4">Teléfono</label>
+    <input type="text" class="form-control" name="telefono_referencia_3" value="{freeform:edit_data:telefono_referencia_3}" id="freeform_telefono_referencia_3" maxlength="150">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <label for="exampleInputEmail1" class="text-gray h4">Nombre de referencia 4</label>
+    <input type="text" class="form-control" name="nombre_referencia_4" value="{freeform:edit_data:nombre_referencia_4}" id="freeform_nombre_referencia_4" maxlength="150">
+  </div>
+  <div class="col-md-6">
+    <label for="exampleInputEmail1" class="text-gray h4">Teléfono</label>
+    <input type="text" class="form-control" name="telefono_referencia_4" value="{freeform:edit_data:telefono_referencia_4}" id="freeform_telefono_referencia_4" maxlength="150">
   </div>
 </div>
 <div class="pv-21 text-right">
