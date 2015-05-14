@@ -237,7 +237,7 @@
     <div class="col-md-6">
       <div class="form-group">
         <label for="exampleInputName2" class="text-gray h4"><span class="text-primary"></span>Manejo de software:</label>
-        <select multiple="multiple" class="selectpicker full-width  ms" name="manejo_software" >
+        <select multiple="multiple" class="selectpicker full-width  ms" name="manejo_software" id="freeform_manejo_software">
           {if freeform:edit_data:manejo_software!=''}
             <option value="{freeform:edit_data:manejo_software}" selected>{freeform:edit_data:manejo_software}</option>
           {/if}           
