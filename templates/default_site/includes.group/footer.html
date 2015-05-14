@@ -72,5 +72,27 @@
           });
       });
   </script>
+  <script>
+      $(function() {
+          $('#freeform_manejo_software').change(function() {
+              console.log($(this).val());
+
+          }).multipleSelect({
+              width: '100%',
+              placeholder: "Selecciona"
+          });
+      });
+  </script>
+  <script>
+      $(function() {
+          $('#freeform_tipo_carrera_adicional').change(function() {
+              console.log($(this).val());
+
+          }).multipleSelect({
+              width: '100%',
+              placeholder: "Selecciona"
+          });
+      });
+  </script>
   </body>
 </html>
