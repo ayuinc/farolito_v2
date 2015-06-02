@@ -4042,7 +4042,10 @@ a:hover {
 figure {
   margin: 21px 0; }
   figure img {
-    margin: 21px; }
+    margin: 21px;
+    display: block;
+    max-width: 100%;
+    height: auto;}
 
 .text-yellow {
   color: #fcf07e; }
